@@ -26,7 +26,7 @@
 
     macros {
         prev_screen: prev_screen {
-            label = "prev_virtual_desktop";
+            label = "ZM_prev_virtual_desktop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <2>;
@@ -40,7 +40,7 @@
         };
 
         next_screen: next_screen {
-            label = "next_virtual_desktop";
+            label = "ZM_next_virtual_desktop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <2>;
@@ -55,7 +55,7 @@
 
 
         undo: undo {
-            label = "undo";
+            label = "ZM_undo";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <2>;
@@ -68,7 +68,7 @@
 
 
         redo: redo {
-            label = "redo";
+            label = "ZM_redo";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <2>;
