@@ -9,62 +9,20 @@
 
 
 / {
+
     macros {
-        prev_screen: prev_screen {
-            label = "ZM_prev_virtual_desktop";
+        zed_em_kay: zed_em_kay {
+            label = "ZM_zed_em_kay";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <2>;
             bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_press &kp LWIN>
-                , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LWIN>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-
-        next_screen: next_screen {
-            label = "ZM_next_virtual_desktop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <2>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_press &kp LWIN>
-                , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LWIN>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-
-
-        undo: undo {
-            label = "ZM_undo";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <2>;
-            bindings
-                = <macro_press &kp LCTRL>
-                , <macro_tap &kp Z>
-                , <macro_release &kp LCTRL>                ;
-        };
-
-
-        redo: redo {
-            label = "ZM_redo";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <2>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp Z>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_release &kp LCTRL>
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
                 ;
         };
     };
+
 
 
     behaviors {
