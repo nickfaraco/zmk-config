@@ -60,10 +60,9 @@
             #binding-cells = <0>;
             wait-ms = <2>;
             bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp Z>
-                , <&macro_release &kp LCTRL>
-                ;
+                = <macro_press &kp LCTRL>
+                , <macro_tap &kp Z>
+                , <macro_release &kp LCTRL>                ;
         };
 
 
