@@ -117,7 +117,7 @@
 
 
             bindings = <
-                &none  &C_MUTE  &C_VOL_DN  &C_VOL_UP  &kp F10                            &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
+                &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10                            &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
                 &redo  &kp F4  &kp F5  &kp F5  &undo                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
                 &none  &kp F1  &kp F2  &kp F3  &kp F12                            &none      &prev_screen  &next_screen &none       &none
                                             &none  &none  &none  &none  &none  &none  &none
