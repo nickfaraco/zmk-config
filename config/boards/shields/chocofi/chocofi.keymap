@@ -31,11 +31,9 @@
             #binding-cells = <0>;
             wait-ms = <2>;
             bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_press &kp LWIN>
+                = <&macro_press &kp LCTRL &kp LWIN>
                 , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LWIN>
-                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LWIN &kp LCTRL>
                 ;
         };
 
@@ -45,11 +43,9 @@
             #binding-cells = <0>;
             wait-ms = <2>;
             bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_press &kp LWIN>
+                = <&macro_press &kp LCTRL &kp LWIN>
                 , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LWIN>
-                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LWIN &kp LCTRL>
                 ;
         };
 
@@ -72,11 +68,9 @@
             #binding-cells = <0>;
             wait-ms = <2>;
             bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_press &kp LSHIFT>
+                = <&macro_press &kp LCTRL &kp LSHIFT>
                 , <&macro_tap &kp Z>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHIFT &kp LCTRL>
                 ;
         };
     };
