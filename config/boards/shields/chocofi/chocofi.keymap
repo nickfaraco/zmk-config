@@ -32,13 +32,26 @@
                 };
         };
 
+        macros {
+            zed_em_kay: zed_em_kay {
+                label = "ZM_zed_em_kay";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp Z &kp M &kp K>
+                    , <&macro_release &kp LSHFT>
+                    ;
+            };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
 
                 default_layer {
                         bindings = <
-   &mt RALT Q  &kp W       &kp E          &kp R          &kp T             &kp Y        &kp U         &kp I            &kp O          &mt RALT P
+   &mt RALT Q  &kp W       &kp E          &kp R          &zed_em_kay             &kp Y        &kp U         &kp I            &kp O          &mt RALT P
    &kp A       &kp S       &kp D          &kp F          &kp G             &kp H        &kp J         &kp K            &kp L          &kp SEMI
    &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT V    &kp B             &kp N        &hm RSHFT M   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH
                            &mt RCTL ESC   &lt NAV SPACE  &lt MOUSE TAB     &kp RET      &lt NUM BSPC  &lt FUN DEL
