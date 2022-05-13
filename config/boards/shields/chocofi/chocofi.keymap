@@ -16,7 +16,7 @@
             label = "LEFT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            tapping-term-ms = <100>;                     // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9>;    // <---[[right-hand keys]]
@@ -24,17 +24,6 @@
     };
 
     macros {
-
-        // zed_em_kay: zed_em_kay {
-        //     label = "ZM_zed_em_kay";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     bindings
-        //         = <&macro_press &kp LSHFT>
-        //         , <&macro_tap &kp Z &kp M &kp K>
-        //         , <&macro_release &kp LSHFT>
-        //         ;
-        // };
 
         prev_screen: prev_screen {
             label = "ZM_prev_virtual_desktop";
@@ -105,13 +94,6 @@
                 &kp Z       &kp X       &kp C         &kp D        &kp V                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
                                                       &kp ESC      &kp SPACE    &kp TAB   &kp RET   &kp BSPC  &kp DEL
             >;
-
-            // bindings = <
-            //     &kp Q       &kp W       &kp F         &kp P        &kp B                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
-            //     &kp A       &kp R       &kp S         &kp T        &kp G                            &kp M     &kp N     &kp E     &kp I     &kp O
-            //     &kp Z       &kp X       &kp C         &kp D        &kp V                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-            //                                           &kp ESC      &kp SPACE    &kp TAB   &kp RET   &kp BSPC  &kp DEL
-            // >;
         };
 
 
@@ -134,14 +116,6 @@
                 &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &prev_screen  &next_screen &none       &none
                                             &none  &none  &none  &none  &none  &none
             >;
-
-            // bindings = <
-            //     &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
-            //     &none  &kp F4  &kp F5  &kp F5  &none                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
-            //     &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &none         &none        &none       &none
-            //                                 &none  &none  &none  &none  &none  &none
-            // >;
-
         };
     };
 };
