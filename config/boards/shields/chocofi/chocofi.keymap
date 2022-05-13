@@ -37,11 +37,7 @@
                 label = "ZM_zed_em_kay";
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
-                bindings
-                    = < &kp LSHFT>
-                    , < &kp Z &kp M &kp K>
-                    , < &kp LSHFT>
-                    ;
+                bindings = < &kp Z &kp M &kp K>;
             };
         };
 
