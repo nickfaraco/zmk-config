@@ -107,40 +107,40 @@
 
             bindings = <
                 &kp Q       &kp W       &kp F         &kp P        &kp B                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
-                &kp A  &kp R  &kp S  &kp T  &kp G                            &kp M     &kp N     &kp E     &kp I     &kp O
+                &kp A       &kp R       &kp S         &kp T        &kp G                            &kp M     &kp N     &kp E     &kp I     &kp O
                 &kp Z       &kp X       &kp C         &kp D        &kp V                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
                                                       &kp ESC      &kp SPACE    &kp TAB   &kp RET   &kp BSPC  &kp DEL
             >;
         };
 
 
-        ext_layer {
+        // ext_layer {
 
-            bindings = <
-                &none  &kp F7  &kp F8  &kp F9  &kp F10                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
-                &none  &kp F4  &kp F5  &kp F5  &kp F11                            &kp M     &kp N     &kp E     &kp I     &kp O
-                &none  &kp F1  &kp F2  &kp F3  &kp F12                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-                                            &none  &none  &none    &none  &none  &none
-            >;
-        };
+        //     bindings = <
+        //         &none  &kp F7  &kp F8  &kp F9  &kp F10                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+        //         &none  &kp F4  &kp F5  &kp F5  &kp F11                            &kp M     &kp N     &kp E     &kp I     &kp O
+        //         &none  &kp F1  &kp F2  &kp F3  &kp F12                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
+        //                                     &none  &none  &none    &none  &none  &none
+        //     >;
+        // };
 
 
-        nav_layer {
+        // nav_layer {
 
-            // bindings = <
-            //     &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
-            //     &redo  &kp F4  &kp F5  &kp F5  &undo                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
-            //     &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &prev_screen  &next_screen &none       &none
-            //                                 &none  &none  &none  &none  &none  &none
-            // >;
+        //     // bindings = <
+        //     //     &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
+        //     //     &redo  &kp F4  &kp F5  &kp F5  &undo                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
+        //     //     &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &prev_screen  &next_screen &none       &none
+        //     //                                 &none  &none  &none  &none  &none  &none
+        //     // >;
 
-            bindings = <
-                &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
-                &none  &kp F4  &kp F5  &kp F5  &none                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
-                &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &none         &none        &none       &none
-                                            &none  &none  &none  &none  &none  &none
-            >;
+        //     bindings = <
+        //         &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
+        //         &none  &kp F4  &kp F5  &kp F5  &none                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
+        //         &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &none         &none        &none       &none
+        //                                     &none  &none  &none  &none  &none  &none
+        //     >;
 
-        };
+        // };
     };
 };
