@@ -23,70 +23,70 @@
         };
     };
 
-    // macros {
+    macros {
 
-    //     zed_em_kay: zed_em_kay {
-    //         label = "ZM_zed_em_kay";
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings
-    //             = <&macro_press &kp LSHFT>
-    //             , <&macro_tap &kp Z &kp M &kp K>
-    //             , <&macro_release &kp LSHFT>
-    //             ;
-    //     };
-
-        // prev_screen: prev_screen {
-        //     label = "ZM_prev_virtual_desktop";
+        // zed_em_kay: zed_em_kay {
+        //     label = "ZM_zed_em_kay";
         //     compatible = "zmk,behavior-macro";
         //     #binding-cells = <0>;
-        //     wait-ms = <2>;
         //     bindings
-        //         = <&macro_press &kp LCTRL &kp LWIN>
-        //         , <&macro_tap &kp LEFT>
-        //         , <&macro_release &kp LWIN &kp LCTRL>
+        //         = <&macro_press &kp LSHFT>
+        //         , <&macro_tap &kp Z &kp M &kp K>
+        //         , <&macro_release &kp LSHFT>
         //         ;
         // };
 
-        // next_screen: next_screen {
-        //     label = "ZM_next_virtual_desktop";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     wait-ms = <2>;
-        //     bindings
-        //         = <&macro_press &kp LCTRL &kp LWIN>
-        //         , <&macro_tap &kp RIGHT>
-        //         , <&macro_release &kp LWIN &kp LCTRL>
-        //         ;
-        // };
+        prev_screen: prev_screen {
+            label = "ZM_prev_virtual_desktop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <2>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LWIN>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LWIN &kp LCTRL>
+                ;
+        };
+
+        next_screen: next_screen {
+            label = "ZM_next_virtual_desktop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <2>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LWIN>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LWIN &kp LCTRL>
+                ;
+        };
 
 
-        // undo: undo {
-        //     label = "ZM_undo";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     wait-ms = <2>;
-        //     bindings
-        //         = <&macro_press &kp LCTRL>
-        //         , <&macro_tap &kp Z>
-        //         , <&macro_release &kp LCTRL>
-        //         ;
-        // };
+        undo: undo {
+            label = "ZM_undo";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <2>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp Z>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
 
 
-        // redo: redo {
-        //     label = "ZM_redo";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     wait-ms = <2>;
-        //     bindings
-        //         = <&macro_press &kp LCTRL &kp LSHIFT>
-        //         , <&macro_tap &kp Z>
-        //         , <&macro_release &kp LSHIFT &kp LCTRL>
-        //         ;
-        // };
+        redo: redo {
+            label = "ZM_redo";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <2>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LSHIFT>
+                , <&macro_tap &kp Z>
+                , <&macro_release &kp LSHIFT &kp LCTRL>
+                ;
+        };
 
-    // };
+    };
 
 
     keymap {
@@ -115,33 +115,33 @@
         };
 
 
-        // ext_layer {
+        ext_layer {
 
-        //     bindings = <
-        //         &none  &kp F7  &kp F8  &kp F9  &kp F10                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
-        //         &none  &kp F4  &kp F5  &kp F5  &kp F11                            &kp M     &kp N     &kp E     &kp I     &kp O
-        //         &none  &kp F1  &kp F2  &kp F3  &kp F12                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-        //                                     &none  &none  &none    &none  &none  &none
-        //     >;
-        // };
+            bindings = <
+                &none  &kp F7  &kp F8  &kp F9  &kp F10                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+                &none  &kp F4  &kp F5  &kp F5  &kp F11                            &kp M     &kp N     &kp E     &kp I     &kp O
+                &none  &kp F1  &kp F2  &kp F3  &kp F12                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
+                                            &none  &none  &none    &none  &none  &none
+            >;
+        };
 
 
-        // nav_layer {
+        nav_layer {
 
-        //     // bindings = <
-        //     //     &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
-        //     //     &redo  &kp F4  &kp F5  &kp F5  &undo                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
-        //     //     &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &prev_screen  &next_screen &none       &none
-        //     //                                 &none  &none  &none  &none  &none  &none
-        //     // >;
+            bindings = <
+                &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
+                &redo  &kp F4  &kp F5  &kp F5  &undo                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
+                &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &prev_screen  &next_screen &none       &none
+                                            &none  &none  &none  &none  &none  &none
+            >;
 
-        //     bindings = <
-        //         &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
-        //         &none  &kp F4  &kp F5  &kp F5  &none                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
-        //         &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &none         &none        &none       &none
-        //                                     &none  &none  &none  &none  &none  &none
-        //     >;
+            // bindings = <
+            //     &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
+            //     &none  &kp F4  &kp F5  &kp F5  &none                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
+            //     &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &none         &none        &none       &none
+            //                                 &none  &none  &none  &none  &none  &none
+            // >;
 
-        // };
+        };
     };
 };
