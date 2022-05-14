@@ -1,0 +1,39 @@
+ZMK_MACRO(prev_screen,
+    wait-ms = <0>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LCTRL &kp LWIN>
+        , <&macro_tap &kp LEFT>
+        , <&macro_release &kp LWIN &kp LCTRL>
+        ;
+    );
+
+ZMK_MACRO(next_screen,
+    wait-ms = <0>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LCTRL &kp LWIN>
+        , <&macro_tap &kp RIGHT>
+        , <&macro_release &kp LWIN &kp LCTRL>
+        ;
+    );
+
+ZMK_MACRO(undo,
+    wait-ms = <0>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LCTRL>
+        , <&macro_tap &kp Z>
+        , <&macro_release &kp LCTRL>
+        ;
+    );
+
+ZMK_MACRO(redo,
+    wait-ms = <0>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LCTRL &kp LSHIFT>
+        , <&macro_tap &kp Z>
+        , <&macro_release &kp LSHIFT &kp LCTRL>
+        ;
+    );
