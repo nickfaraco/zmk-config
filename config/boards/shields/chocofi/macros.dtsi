@@ -1,90 +1,90 @@
-// ZMK_MACRO(prev_screen,
-//     wait-ms = <0>;
-//     tap-ms = <10>;
+ZMK_MACRO(prev_screen, \
+    wait-ms = <0>; \
+    tap-ms = <10>; \
+    bindings \
+        = <&macro_press &kp LCTRL &kp LWIN> \
+        , <&macro_tap &kp LEFT> \
+        , <&macro_release &kp LWIN &kp LCTRL> \
+        ; \
+    )
+
+ZMK_MACRO(next_screen, \
+    wait-ms = <0>; \
+    tap-ms = <10>; \
+    bindings \
+        = <&macro_press &kp LCTRL &kp LWIN> \
+        , <&macro_tap &kp RIGHT> \
+        , <&macro_release &kp LWIN &kp LCTRL> \
+        ; \
+    )
+
+ZMK_MACRO(undo, \
+    wait-ms = <0>; \
+    tap-ms = <10>; \
+    bindings \
+        = <&macro_press &kp LCTRL> \
+        , <&macro_tap &kp Z> \
+        , <&macro_release &kp LCTRL> \
+        ; \
+    )
+
+ZMK_MACRO(redo, \
+    wait-ms = <0>; \
+    tap-ms = <10>; \
+    bindings \
+        = <&macro_press &kp LCTRL &kp LSHIFT> \
+        , <&macro_tap &kp Z> \
+        , <&macro_release &kp LSHIFT &kp LCTRL> \
+        ; \
+    )
+
+
+// prev_screen: prev_screen {
+//     label = "ZM_prev_virtual_desktop";
+//     compatible = "zmk,behavior-macro";
+//     #binding-cells = <0>;
+//     wait-ms = <2>;
 //     bindings
 //         = <&macro_press &kp LCTRL &kp LWIN>
 //         , <&macro_tap &kp LEFT>
 //         , <&macro_release &kp LWIN &kp LCTRL>
 //         ;
-//     );
+// };
 
-// ZMK_MACRO(next_screen,
-//     wait-ms = <0>;
-//     tap-ms = <10>;
+// next_screen: next_screen {
+//     label = "ZM_next_virtual_desktop";
+//     compatible = "zmk,behavior-macro";
+//     #binding-cells = <0>;
+//     wait-ms = <2>;
 //     bindings
 //         = <&macro_press &kp LCTRL &kp LWIN>
 //         , <&macro_tap &kp RIGHT>
 //         , <&macro_release &kp LWIN &kp LCTRL>
 //         ;
-//     );
+// };
 
-// ZMK_MACRO(undo,
-//     wait-ms = <0>;
-//     tap-ms = <10>;
+
+// undo: undo {
+//     label = "ZM_undo";
+//     compatible = "zmk,behavior-macro";
+//     #binding-cells = <0>;
+//     wait-ms = <2>;
 //     bindings
 //         = <&macro_press &kp LCTRL>
 //         , <&macro_tap &kp Z>
 //         , <&macro_release &kp LCTRL>
 //         ;
-//     );
+// };
 
-// ZMK_MACRO(redo,
-//     wait-ms = <0>;
-//     tap-ms = <10>;
+
+// redo: redo {
+//     label = "ZM_redo";
+//     compatible = "zmk,behavior-macro";
+//     #binding-cells = <0>;
+//     wait-ms = <2>;
 //     bindings
 //         = <&macro_press &kp LCTRL &kp LSHIFT>
 //         , <&macro_tap &kp Z>
 //         , <&macro_release &kp LSHIFT &kp LCTRL>
 //         ;
-//     );
-
-
-prev_screen: prev_screen {
-    label = "ZM_prev_virtual_desktop";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <2>;
-    bindings
-        = <&macro_press &kp LCTRL &kp LWIN>
-        , <&macro_tap &kp LEFT>
-        , <&macro_release &kp LWIN &kp LCTRL>
-        ;
-};
-
-next_screen: next_screen {
-    label = "ZM_next_virtual_desktop";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <2>;
-    bindings
-        = <&macro_press &kp LCTRL &kp LWIN>
-        , <&macro_tap &kp RIGHT>
-        , <&macro_release &kp LWIN &kp LCTRL>
-        ;
-};
-
-
-undo: undo {
-    label = "ZM_undo";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <2>;
-    bindings
-        = <&macro_press &kp LCTRL>
-        , <&macro_tap &kp Z>
-        , <&macro_release &kp LCTRL>
-        ;
-};
-
-
-redo: redo {
-    label = "ZM_redo";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <2>;
-    bindings
-        = <&macro_press &kp LCTRL &kp LSHIFT>
-        , <&macro_tap &kp Z>
-        , <&macro_release &kp LSHIFT &kp LCTRL>
-        ;
-};
+// };
