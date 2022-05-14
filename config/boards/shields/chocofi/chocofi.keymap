@@ -1,5 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define EXT  1
@@ -41,7 +43,7 @@
                 &kp Q       &kp W       &kp F         &kp P        &kp B                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
                 &hm LALT A  &hm LGUI R  &hm LSHIFT S  &hm LCTRL T  &kp G                            &kp M     &kp N     &kp E     &kp I     &kp O
                 &kp Z       &kp X       &kp C         &kp D        &kp V                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-                                                      &kp ESC      &kp SPACE    &kp TAB   &kp RET   &kp BSPC  &kp DEL
+                                                      &kp ESC      &lt FUN SPACE    &lt EXT TAB   &lt NAV RET   &kp BSPC  &kp DEL
             >;
         };
 
@@ -63,6 +65,29 @@
                 &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
                 &redo  &kp F4  &kp F5  &kp F5  &undo                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
                 &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &prev_screen  &next_screen &none       &none
+                                            &none  &none  &none  &none  &none  &none
+            >;
+        };
+
+
+
+        fun_layer {
+
+            bindings = <
+                &none  &kp F7  &kp F8  &kp F9  &kp F10                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
+                &none  &kp F4  &kp F5  &kp F5  &kp F11                            &kp M     &kp N     &kp E     &kp I     &kp O
+                &none  &kp F1  &kp F2  &kp F3  &kp F12                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
+                                            &none  &none  &mo ADJ    &none  &mo ADJ  &none
+            >;
+        };
+
+
+        adj_layer {
+
+            bindings = <
+                &bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &out OUT_TOG          &none        &none  &none  &none  &none
+                &none       &none         &none         &zed_em_kay         &reset                &reset       &zed_em_kay  &none  &none  &none
+                &none       &none         &none         &none         &bootloader           &bootloader  &none  &none  &none  &none
                                             &none  &none  &none  &none  &none  &none
             >;
         };

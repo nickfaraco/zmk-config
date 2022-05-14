@@ -1,3 +1,16 @@
+// just for testing purposes
+zed_em_kay: zed_em_kay {
+            label = "ZM_zed_em_kay";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+
+// define useful macros for windows management
 ZMK_MACRO(prev_screen, \
     wait-ms = <0>; \
     tap-ms = <10>; \
