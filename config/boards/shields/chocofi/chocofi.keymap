@@ -3,12 +3,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+// layers ID definition
 #define BASE 0
 #define EXT  1
 #define NAV  2
 #define FUN  3
 #define ADJ  4
 
+// macros definition
+#define undo LC(Z)
+#define redo LC(LS(Z))
+#define prev_screen LC(LG(LEFT))
+#define next_screen LC(LG(RIGHT))
 
 / {
 
@@ -23,10 +29,6 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9>;    // <---[[right-hand keys]]
         };
-    };
-
-    macros {
-        #include "macros.dtsi"
     };
 
     keymap {
@@ -62,9 +64,9 @@
         nav_layer {
 
             bindings = <
-                &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10          &kp PG_UP  &kp HOME      &kp UP       &kp END     &none
-                &redo  &kp F4  &kp F5  &kp F5  &undo                            &kp PG_DN  &kp LEFT      &kp DOWN     &kp RIGHT   &none
-                &none  &kp F1  &kp F2  &kp F3  &kp F12                          &none      &prev_screen  &next_screen &none       &none
+                &none    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10        &kp PG_UP  &kp HOME          &kp UP           &kp END     &none
+                &kp redo &kp F4  &kp F5  &kp F5  &kp undo                       &kp PG_DN  &kp LEFT          &kp DOWN         &kp RIGHT   &none
+                &none    &kp F1  &kp F2  &kp F3  &kp F12                          &none      &kp prev_screen   &kp next_screen  &none       &none
                                             &none  &none  &none  &none  &none  &none
             >;
         };
@@ -86,7 +88,7 @@
 
             bindings = <
                 &bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &out OUT_TOG          &none        &none  &none  &none  &none
-                &none       &none         &none         &zed_em_kay         &reset                &reset       &zed_em_kay  &none  &none  &none
+                &none       &none         &none         &none         &reset                &reset       &none  &none  &none  &none
                 &none       &none         &none         &none         &bootloader           &bootloader  &none  &none  &none  &none
                                             &none  &none  &none  &none  &none  &none
             >;
