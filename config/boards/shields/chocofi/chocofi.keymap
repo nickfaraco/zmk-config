@@ -15,8 +15,22 @@
 #define redo LC(LS(Z))
 #define prev_screen LC(LG(LEFT))
 #define next_screen LC(LG(RIGHT))
+#define meh LC(LS(LALT))
+
+// tune mod tap
+&mt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+};
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NAV FUN>;
+            then-layer = <ADJ>;
+        };
+    };
 
     behaviors {
         hml: left_hand_positional_hold_tap {
@@ -56,7 +70,7 @@
                 &kp Q        &kp W        &kp F          &kp P         &kp B                 &kp J   &kp L          &kp U           &kp Y         &kp SEMI
                 &hml LALT A  &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G                 &kp M   &hmr RCTRL N   &hmr RSHIFT E   &hmr RGUI I   &hmr RALT O
                 &kp Z        &kp X        &kp C          &kp D         &kp V                 &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH
-                                              &kp ESC    &lt FUN SPACE   &lt EXT TAB   &lt NAV RET   &kp BSPC  &kp DEL
+                                              &kp ESC    &lt FUN SPACE   &lt EXT TAB   &mt meh RET   &lt NAV BSPC  &kp DEL
             >;
         };
 
@@ -78,7 +92,7 @@
                 &none    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10        &kp PG_UP  &kp HOME          &kp UP           &kp END     &none
                 &kp redo &kp F4  &kp F5  &kp F5  &kp undo                       &kp PG_DN  &kp LEFT          &kp DOWN         &kp RIGHT   &none
                 &none    &kp F1  &kp F2  &kp F3  &kp F12                          &none      &kp prev_screen   &kp next_screen  &none       &none
-                                            &none  &none  &none  &none  &none  &none
+                                            &none  &mo FUN  &none  &none  &none  &none
             >;
         };
 
@@ -90,7 +104,7 @@
                 &none  &kp F7  &kp F8  &kp F9  &kp F10                            &kp J     &kp L     &kp U     &kp Y     &kp SEMI
                 &none  &kp F4  &kp F5  &kp F5  &kp F11                            &kp M     &kp N     &kp E     &kp I     &kp O
                 &none  &kp F1  &kp F2  &kp F3  &kp F12                            &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH
-                                            &none  &none  &mo ADJ    &none  &mo ADJ  &none
+                                            &none  &none  &none    &none  &mo NAV  &none
             >;
         };
 
