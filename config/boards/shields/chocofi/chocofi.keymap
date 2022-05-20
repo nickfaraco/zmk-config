@@ -16,6 +16,8 @@
 #define prev_screen LC(LG(LEFT))
 #define next_screen LC(LG(RIGHT))
 #define meh LC(LS(LALT))
+#define prev_win LA(TAB)
+#define next_win LA(LS(TAB))
 
 // tune mod tap
 &mt {
@@ -23,6 +25,12 @@
     tapping_term_ms = <200>;
 };
 
+// caps word settings
+&caps_word {
+    continue-list = <UNDERSCORE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+};
+
+// main tree
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -56,6 +64,16 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;    // <---[[right-hand keys]]
         };
 
+        osm: one_shot_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ONE_SHOT_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&sk>, <&kp>;
+        };
+
         // TAP DANCES
         bslhpipe: tap_dance_backslash_pipe {
             compatible = "zmk,behavior-tap-dance";
@@ -87,6 +105,30 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp RA(N5)>, <&kp DLLR>;
+        };
+
+        close: tap_dance_close {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_CLOSE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LC(F4)>, <&kp LA(F4)>;
+        };
+    };
+
+    // macros
+    macros {
+        sel_word: select_word {
+            label = "ZM_SELECT_WORD";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp LEFT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LSHFT &kp LCTRL>
+                ;
         };
     };
 
@@ -123,9 +165,9 @@
         nav_layer {
 
             bindings = <
-                &none    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F10        &kp PG_UP  &kp HOME          &kp UP           &kp END     &none
-                &kp redo &kp F4  &kp F5  &kp F5  &kp undo                       &kp PG_DN  &kp LEFT          &kp DOWN         &kp RIGHT   &none
-                &none    &kp F1  &kp F2  &kp F3  &kp F12                          &none      &kp prev_screen   &kp next_screen  &none       &none
+                &close         &kp C_MUTE      &kp C_VOL_DN      &kp C_VOL_UP      &kp redo            &kp next_win  &kp HOME          &kp UP           &kp END     &kp PG_UP
+                &kp C_AL_LOCK  &osm RALT RALT  &osm LSHFT LSHFT  &osm LCTRL LCTRL  &kp undo            &kp prev_win  &kp LEFT          &kp DOWN         &kp RIGHT   &kp PG_DN
+                &kp CAPS       &kp C_AC_CUT    &kp C_AC_COPY     &kp C_AC_PASTE    &caps_word          &kp PSCRN     &kp prev_screen   &kp next_screen  &sel_word   &none
                                             &none  &mo FUN  &none  &none  &none  &none
             >;
         };
