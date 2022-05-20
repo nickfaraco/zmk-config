@@ -115,6 +115,30 @@
             tapping-term-ms = <200>;
             bindings = <&kp LC(F4)>, <&kp LA(F4)>;
         };
+
+        // MOD-MORPHS (for "ctrl+[" and "ctrl+]")
+        bksbrk: backspace_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp LEFT_BRACKET>;
+            mods = <MOD_LCTL>;
+        };
+        delbrk: delete_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DELETE_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp RIGHT_BRACKET>;
+            mods = <MOD_LCTL>;
+        };
+        lt_bspc: layer_tap_backspace_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            bindings = <&mo>, <&bksbrk>;
+        };
     };
 
     // macros
@@ -164,7 +188,7 @@
                 &kp Q        &kp W        &kp F          &kp P         &kp B                 &kp J   &kp L          &kp U           &kp Y         &kp SEMI
                 &hml LALT A  &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G                 &kp M   &hmr RCTRL N   &hmr RSHIFT E   &hmr RGUI I   &hmr RALT O
                 &kp Z        &kp X        &kp C          &kp D         &kp V                 &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH
-                                              &kp ESC    &lt FUN SPACE   &mt meh TAB   &lt EXT RET   &lt NAV BSPC  &kp DEL
+                                              &kp ESC    &lt FUN SPACE   &mt meh TAB   &lt EXT RET   &lt_bspc NAV 0 &delbrk
             >;
         };
 
