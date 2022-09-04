@@ -19,6 +19,8 @@
 #define prev_win LA(TAB)
 #define next_win LA(LS(TAB))
 #define deg RA(LS(SEMI))
+#define CANCEL &kp K_CANCEL         // cancels caps-word and does nothing else
+#define QUICK_TAP_MS 175
 
 // tune mod tap
 &mt {
@@ -30,7 +32,7 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
-    quick-tap-ms = <175>;      // double-tap + hold repeats tap-key
+    quick-tap-ms = <QUICK_TAP_MS>;      // double-tap + hold repeats tap-key
 };
 
 // caps word settings
@@ -56,7 +58,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;                // double tapping same key allows for repeating
+            quick-tap-ms = <QUICK_TAP_MS>;       // double tapping same key allows for repeating
             global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;    // <---[[right-hand keys]]
@@ -69,7 +71,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;                // double tapping same key allows for repeating
+            quick-tap-ms = <QUICK_TAP_MS>;       // double tapping same key allows for repeating
             global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;    // <---[[right-hand keys]]
@@ -126,6 +128,53 @@
             tapping-term-ms = <200>;
             bindings = <&kp LC(F4)>, <&kp LA(F4)>;
         };
+
+
+        // tap: sticky-shift | lshft + tap: caps-word | hold: set in keymap (MEH)
+        ss_cw: ss_cw {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SS_CW";
+            #binding-cells = <0>;
+            bindings = <&sk RSHFT>, <&caps_word>;
+            mods = <(MOD_LSFT)>;
+        };
+        lt_shft: lt_shft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_SHFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            flavor = "balanced";
+            bindings = <&mo>, <&ss_cw>;
+        };
+
+        // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete | hold: nav layer
+        bs_del_nav: bs_del_nav {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BS_DEL_NAV";
+            #binding-cells = <0>;
+            bindings = <&lt NAV BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            masked-mods = <MOD_LSFT>;  // requires PR #1412
+        };
+
+        // tap: space | shft + tap: dot -> space -> sticky shift | hold: activate layer
+        spc_morph: spc_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPC_MORPH";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&dot_spc>;
+            mods = <(MOD_LSFT)>;
+        };
+        lt_spc: lt_spc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_SPC";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            flavor = "balanced";
+            bindings = <&mo>, <&spc_morph>;
+        };
     };
 
     // macros
@@ -141,6 +190,15 @@
                 , <&macro_tap &kp RIGHT>
                 , <&macro_release &kp LSHFT &kp LCTRL>
                 ;
+        };
+
+        dot_spc: dot_spc{
+            label = "ZM_DOT_SPACE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp DOT &kp SPACE &sk LSHFT>;
         };
     };
 
@@ -159,6 +217,18 @@
             layers = <BASE>;
             bindings = <&kp RA(GRAVE)>;
         };
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            layers = <BASE>;
+            bindings = <&kp ESCAPE>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            layers = <BASE>;
+            bindings = <&kp TAB>;
+        };
     };
 
     keymap {
@@ -175,7 +245,7 @@
                 &kp Q        &kp W        &kp F          &kp P         &kp B                 &kp J   &kp L          &kp U           &kp Y         &kp SEMI
                 &hml LALT A  &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G                 &kp M   &hmr RCTRL N   &hmr RSHIFT E   &hmr RGUI I   &hmr RALT O
                 &kp Z        &kp X        &kp C          &kp D         &kp V                 &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH
-                                              &kp ESC    &lt FUN SPACE   &mt meh TAB   &lt EXT RET   &lt NAV BSPC  &kp DEL
+                                              &none    &lt_spc FUN 0   &lt_shft meh 0       &lt EXT RET   &bs_del_nav    &none
             >;
         };
 
@@ -183,10 +253,10 @@
         ext_layer {
 
             bindings = <
-                &kp FSLH   &kp N7  &kp N8  &kp N9  &kp MINUS          &kp AT      &kp QMARK   &kp EXCL   &bslhpipe   &grvtilde
+                &kp PRCNT  &kp N7  &kp N8  &kp N9  &kp MINUS          &kp AT      &kp QMARK   &kp EXCL   &bslhpipe   &grvtilde
                 &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp UNDER   &kp LPAR    &kp LBKT   &kp LBRC    &apoquote
-                &kp PRCNT  &kp N1  &kp N2  &kp N3  &kp EQUAL          &kp CARET   &kp RPAR    &kp RBKT   &kp RBRC    &eurodollar
-                                        &kp COMMA  &kp N0  &kp DOT    &none  &none  &none
+                &kp COMMA  &kp N1  &kp N2  &kp N3  &kp EQUAL          &kp CARET   &kp RPAR    &kp RBKT   &kp RBRC    &eurodollar
+                                        &none  &kp N0  &kp DOT    &none  &none  &none
             >;
         };
 
