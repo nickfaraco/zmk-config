@@ -200,6 +200,16 @@
             tap-ms = <5>;
             bindings = <&kp DOT &kp SPACE &sk LSHFT>;
         };
+
+        // Windows sleep key (fix LOCK not working on Windows)
+        win_sleep: win_sleep{
+            label = "ZM_WIN_SLEEP";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <5>;
+            bindings = <&kp LG(X) &kp U &kp S>;
+        };
     };
 
     // combos for accents dead keys (for US_intl_altgr_deadkeys OS layout)
@@ -265,7 +275,7 @@
 
             bindings = <
                 &close         &kp C_MUTE      &kp C_VOL_DN      &kp C_VOL_UP      &kp redo            &kp next_win  &kp HOME          &kp UP           &kp END     &kp PG_UP
-                &kp C_AL_LOCK  &osm RALT RALT  &osm LSHFT LSHFT  &osm LCTRL LCTRL  &kp undo            &kp prev_win  &kp LEFT          &kp DOWN         &kp RIGHT   &kp PG_DN
+                &win_sleep     &osm RALT RALT  &osm LSHFT LSHFT  &osm LCTRL LCTRL  &kp undo            &kp prev_win  &kp LEFT          &kp DOWN         &kp RIGHT   &kp PG_DN
                 &kp CAPS       &kp C_AC_CUT    &kp C_AC_COPY     &kp C_AC_PASTE    &caps_word          &kp PSCRN     &kp prev_screen   &kp next_screen  &sel_word   &none
                                             &none  &mo FUN  &none  &none  &none  &none
             >;
