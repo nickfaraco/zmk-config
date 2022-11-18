@@ -155,7 +155,7 @@
             #binding-cells = <0>;
             bindings = <&lt NAV BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            masked-mods = <MOD_LSFT>;  // requires PR #1412
+            keep-mods = <MOD_LSFT>;  // requires PR #1412
         };
 
         // tap: space | shft + tap: dot -> space -> sticky shift | hold: activate layer
