@@ -16,6 +16,7 @@
 #define prev_screen LC(LG(LEFT))
 #define next_screen LC(LG(RIGHT))
 #define meh LC(LS(LALT))
+#define hyper LG(LC(LS(LALT)))
 #define prev_win LA(TAB)
 #define next_win LA(LS(TAB))
 #define deg RA(LS(SEMI))
@@ -130,7 +131,7 @@
         };
 
 
-        // tap: sticky-shift | lshft + tap: caps-word | hold: set in keymap (MEH)
+        // tap: sticky-shift | lshft + tap: caps-word | hold: set in keymap (HYPER)
         ss_cw: ss_cw {
             compatible = "zmk,behavior-mod-morph";
             label = "SS_CW";
@@ -255,13 +256,13 @@
             //     &kp Q        &kp W        &kp F          &kp P         &kp B                 &kp J   &kp L          &kp U           &kp Y         &kp SEMI
             //     &hml LALT A  &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G                 &kp M   &hmr RCTRL N   &hmr RSHIFT E   &hmr RGUI I   &hmr RALT O
             //     &kp Z        &kp X        &kp C          &kp D         &kp V                 &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH
-            //                                   &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft meh 0   &bs_del_nav    &none
+            //                                   &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav    &none
             // >;
             bindings = <
                 &kp W        &kp L        &kp Y          &kp P         &kp B                 &kp Z   &kp F          &kp O           &kp U         &kp SQT
                 &hml LALT C  &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G                 &kp M   &hmr RCTRL N   &hmr RSHIFT E   &hmr RGUI I   &hmr RALT A
                 &kp Q        &kp J        &kp V          &kp D         &kp K                 &kp X   &kp H          &kp COMMA       &kp DOT       &kp FSLH
-                                              &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft meh 0   &bs_del_nav    &none
+                                              &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav    &none
             >;
         };
 
