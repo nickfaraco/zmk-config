@@ -5,23 +5,35 @@
 
 // layers ID definition
 #define BASE 0
-#define EXT  1
-#define NAV  2
-#define FUN  3
-#define ADJ  4
+#define BASE_OSX 1
+#define EXT  2
+#define NAV  3
+#define NAV_OSX  4
+#define FUN  5
+#define ADJ  6
 
 // macros definition
+#define meh LC(LS(LALT))
+#define hyper LG(LC(LS(LALT)))
+#define deg RA(LS(SEMI))
+#define CANCEL &kp K_CANCEL         // cancels caps-word and does nothing else
+#define QUICK_TAP_MS 175
+
+// OSX specific macros
+#define undo_OSX LG(Z)
+#define redo_OSX LG(LS(Z))
+#define prev_screen_OSX LC(LEFT)
+#define next_screen_OSX LC(RIGHT)
+#define prev_win_OSX LG(TAB)
+#define next_win_OSX LG(LS(TAB))
+
+// Windows/Linux specific macros
 #define undo LC(Z)
 #define redo LC(LS(Z))
 #define prev_screen LC(LG(LEFT))
 #define next_screen LC(LG(RIGHT))
-#define meh LC(LS(LALT))
-#define hyper LG(LC(LS(LALT)))
 #define prev_win LA(TAB)
 #define next_win LA(LS(TAB))
-#define deg RA(LS(SEMI))
-#define CANCEL &kp K_CANCEL         // cancels caps-word and does nothing else
-#define QUICK_TAP_MS 175
 
 // tune mod tap
 &mt {
@@ -159,6 +171,15 @@
             keep-mods = <MOD_LSFT>;  // requires PR #1412
         };
 
+        bs_del_nav_OSX: bs_del_nav {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BS_DEL_NAV";
+            #binding-cells = <0>;
+            bindings = <&lt NAV_OSX BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <MOD_LSFT>;  // requires PR #1412
+        };
+
         // tap: space | shft + tap: dot -> space -> sticky shift | hold: activate layer
         spc_morph: spc_morph {
             compatible = "zmk,behavior-mod-morph";
@@ -210,6 +231,24 @@
             wait-ms = <100>;
             tap-ms = <5>;
             bindings = <&kp LG(X) &kp U &kp S>;
+        };
+
+        pc_connect: pc_connect{
+            label = "ZM_PC_CONNECT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <5>;
+            bindings = <&bt BT_SEL 1 &to BASE>;
+        };
+
+        osx_connect: osx_connect{
+            label = "ZM_PC_CONNECT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <5>;
+            bindings = <&bt BT_SEL 0 &to BASE_OSX>;
         };
     };
 
@@ -266,6 +305,14 @@
             >;
         };
 
+        default_layer_OSX {
+            bindings = <
+                &kp W        &kp L        &kp Y          &kp P         &kp B                 &kp Z   &kp F          &kp O           &kp U         &kp SQT
+                &hml LCTRL C  &hml LALT R  &hml LSHIFT S  &hml LGUI T  &kp G                 &kp M   &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
+                &kp Q        &kp J        &kp V          &kp D         &kp K                 &kp X   &kp H          &kp COMMA       &kp DOT       &kp FSLH
+                                              &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav_OSX    &none
+            >;
+        };
 
         ext_layer {
 
@@ -288,6 +335,15 @@
             >;
         };
 
+        nav_layer_OSX {
+
+            bindings = <
+                &kp LG(Q)      &kp C_MUTE      &kp C_VOL_DN      &kp C_VOL_UP      &kp redo_OSX            &kp next_win  &kp HOME          &kp UP           &kp END     &kp PG_UP
+                &kp C_SLEEP    &osm RALT RALT  &osm LSHFT LSHFT  &osm LCTRL LCTRL  &kp undo_OSX            &kp prev_win  &kp LEFT          &kp DOWN         &kp RIGHT   &kp PG_DN
+                &kp CAPS       &kp C_AC_CUT    &kp C_AC_COPY     &kp C_AC_PASTE    &caps_word          &kp PSCRN     &kp prev_screen   &kp next_screen  &sel_word   &none
+                                            &none  &mo FUN  &none  &none  &none  &none
+            >;
+        };
 
 
         fun_layer {
@@ -305,7 +361,7 @@
 
             bindings = <
                 &bootloader  &none         &none         &none         &reset              &reset  &none  &none  &none  &bootloader
-                &bt BT_CLR   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &out OUT_TOG        &none   &none  &none  &none  &none
+                &bt BT_CLR   &bt BT_SEL 2  &pc_connect   &osx_connect  &out OUT_TOG        &none   &none  &none  &none  &none
                 &none        &none         &none         &none         &none               &none   &none  &none  &none  &none
                                                             &none  &none  &none  &none  &none  &none
             >;
