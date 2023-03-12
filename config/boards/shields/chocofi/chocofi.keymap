@@ -168,7 +168,6 @@
             #binding-cells = <0>;
             bindings = <&lt NAV BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <MOD_LSFT>;  // requires PR #1412
         };
 
         bs_del_nav_OSX: bs_del_nav {
@@ -177,7 +176,6 @@
             #binding-cells = <0>;
             bindings = <&lt NAV_OSX BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <MOD_LSFT>;  // requires PR #1412
         };
 
         // tap: space | shft + tap: dot -> space -> sticky shift | hold: activate layer
