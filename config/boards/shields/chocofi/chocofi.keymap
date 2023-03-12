@@ -17,7 +17,8 @@
 #define hyper LG(LC(LS(LALT)))
 #define deg RA(LS(SEMI))
 #define CANCEL &kp K_CANCEL         // cancels caps-word and does nothing else
-#define QUICK_TAP_MS 175
+#define TAP_TERM_MS 200
+#define QUICK_TAP_MS 125
 
 // OSX specific macros
 #define undo_OSX LG(Z)
@@ -35,6 +36,11 @@
 #define prev_win LA(TAB)
 #define next_win LA(LS(TAB))
 
+// 36 keys physical layout
+#define LEFT_KEYS 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 // left-hand keys
+#define RIGHT_KEYS 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 // right-hand keys
+#define THUMBS 30 31 32 33 34 35 // thumb keys
+
 // tune mod tap
 &mt {
     flavor = "tap-preferred";
@@ -44,7 +50,7 @@
 // layer tap config
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TAP_TERM_MS>;
     quick-tap-ms = <QUICK_TAP_MS>;      // double-tap + hold repeats tap-key
 };
 
@@ -70,32 +76,32 @@
             label = "LEFT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <QUICK_TAP_MS>;       // double tapping same key allows for repeating
-            global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
+            tapping-term-ms = <TAP_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;       // double-tap + hold repeats tap-key
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;    // <---[[right-hand keys]]
-            hold-trigger-on-release;             // requires PR #1423 (or Urob's ZMK fork)
+            hold-trigger-key-positions = <RIGHT_KEYS THUMBS>;
+            hold-trigger-on-release;
         };
 
         hmr: right_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_POSITIONAL_HOLD_TAP";
+            label = "RIGHT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <QUICK_TAP_MS>;       // double tapping same key allows for repeating
-            global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
+            tapping-term-ms = <TAP_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;       // double-tap + hold repeats tap-key
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;    // <---[[right-hand keys]]
-            hold-trigger-on-release;             // requires PR #1423 (or Urob's ZMK fork)
+            hold-trigger-key-positions = <LEFT_KEYS THUMBS>;
+            hold-trigger-on-release;
         };
 
         osm: one_shot_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "ONE_SHOT_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&sk>, <&kp>;
@@ -106,7 +112,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BACKSLASH_PIPE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp BSLH>, <&kp PIPE>;
         };
 
@@ -114,7 +120,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_GRAVE_TILDE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
 
@@ -122,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_APOSTROPE_QUOTE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp SQT>, <&kp DQT>;
         };
 
@@ -130,7 +136,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_EURO_DOLLAR";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp RA(N5)>, <&kp DLLR>;
         };
 
@@ -138,7 +144,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CLOSE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp LC(F4)>, <&kp LA(F4)>;
         };
 
@@ -155,7 +161,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LT_SHFT";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;
             flavor = "balanced";
             bindings = <&mo>, <&ss_cw>;
@@ -190,7 +196,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LT_SPC";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;
             flavor = "balanced";
             bindings = <&mo>, <&spc_morph>;
