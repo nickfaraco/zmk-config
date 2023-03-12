@@ -170,7 +170,7 @@
             tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;
             flavor = "balanced";
-            bindings = <&mo>, <&ss_cw>;
+            bindings = <&kp>, <&ss_cw>;
         };
 
         // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete | hold: nav layer
