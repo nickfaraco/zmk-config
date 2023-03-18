@@ -1,25 +1,95 @@
-// combos for accents dead keys (for US_intl_altgr_deadkeys OS layout)
-combo_acc {
+// left-hand side combos
+combo_acc { // combos for accents dead keys (for US_intl_altgr_deadkeys OS layout)
     timeout-ms = <50>;
-    key-positions = <1 2>;
-    layers = <BASE>;
+    key-positions = <10 11>;
+    layers = <BASE BASE_OSX>;
     bindings = <&kp RA(SINGLE_QUOTE)>;
-};
-combo_grv {
-    timeout-ms = <50>;
-    key-positions = <2 3>;
-    layers = <BASE>;
-    bindings = <&kp RA(GRAVE)>;
 };
 combo_esc {
     timeout-ms = <50>;
-    key-positions = <31 32>;
-    layers = <BASE>;
+    key-positions = <11 12>;
+    layers = <BASE BASE_OSX>;
     bindings = <&kp ESCAPE>;
 };
 combo_tab {
     timeout-ms = <50>;
-    key-positions = <33 34>;
-    layers = <BASE>;
+    key-positions = <12 13>;
+    layers = <BASE BASE_OSX>;
     bindings = <&kp TAB>;
+};
+combo_copy {
+    timeout-ms = <50>;
+    key-positions = <21 22>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp K_COPY>;
+};
+combo_paste {
+    timeout-ms = <50>;
+    key-positions = <22 23>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp K_PASTE>;
+};
+combo_cut {
+    timeout-ms = <50>;
+    key-positions = <21 22 23>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp K_CUT>;
+};
+// right-hand side combos
+// parenthesis combos
+combo_lpar {
+    timeout-ms = <50>;
+    key-positions = <6 7>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp LPAR>;
+};
+combo_rpar {
+    timeout-ms = <50>;
+    key-positions = <7 8>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp RPAR>;
+};
+combo_par {
+    timeout-ms = <50>;
+    key-positions = <6 7 8>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&macro_par>;
+};
+// brackets combos
+combo_lbkt {
+    timeout-ms = <50>;
+    key-positions = <16 17>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp LBKT>;
+};
+combo_rbkt {
+    timeout-ms = <50>;
+    key-positions = <17 18>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp RBKT>;
+};
+combo_bkt {
+    timeout-ms = <50>;
+    key-positions = <16 17 18>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&macro_bkt>;
+};
+// braces combos
+combo_lbrc {
+    timeout-ms = <50>;
+    key-positions = <26 27>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp LBRC>;
+};
+combo_rbrc {
+    timeout-ms = <50>;
+    key-positions = <27 28>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&kp RBRC>;
+};
+combo_brc {
+    timeout-ms = <50>;
+    key-positions = <26 27 28>;
+    layers = <BASE BASE_OSX>;
+    bindings = <&macro_brc>;
 };
