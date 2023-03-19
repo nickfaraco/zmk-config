@@ -23,20 +23,38 @@
         combo_copy {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp K_COPY>;
+            layers = <BASE>;
+            bindings = <&kp LC(C)>;
         };
         combo_paste {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp K_PASTE>;
+            layers = <BASE>;
+            bindings = <&kp LC(V)>;
         };
         combo_cut {
             timeout-ms = <50>;
+            key-positions = <22 23>;
+            layers = <BASE>;
+            bindings = <&kp LC(X)>;
+        };
+        combo_copy_OSX {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            layers = <BASE_OSX>;
+            bindings = <&kp LG(C)>;
+        };
+        combo_paste_OSX {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            layers = <BASE_OSX>;
+            bindings = <&kp LG(V)>;
+        };
+        combo_cut_OSX {
+            timeout-ms = <50>;
             key-positions = <21 22 23>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp K_CUT>;
+            layers = <BASE_OSX>;
+            bindings = <&kp LG(X)>;
         };
     // right-hand side combos
         // parenthesis combos
