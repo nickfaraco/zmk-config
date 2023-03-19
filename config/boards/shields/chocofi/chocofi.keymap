@@ -12,6 +12,8 @@
 #define FUN  5
 #define ADJ  6
 
+#include "combos.dtsi"
+
 // macros definition
 #define meh LC(LS(LALT))
 #define hyper LG(LC(LS(LALT)))
@@ -64,6 +66,7 @@
 &caps_word {
     continue-list = <UNDERSCORE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
+
 
 // main tree
 / {
@@ -285,11 +288,6 @@
             tap-ms = <5>;
             bindings = <&kp LBRC &kp RBRC &sk LEFT>;
         };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-        #include "combos.dtsi"
     };
 
     keymap {
