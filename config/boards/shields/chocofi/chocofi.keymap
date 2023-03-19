@@ -270,7 +270,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;
-            bindings = <&kp LPAR &kp RPAR &sk LEFT>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
         };
         macro_bkt: macro_bkt{
             label = "ZM_BKT";
@@ -278,15 +278,15 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;
-            bindings = <&kp LBKT &kp RBKT &sk LEFT>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
         };
         macro_brc: macro_brc{
-            label = "ZM_PAR";
+            label = "ZM_BRC";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;
-            bindings = <&kp LBRC &kp RBRC &sk LEFT>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
         };
     };
 
