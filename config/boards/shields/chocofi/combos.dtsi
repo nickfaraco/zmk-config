@@ -2,6 +2,30 @@
     combos {
         compatible = "zmk,combos";
     // left-hand side combos
+        combo_close_window {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            layers = <BASE>;
+            bindings = <&kp RA(F4)>;
+        };
+        combo_close_tab {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            layers = <BASE>;
+            bindings = <&kp LC(W)>;
+        };
+        combo_close_window_OSX {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            layers = <BASE_OSX>;
+            bindings = <&kp LG(Q)>;
+        };
+        combo_close_tab_OSX {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            layers = <BASE_OSX>;
+            bindings = <&kp LG(W)>;
+        };
         combo_acc { // combos for accents dead keys (for US_intl_altgr_deadkeys OS layout)
             timeout-ms = <50>;
             key-positions = <10 11>;
