@@ -217,6 +217,36 @@
             flavor = "balanced";
             bindings = <&mo>, <&spc_morph>;
         };
+
+        //usefull mod-morphs
+        dot_to_colon: dot_to_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_TO_COLON";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        comma_to_semi: comma_to_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_TO_SEMICOLON";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        quest_to_excl: quest_to_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "quest_to_excl";
+            #binding-cells = <0>;
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        single_to_doublequote: single_to_doublequote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SINGLE_TO_DOUBLEQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     // macros
@@ -326,18 +356,18 @@
             //                                   &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav    &none
             // >;
             bindings = <
-                &kp W        &kp L        &kp Y          &kp P         &kp B                 &kp Z   &kp F          &kp O           &kp U         &kp SQT
+                &kp W        &kp L        &kp Y          &kp P         &kp B                 &kp Z   &kp F          &kp O           &kp U         &single_to_doublequote
                 &hml LALT C  &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G                 &kp M   &hmr RCTRL N   &hmr RSHIFT E   &hmr RGUI I   &hmr RALT A
-                &kp Q        &kp J        &kp V          &kp D         &kp K                 &kp X   &kp H          &kp COMMA       &kp DOT       &kp FSLH
+                &kp Q        &kp J        &kp V          &kp D         &kp K                 &kp X   &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
                                               &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav    &none
             >;
         };
 
         default_layer_OSX {
             bindings = <
-                &kp W        &kp L        &kp Y          &kp P         &kp B                 &kp Z   &kp F          &kp O           &kp U         &kp SQT
+                &kp W        &kp L        &kp Y          &kp P         &kp B                 &kp Z   &kp F          &kp O           &kp U         &single_to_doublequote
                 &hml LCTRL C  &hml LALT R  &hml LSHIFT S  &hml LGUI T  &kp G                 &kp M   &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
-                &kp Q        &kp J        &kp V          &kp D         &kp K                 &kp X   &kp H          &kp COMMA       &kp DOT       &kp FSLH
+                &kp Q        &kp J        &kp V          &kp D         &kp K                 &kp X   &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
                                               &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav_OSX    &none
             >;
         };
