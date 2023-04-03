@@ -1,3 +1,11 @@
+/*                KEY POSITIONS
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │  00  01  02  03  04 │ │  05  06  07  08  09 │
+  │  10  11  12  13  14 │ │  15  16  17  18  19 │
+  │  20  21  22  23  24 │ │  25  26  27  28  29 │
+  ╰───────╮  30  31  32 │ │  33  34  35 ╭───────╯
+          ╰─────────────╯ ╰─────────────╯ */
+
 #define COMBO_TAB_MS 25
 // use global-quick-tap-ms for combos (requires PR 1387)
 #define COMBO_HOOK global-quick-tap-ms = <75>;
@@ -5,294 +13,62 @@
 &{/}{
     combos {
         compatible = "zmk,combos";
+#define CONCAT2(x, y) x ## y
+#define CONCAT(x, y) CONCAT2(x, y)
+#define COMBO(pos, k, l) CONCAT(combo, __COUNTER__) { key-positions = <pos>; bindings = <k>; layers = <l>; timeout-ms = <COMBO_TAB_MS>; };
     // left-hand side combos
-        combo_close_window {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <1 2>;
-            layers = <BASE>;
-            bindings = <&kp RA(F4)>;
-        };
-        combo_close_tab {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <2 3>;
-            layers = <BASE>;
-            bindings = <&kp LC(W)>;
-        };
-        combo_close_window_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <1 2>;
-            layers = <BASE_OSX>;
-            bindings = <&kp LG(Q)>;
-        };
-        combo_close_tab_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <2 3>;
-            layers = <BASE_OSX>;
-            bindings = <&kp LG(W)>;
-        };
-        combo_acc { // combos for accents dead keys (for US_intl_altgr_deadkeys OS layout)
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <10 11>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp RA(SINGLE_QUOTE)>;
-        };
-        combo_esc {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <11 12>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp ESCAPE>;
-        };
-        combo_tab {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <12 13>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp TAB>;
-        };
-        combo_copy {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <21 22>;
-            layers = <BASE>;
-            bindings = <&kp LC(C)>;
-        };
-        combo_paste {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <22 23>;
-            layers = <BASE>;
-            bindings = <&kp LC(V)>;
-        };
-        combo_cut {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <21 22 23>;
-            layers = <BASE>;
-            bindings = <&kp LC(X)>;
-        };
-        combo_copy_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <21 22>;
-            layers = <BASE_OSX>;
-            bindings = <&kp LG(C)>;
-        };
-        combo_paste_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <22 23>;
-            layers = <BASE_OSX>;
-            bindings = <&kp LG(V)>;
-        };
-        combo_cut_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <21 22 23>;
-            layers = <BASE_OSX>;
-            bindings = <&kp LG(X)>;
-        };
-        combo_undo {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <20 21>;
-            layers = <BASE>;
-            bindings = <&kp LC(Z)>;
-        };
-        combo_undo_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <20 21>;
-            layers = <BASE_OSX>;
-            bindings = <&kp LG(Z)>;
-        };
-        combo_redo {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <23 24>;
-            layers = <BASE>;
-            bindings = <&kp LC(LS(Z))>;
-        };
-        combo_redo_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <23 24>;
-            layers = <BASE_OSX>;
-            bindings = <&kp LG(LS(Z))>;
-        };
+        COMBO(1 2, &kp RA(F4), BASE)
+        COMBO(2 3, &kp LC(W), BASE)
+        COMBO(1 2, &kp LG(Q), BASE_OSX)
+        COMBO(2 3, &kp LG(W), BASE_OSX)
+        COMBO(10 11, &kp RA(SINGLE_QUOTE), BASE BASE_OSX)
+        COMBO(11 12, &kp ESCAPE, BASE BASE_OSX)
+        COMBO(12 13, &kp TAB, BASE BASE_OSX)
+        COMBO(21 22, &kp LC(C), BASE)
+        COMBO(22 23, &kp LC(V), BASE)
+        COMBO(21 22 23, &kp LC(X), BASE)
+        COMBO(21 22, &kp LG(C), BASE_OSX)
+        COMBO(22 23, &kp LG(V), BASE_OSX)
+        COMBO(21 22 23, &kp LG(X), BASE_OSX)
+        COMBO(20 21, &kp LC(Z), BASE)
+        COMBO(20 21, &kp LG(Z), BASE_OSX)
+        COMBO(23 24, &kp LC(LS(Z)), BASE)
+        COMBO(23 24, &kp LG(LS(Z)), BASE_OSX)
         // vertical combos
-        combo_deg {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <0 10>;
-            layers = <BASE>;
-            bindings = <&macro_deg_win>;
-        };
-        combo_deg_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <0 10>;
-            layers = <BASE_OSX>;
-            bindings = <&kp LA(LS(N8))>;
-        };
-        combo_at {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <1 11>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp AT>;
-        };
-        combo_hash {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <2 12>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp HASH>;
-        };
-        combo_eurdollar {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <3 13>;
-            layers = <BASE>;
-            bindings = <&eurodollar>;
-        };
-        combo_eurdollar_OSX {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <3 13>;
-            layers = <BASE_OSX>;
-            bindings = <&eurodollar_OSX>;
-        };
-        combo_perc {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <4 14>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp PERCENT>;
-        };
-        combo_grave {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <11 21>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp GRAVE>;
-        };
-        combo_backslash {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <12 22>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp BACKSLASH>;
-        };
-        combo_equal {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <13 23>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp EQUAL>;
-        };
-        combo_tilde {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <14 24>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp PERCENT>;
-        };
+        COMBO(0 10, &macro_deg_win, BASE)
+        COMBO(0 10, &kp LA(LS(N8)), BASE_OSX)
+        COMBO(1 11, &kp AT, BASE BASE_OSX)
+        COMBO(2 12, &kp HASH, BASE BASE_OSX)
+        COMBO(3 13, &eurodollar, BASE)
+        COMBO(3 13, &eurodollar_OSX, BASE_OSX)
+        COMBO(4 14, &kp PERCENT, BASE BASE_OSX)
+        COMBO(11 21, &kp GRAVE, BASE BASE_OSX)
+        COMBO(12 22, &kp BACKSLASH, BASE BASE_OSX)
+        COMBO(13 23, &kp EQUAL, BASE BASE_OSX)
+        COMBO(14 24, &kp TILDE, BASE BASE_OSX)
     // right-hand side combos
         // parenthesis combos
-        combo_lpar {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <6 7>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp LPAR>;
-        };
-        combo_rpar {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <7 8>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp RPAR>;
-        };
-        combo_par {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <6 7 8>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&macro_par>;
-        };
+        COMBO(6 7, &kp LPAR, BASE BASE_OSX)
+        COMBO(7 8, &kp RPAR, BASE BASE_OSX)
+        COMBO(6 7 8, &macro_par, BASE BASE_OSX)
         // brackets combos
-        combo_lbkt {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <16 17>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp LBKT>;
-        };
-        combo_rbkt {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <17 18>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp RBKT>;
-        };
-        combo_bkt {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <16 17 18>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&macro_bkt>;
-        };
+        COMBO(16 17, &kp LBKT, BASE BASE_OSX)
+        COMBO(17 18, &kp RBKT, BASE BASE_OSX)
+        COMBO(16 17 18, &macro_bkt, BASE BASE_OSX)
         // braces combos
-        combo_lbrc {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <26 27>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp LBRC>;
-        };
-        combo_rbrc {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <27 28>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp RBRC>;
-        };
-        combo_brc {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <26 27 28>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&macro_brc>;
-        };
+        COMBO(26 27, &kp LBRC, BASE BASE_OSX)
+        COMBO(27 28, &kp RBRC, BASE BASE_OSX)
+        COMBO(26 27 28, &macro_brc, BASE BASE_OSX)
         // vertical combos
-        combo_caret {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <5 15>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp CARET>;
-        };
-        combo_plus {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <6 16>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp PLUS>;
-        };
-        combo_asterisk {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <7 17>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp ASTERISK>;
-        };
-        combo_ampersand {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <8 18>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp AMPERSAND>;
-        };
-        combo_greater {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <9 19>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp GREATER_THAN>;
-        };
-        combo_underscore {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <15 25>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp UNDERSCORE>;
-        };
-        combo_minus {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <16 26>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp MINUS>;
-        };
-        combo_slash {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <17 27>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp SLASH>;
-        };
-        combo_pipe {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <18 28>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp PIPE>;
-        };
-        combo_lessthan {
-            timeout-ms = <COMBO_TAB_MS>;
-            key-positions = <19 29>;
-            layers = <BASE BASE_OSX>;
-            bindings = <&kp LESS_THAN>;
-        };
+        COMBO(5 15, &kp CARET, BASE BASE_OSX)
+        COMBO(6 16, &kp PLUS, BASE BASE_OSX)
+        COMBO(7 17, &kp ASTERISK, BASE BASE_OSX)
+        COMBO(8 18, &kp AMPERSAND, BASE BASE_OSX)
+        COMBO(9 19, &kp GREATER_THAN, BASE BASE_OSX)
+        COMBO(15 25, &kp UNDERSCORE, BASE BASE_OSX)
+        COMBO(16 26, &kp MINUS, BASE BASE_OSX)
+        COMBO(17 27, &kp SLASH, BASE BASE_OSX)
+        COMBO(18 28, &kp PIPE, BASE BASE_OSX)
+        COMBO(19 29, &kp LESS_THAN, BASE BASE_OSX)
     };
 };
