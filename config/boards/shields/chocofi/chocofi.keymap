@@ -6,21 +6,21 @@
 // layers ID definition
 #define BASE 0
 #define BASE_OSX 1
-#define EXT  2
-#define NAV  3
-#define NAV_OSX  4
-#define FUN  5
-#define ADJ  6
+#define NAV  2
+#define NAV_OSX  3
+#define NUM  4
+#define ADJ  5
 
 #include "combos.dtsi"
+
+// tapping term definition
+#define TAP_TERM_MS 200
+#define QUICK_TAP_MS 125
 
 // macros definition
 #define meh LC(LS(LALT))
 #define hyper LG(LC(LS(LALT)))
 #define deg RA(LS(SEMI))
-#define CANCEL &kp K_CANCEL         // cancels caps-word and does nothing else
-#define TAP_TERM_MS 200
-#define QUICK_TAP_MS 125
 
 // OSX specific macros
 #define undo_OSX LG(Z)
@@ -70,14 +70,6 @@
 
 // main tree
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NAV FUN>;
-            then-layer = <ADJ>;
-        };
-    };
-
     behaviors {
         // HOME ROW MODS
         hml: left_hand_positional_hold_tap {
@@ -106,41 +98,7 @@
             hold-trigger-on-release;
         };
 
-        osm: one_shot_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ONE_SHOT_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAP_TERM_MS>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&sk>, <&kp>;
-        };
-
         // TAP DANCES
-        bslhpipe: tap_dance_backslash_pipe {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_BACKSLASH_PIPE";
-            #binding-cells = <0>;
-            tapping-term-ms = <TAP_TERM_MS>;
-            bindings = <&kp BSLH>, <&kp PIPE>;
-        };
-
-        grvtilde: tap_dance_grave_tilde {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_GRAVE_TILDE";
-            #binding-cells = <0>;
-            tapping-term-ms = <TAP_TERM_MS>;
-            bindings = <&kp GRAVE>, <&kp TILDE>;
-        };
-
-        apoquote: tap_dance_apostrophe_quote {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_APOSTROPE_QUOTE";
-            #binding-cells = <0>;
-            tapping-term-ms = <TAP_TERM_MS>;
-            bindings = <&kp SQT>, <&kp DQT>;
-        };
-
         eurodollar: tap_dance_euro_dollar {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_EURO_DOLLAR";
@@ -155,15 +113,13 @@
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp LA(LS(N2))>, <&kp DLLR>;
         };
-
-        close: tap_dance_close {
+        prev_next_song: prev_next_song {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_CLOSE";
+            label = "PREV_NEXT_SONG";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_TERM_MS>;
-            bindings = <&kp LC(F4)>, <&kp LA(F4)>;
+            bindings = <&kp C_NEXT>, <&kp C_PREV>;
         };
-
 
         // tap: sticky-shift | lshft + tap: caps-word | hold: set in keymap (HYPER)
         ss_cw: ss_cw {
@@ -343,86 +299,58 @@
         compatible = "zmk,keymap";
 
         default_layer {
-        // ----------------------------------------------------------------------------------------------------------------------------
-        // |    Q    |    W    |    F    |    P    |    B    |                      |    J    |    L    |    I    |    Y    |    ;    |
-        // |    A    |    R    |    S    |    T    |    G    |                      |    M    |    N    |    E    |    I    |    O    |
-        // |    Z    |    X    |    C    |    D    |    V    |                      |    K    |    H    |    ,    |    .    |    /    |
-        //                               |   ESC   |  SPACE  |   TAB   |  |  RETURN |BACKSPACE|   DEL   |
-
-            // bindings = <
-            //     &kp Q        &kp W        &kp F          &kp P         &kp B                 &kp J   &kp L          &kp U           &kp Y         &kp SEMI
-            //     &hml LALT A  &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G                 &kp M   &hmr RCTRL N   &hmr RSHIFT E   &hmr RGUI I   &hmr RALT O
-            //     &kp Z        &kp X        &kp C          &kp D         &kp V                 &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH
-            //                                   &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav    &none
-            // >;
             bindings = <
-                &kp W        &kp L        &kp Y          &kp P         &kp B                 &kp Z   &kp F          &kp O           &kp U         &single_to_doublequote
-                &hml LALT C  &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G                 &kp M   &hmr RCTRL N   &hmr RSHIFT E   &hmr RGUI I   &hmr RALT A
-                &kp Q        &kp J        &kp V          &kp D         &kp K                 &kp X   &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
-                                              &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav    &none
+                &kp W   &kp L        &kp Y          &kp P         &kp B               &kp Z             &kp F             &kp O           &kp U         &single_to_doublequote
+                &kp C   &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G               &kp M             &hmr RCTRL N      &hmr RSHIFT E   &hmr RGUI I   &kp A
+                &kp Q   &kp J        &kp V          &hml LALT D   &kp K               &kp X             &hmr RALT H       &comma_to_semi  &dot_to_colon &quest_to_excl
+                                     &kp K_CANCEL   &mt LCTRL RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav       &sl ADJ
             >;
         };
 
         default_layer_OSX {
             bindings = <
-                &kp W        &kp L        &kp Y          &kp P         &kp B                 &kp Z   &kp F          &kp O           &kp U         &single_to_doublequote
-                &hml LCTRL C  &hml LALT R  &hml LSHIFT S  &hml LGUI T  &kp G                 &kp M   &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
-                &kp Q        &kp J        &kp V          &kp D         &kp K                 &kp X   &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
-                                              &none    &lt_spc FUN 0   &lt EXT RET       &lt_shft hyper 0   &bs_del_nav_OSX    &none
+                &kp W   &kp L        &kp Y          &kp P         &kp B               &kp Z             &kp F             &kp O           &kp U         &single_to_doublequote
+                &kp C   &hml LCTRL R &hml LSHIFT S  &hml LGUI T   &kp G               &kp M             &hmr RGUI N       &hmr RSHIFT E   &hmr RCTRL I  &kp A
+                &kp Q   &kp J        &kp V          &hml LALT D   &kp K               &kp X             &hmr RALT H       &comma_to_semi  &dot_to_colon &quest_to_excl
+                                     &kp K_CANCEL   &mt LGUI RET  &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav_OSX   &sl ADJ
             >;
         };
 
-        ext_layer {
-
+        nav_layer{
             bindings = <
-                &kp PRCNT  &kp N7  &kp N8  &kp N9  &kp MINUS          &kp AT      &kp QMARK   &kp EXCL   &bslhpipe   &grvtilde
-                &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp UNDER   &kp LPAR    &kp LBKT   &kp LBRC    &apoquote
-                &kp COMMA  &kp N1  &kp N2  &kp N3  &kp EQUAL          &kp CARET   &kp RPAR    &kp RBKT   &kp RBRC    &eurodollar
-                                        &none  &kp N0  &kp DOT    &none  &none  &none
+                &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LC(BSPC)    &kp UP    &kp LC(DEL)      &none
+                &none  &sk LGUI    &sk LSHFT     &sk LCTRL     &prev_next_song        &kp PG_DN  &hmr HOME LEFT  &kp DOWN  &hmr END RIGHT   &win_sleep
+                &none  &none       &none         &sk LALT      &none                  &none      &kp prev_screen &none     &kp next_screen  &kp PRINTSCREEN
+                                   &none         &none         &none                  &none      &none           &none
             >;
         };
 
-
-        nav_layer {
-
+        nav_layer_OSX{
             bindings = <
-                &close         &kp C_MUTE      &kp C_VOL_DN      &kp C_VOL_UP      &kp redo            &kp next_win  &kp HOME          &kp UP           &kp END     &kp PG_UP
-                &win_sleep     &osm RALT RALT  &osm LSHFT LSHFT  &osm LCTRL LCTRL  &kp undo            &kp prev_win  &kp LEFT          &kp DOWN         &kp RIGHT   &kp PG_DN
-                &kp CAPS       &kp C_AC_CUT    &kp C_AC_COPY     &kp C_AC_PASTE    &caps_word          &kp PSCRN     &kp prev_screen   &kp next_screen  &sel_word   &none
-                                            &none  &mo FUN  &none  &none  &none  &none
+                &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LG(BSPC)        &kp UP    &kp LG(DEL)          &none
+                &none  &sk LCTRL   &sk LSHFT     &sk LGUI      &prev_next_song        &kp PG_DN  &hmr HOME LEFT      &kp DOWN  &hmr END RIGHT       &win_sleep
+                &none  &none       &none         &sk LALT      &none                  &none      &kp prev_screen_OSX &none     &kp next_screen_OSX  &kp PRINTSCREEN
+                                   &none         &none         &none                  &none      &none               &none
             >;
         };
 
-        nav_layer_OSX {
-
+        num_layer{
             bindings = <
-                &kp LG(Q)      &kp C_MUTE      &kp C_VOL_DN      &kp C_VOL_UP      &kp redo_OSX            &kp next_win  &kp HOME          &kp UP           &kp END     &kp PG_UP
-                &kp C_SLEEP    &osm RALT RALT  &osm LSHFT LSHFT  &osm LCTRL LCTRL  &kp undo_OSX            &kp prev_win  &kp LEFT          &kp DOWN         &kp RIGHT   &kp PG_DN
-                &kp CAPS       &kp C_AC_CUT    &kp C_AC_COPY     &kp C_AC_PASTE    &caps_word          &kp PSCRN     &kp prev_screen   &kp next_screen  &sel_word   &none
-                                            &none  &mo FUN  &none  &none  &none  &none
+                &none    &kp F7  &kp F8  &kp F9  &kp F10          &kp PLUS   &kp N7  &kp N8  &kp N9  &none
+                &kp F12  &kp F4  &kp F5  &kp F6  &kp F11          &kp MINUS  &kp N4  &kp N5  &kp N6  &kp ASTERISK
+                &kp F13  &kp F1  &kp F2  &kp F3  &none            &none      &kp N1  &kp N2  &kp N3  &kp SLASH
+                                 &none   &none   &none            &kp DOT    &kp N0  &none
             >;
         };
-
-
-        fun_layer {
-
-            bindings = <
-                &none  &kp F7  &kp F8  &kp F9  &kp F10             &kp HASH  &none  &kp deg  &none  &none
-                &none  &kp F4  &kp F5  &kp F6  &kp F11             &none     &none  &none    &none  &none
-                &none  &kp F1  &kp F2  &kp F3  &kp F12             &kp AMPS  &none  &none    &none  &none
-                                            &none  &none  &none    &none  &mo NAV  &none
-            >;
-        };
-
 
         adj_layer {
-
             bindings = <
-                &bootloader  &none         &none         &none         &reset              &reset  &none  &none  &none  &bootloader
-                &bt BT_CLR   &bt BT_SEL 2  &pc_connect   &osx_connect  &out OUT_TOG        &none   &none  &none  &none  &none
-                &none        &none         &none         &none         &none               &none   &none  &none  &none  &none
-                                                            &none  &none  &none  &none  &none  &none
+                &none        &none         &to BASE      &to BASE_OSX  &bootloader        &bootloader  &none  &none  &none  &none
+                &bt BT_CLR   &bt BT_SEL 2  &pc_connect   &osx_connect  &reset             &reset       &none  &none  &none  &none
+                &none        &bt BT_SEL 4  &bt BT_SEL 3  &out OUT_TOG  &none              &none        &none  &none  &none  &none
+                                                         &none  &none  &none              &none  &none  &none
             >;
         };
+
     };
 };
