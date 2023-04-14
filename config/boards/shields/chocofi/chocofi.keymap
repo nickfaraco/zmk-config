@@ -106,7 +106,7 @@
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp RA(N5)>, <&kp DLLR>;
         };
-        eurodollar_OSX: tap_dance_euro_dollar {
+        eurodollar_OSX: tap_dance_euro_dollar_OSX {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_EURO_DOLLAR";
             #binding-cells = <0>;
@@ -148,7 +148,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bs_del_nav_OSX: bs_del_nav {
+        bs_del_nav_OSX: bs_del_nav_OSX {
             compatible = "zmk,behavior-mod-morph";
             label = "BS_DEL_NAV";
             #binding-cells = <0>;
@@ -346,7 +346,7 @@
         adj_layer {
             bindings = <
                 &none        &none         &to BASE      &to BASE_OSX  &bootloader        &bootloader  &none  &none  &none  &none
-                &bt BT_CLR   &bt BT_SEL 2  &pc_connect   &osx_connect  &reset             &reset       &none  &none  &none  &none
+                &bt BT_CLR   &bt BT_SEL 2  &pc_connect   &osx_connect  &sys_reset         &sys_reset   &none  &none  &none  &none
                 &none        &bt BT_SEL 4  &bt BT_SEL 3  &out OUT_TOG  &none              &none        &none  &none  &none  &none
                                                          &none  &none  &none              &none  &none  &none
             >;
