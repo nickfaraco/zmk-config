@@ -328,7 +328,7 @@
         nav_layer_OSX{
             bindings = <
                 &none      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LA(BSPC)        &kp UP    &kp LA(DEL)          &none
-                &sk LCTRL  &sk LALT    &sk LSHFT     &sk LGUI      &prev_next_song        &kp PG_DN  &hmr HOME LEFT      &kp DOWN  &hmr END RIGHT       &win_sleep
+                &sk LCTRL  &sk LALT    &sk LSHFT     &sk LGUI      &prev_next_song        &kp PG_DN  &hmr HOME LEFT      &kp DOWN  &hmr END RIGHT       &kp LC(LG(Q))
                 &none      &none       &none         &none         &none                  &none      &kp prev_screen_OSX &none     &kp next_screen_OSX  &kp PRINTSCREEN
                                        &none         &none         &none                  &none      &none               &none
             >;
