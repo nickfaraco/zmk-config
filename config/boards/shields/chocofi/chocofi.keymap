@@ -300,37 +300,37 @@
 
         default_layer {
             bindings = <
-                &kp W   &kp L        &kp Y          &kp P         &kp B               &kp Z             &kp F             &kp O           &kp U         &single_to_doublequote
-                &kp C   &hml LGUI R  &hml LSHIFT S  &hml LCTRL T  &kp G               &kp M             &hmr RCTRL N      &hmr RSHIFT E   &hmr RGUI I   &kp A
-                &kp Q   &kp J        &kp V          &hml LALT D   &kp K               &kp X             &hmr RALT H       &comma_to_semi  &dot_to_colon &quest_to_excl
-                                     &kp K_CANCEL   &mt LCTRL RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav       &sl ADJ
+                &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
+                &hml LGUI C   &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G               &kp M       &hmr RCTRL N   &hmr RSHIFT E   &hmr RALT I   &hmr RGUI A
+                &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
+                                     &kp K_CANCEL   &mt LCTRL RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav    &sl ADJ
             >;
         };
 
         default_layer_OSX {
             bindings = <
-                &kp W   &kp L        &kp Y          &kp P         &kp B               &kp Z             &kp F             &kp O           &kp U         &single_to_doublequote
-                &kp C   &hml LCTRL R &hml LSHIFT S  &hml LGUI T   &kp G               &kp M             &hmr RGUI N       &hmr RSHIFT E   &hmr RCTRL I  &kp A
-                &kp Q   &kp J        &kp V          &hml LALT D   &kp K               &kp X             &hmr RALT H       &comma_to_semi  &dot_to_colon &quest_to_excl
+                &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
+                &hml LCTRL C  &hml LALT R  &hml LSHIFT S  &hml LGUI T   &kp G               &kp M       &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
+                &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
                                      &kp K_CANCEL   &mt LGUI RET  &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav_OSX   &sl ADJ
             >;
         };
 
         nav_layer{
             bindings = <
-                &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LC(BSPC)    &kp UP    &kp LC(DEL)      &none
-                &none  &sk LGUI    &sk LSHFT     &sk LCTRL     &prev_next_song        &kp PG_DN  &hmr HOME LEFT  &kp DOWN  &hmr END RIGHT   &win_sleep
-                &none  &none       &none         &sk LALT      &none                  &none      &kp prev_screen &none     &kp next_screen  &kp PRINTSCREEN
-                                   &none         &none         &none                  &none      &none           &none
+                &none     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LC(BSPC)    &kp UP    &kp LC(DEL)      &none
+                &sk LGUI  &sk LALT    &sk LSHFT     &sk LCTRL     &prev_next_song        &kp PG_DN  &hmr HOME LEFT  &kp DOWN  &hmr END RIGHT   &win_sleep
+                &none     &none       &none         &none         &none                  &none      &kp prev_screen &none     &kp next_screen  &kp PRINTSCREEN
+                                      &none         &none         &none                  &none      &none           &none
             >;
         };
 
         nav_layer_OSX{
             bindings = <
-                &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LA(BSPC)        &kp UP    &kp LA(DEL)          &none
-                &none  &sk LCTRL   &sk LSHFT     &sk LGUI      &prev_next_song        &kp PG_DN  &hmr HOME LEFT      &kp DOWN  &hmr END RIGHT       &win_sleep
-                &none  &none       &none         &sk LALT      &none                  &none      &kp prev_screen_OSX &none     &kp next_screen_OSX  &kp PRINTSCREEN
-                                   &none         &none         &none                  &none      &none               &none
+                &none      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LA(BSPC)        &kp UP    &kp LA(DEL)          &none
+                &sk LCTRL  &sk LALT    &sk LSHFT     &sk LGUI      &prev_next_song        &kp PG_DN  &hmr HOME LEFT      &kp DOWN  &hmr END RIGHT       &win_sleep
+                &none      &none       &none         &none         &none                  &none      &kp prev_screen_OSX &none     &kp next_screen_OSX  &kp PRINTSCREEN
+                                       &none         &none         &none                  &none      &none               &none
             >;
         };
 

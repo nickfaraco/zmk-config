@@ -2,8 +2,8 @@ layout: {qmk_keyboard: chocofi}
 layers:
   BASE:
   - [W, L, Y, P, B, Z, F, O, U, {t: "'", s: '"'}]
-  - - C
-    - {t: R, h: LGUI}
+  - - {t: C, h: LGUI}
+    - {t: R, h: LALT}
     - {t: S, h: LSHIFT}
     - {t: T, h: LCTRL}
     - G
@@ -15,7 +15,7 @@ layers:
   - - Q
     - J
     - V
-    - {t: D, h: LALT}
+    - D
     - K
     - X
     - {t: H, h: RALT}

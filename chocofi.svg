@@ -96,9 +96,10 @@ path {
 <text x="787.652" y="119.304" class="shifted">&quot;</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="173.304" width="55.303999999999995" height="52.0" class=""/>
 <text x="59.652" y="199.304" class="tap">C</text>
+<text x="59.652" y="223.304" class="hold">LGUI</text>
 <rect rx="6.0" ry="6.0" x="91.30399999999999" y="133.768" width="55.303999999999995" height="52.0" class=""/>
 <text x="118.95599999999999" y="159.768" class="tap">R</text>
-<text x="118.95599999999999" y="183.768" class="hold">LGUI</text>
+<text x="118.95599999999999" y="183.768" class="hold">LALT</text>
 <rect rx="6.0" ry="6.0" x="150.608" y="114.0" width="55.303999999999995" height="52.0" class=""/>
 <text x="178.26" y="140.0" class="tap">S</text>
 <text x="178.26" y="164.0" class="hold">LSHIFT</text>
@@ -128,7 +129,6 @@ path {
 <text x="178.26" y="196.0" class="tap">V</text>
 <rect rx="6.0" ry="6.0" x="209.91200000000003" y="191.84" width="55.303999999999995" height="52.0" class=""/>
 <text x="237.56400000000002" y="217.84" class="tap">D</text>
-<text x="237.56400000000002" y="241.84" class="hold">LALT</text>
 <rect rx="6.0" ry="6.0" x="269.21599999999995" y="199.624" width="55.303999999999995" height="52.0" class=""/>
 <text x="296.86799999999994" y="225.624" class="tap">K</text>
 <rect rx="6.0" ry="6.0" x="522.784" y="199.624" width="55.303999999999995" height="52.0" class=""/>
