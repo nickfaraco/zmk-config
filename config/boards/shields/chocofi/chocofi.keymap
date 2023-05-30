@@ -9,9 +9,11 @@
 #define NAV  2
 #define NAV_OSX  3
 #define NUM  4
-#define ADJ  5
+#define MOUSE 5
+#define ADJ 6
 
 #include "combos.dtsi"
+#include "mouse.dtsi"
 
 // tapping term definition
 #define TAP_TERM_MS 200
@@ -303,7 +305,7 @@
                 &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
                 &hml LGUI C   &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G               &kp M       &hmr RCTRL N   &hmr RSHIFT E   &hmr RALT I   &hmr RGUI A
                 &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
-                                     &kp K_CANCEL   &mt LCTRL RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav    &sl ADJ
+                                     &kp K_CANCEL   &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav    &sl ADJ
             >;
         };
 
@@ -312,7 +314,7 @@
                 &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
                 &hml LCTRL C  &hml LALT R  &hml LSHIFT S  &hml LGUI T   &kp G               &kp M       &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
                 &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
-                                     &kp K_CANCEL   &mt LGUI RET  &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav_OSX   &sl ADJ
+                                     &kp K_CANCEL   &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav_OSX   &sl ADJ
             >;
         };
 
@@ -340,6 +342,15 @@
                 &kp F12  &kp F4  &kp F5  &kp F6  &kp F11          &kp MINUS  &kp N4  &kp N5  &kp N6  &kp ASTERISK
                 &kp F13  &kp F1  &kp F2  &kp F3  &none            &none      &kp N1  &kp N2  &kp N3  &kp SLASH
                                  &none   &none   &none            &kp DOT    &kp N0  &none
+            >;
+        };
+
+        mouse_layer{
+            bindings = <
+                &none  &none  &none  &none  &none        &none    U_WH_D    U_MS_U    U_WH_U    &none
+                &none  &none  &none  &none  &none        &none    U_MS_L    U_MS_D    U_MS_R    &none
+                &none  &none  &none  &none  &none        &none    &none     &none     &none     &none
+                              &none  &none  &none        U_BTN1   U_BTN2    &none
             >;
         };
 
