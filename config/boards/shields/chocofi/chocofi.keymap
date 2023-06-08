@@ -11,6 +11,7 @@
 #define NUM  4
 #define MOUSE 5
 #define ADJ 6
+#define LOCKL 7
 
 #include "combos.dtsi"
 #include "mouse.dtsi"
@@ -360,6 +361,15 @@
                 &bt BT_CLR   &bt BT_SEL 2  &pc_connect   &osx_connect  &sys_reset         &sys_reset   &none  &none  &none  &none
                 &none        &bt BT_SEL 4  &bt BT_SEL 3  &out OUT_TOG  &none              &none        &none  &none  &none  &none
                                                          &none  &none  &none              &none  &none  &none
+            >;
+        };
+
+        lock_layer {
+            bindings = <
+                &none  &none  &none  &none  &none        &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none        &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none        &none  &none  &none  &none  &none
+                              &none  &none  &none        &none  &none  &none
             >;
         };
 

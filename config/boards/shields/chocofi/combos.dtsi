@@ -70,5 +70,7 @@
         COMBO(17 27, &kp SLASH, BASE BASE_OSX)
         COMBO(18 28, &kp PIPE, BASE BASE_OSX)
         COMBO(19 29, &kp LESS_THAN, BASE BASE_OSX)
+        // lock layer
+        COMBO(0 9 32 33, &tog LOCKL, BASE BASE_OSX LOCKL)
     };
 };
