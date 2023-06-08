@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // layers ID definition
-#define BASE 0
-#define BASE_OSX 1
+#define BASE_OSX 0
+#define BASE 1
 #define NAV  2
 #define NAV_OSX  3
 #define NUM  4
@@ -301,21 +301,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            bindings = <
-                &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
-                &hml LGUI C   &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G               &kp M       &hmr RCTRL N   &hmr RSHIFT E   &hmr RALT I   &hmr RGUI A
-                &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
-                                     &kp K_CANCEL   &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav    &sl ADJ
-            >;
-        };
-
         default_layer_OSX {
             bindings = <
                 &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
                 &hml LCTRL C  &hml LALT R  &hml LSHIFT S  &hml LGUI T   &kp G               &kp M       &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
                 &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
                                      &kp K_CANCEL   &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav_OSX   &sl ADJ
+            >;
+        };
+
+        default_layer {
+            bindings = <
+                &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
+                &hml LGUI C   &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G               &kp M       &hmr RCTRL N   &hmr RSHIFT E   &hmr RALT I   &hmr RGUI A
+                &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
+                                     &kp K_CANCEL   &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav    &sl ADJ
             >;
         };
 
