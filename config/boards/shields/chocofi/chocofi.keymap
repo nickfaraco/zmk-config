@@ -206,6 +206,14 @@
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        // right ring finger + left middle finger morphs into accent dead key
+        s_to_grave: s_to_grave { // specular to Option+E for the acute accent
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_TO_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&hml LSHIFT S>, <&kp RA(GRAVE)>;
+            mods = <MOD_RALT>;
+        };
     };
 
     // macros
@@ -304,7 +312,7 @@
         default_layer_OSX {
             bindings = <
                 &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
-                &hml LCTRL C  &hml LALT R  &hml LSHIFT S  &hml LGUI T   &kp G               &kp M       &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
+                &hml LCTRL C  &hml LALT R  &s_to_grave  &hml LGUI T   &kp G               &kp M       &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
                 &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
                                      &kp K_CANCEL   &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav_OSX   &sl ADJ
             >;
@@ -313,7 +321,7 @@
         default_layer {
             bindings = <
                 &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
-                &hml LGUI C   &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G               &kp M       &hmr RCTRL N   &hmr RSHIFT E   &hmr RALT I   &hmr RGUI A
+                &hml LGUI C   &hml LALT R  &s_to_grave  &hml LCTRL T  &kp G               &kp M       &hmr RCTRL N   &hmr RSHIFT E   &hmr RALT I   &hmr RGUI A
                 &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
                                      &kp K_CANCEL   &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav    &sl ADJ
             >;
