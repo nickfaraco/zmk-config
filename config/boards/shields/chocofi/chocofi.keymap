@@ -107,14 +107,14 @@
             label = "TAP_DANCE_EURO_DOLLAR";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_TERM_MS>;
-            bindings = <&kp RA(N5)>, <&kp DLLR>;
+            bindings = <&kp DLLR>, <&kp RA(N5)>;
         };
         eurodollar_OSX: tap_dance_euro_dollar_OSX {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_EURO_DOLLAR";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_TERM_MS>;
-            bindings = <&kp LA(LS(N2))>, <&kp DLLR>;
+            bindings = <&kp DLLR>, <&kp LA(LS(N2))>;
         };
         prev_next_song: prev_next_song {
             compatible = "zmk,behavior-tap-dance";
