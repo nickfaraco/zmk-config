@@ -123,6 +123,13 @@
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp C_NEXT>, <&kp C_PREV>;
         };
+        screenshot_OSX: screenshot_OSX { // single-tap: area selector, double-tap: full-screen
+            compatible = "zmk,behavior-tap-dance";
+            label = "SCREENSHOT_OSX";
+            #binding-cells = <0>;
+            tapping-term-ms = <TAP_TERM_MS>;
+            bindings = <&kp LG(LS(NUMBER_4))>, <&kp LG(LS(NUMBER_3))>;
+        };
 
         // tap: sticky-shift | lshft + tap: caps-word | hold: set in keymap (HYPER)
         ss_cw: ss_cw {
@@ -340,7 +347,7 @@
             bindings = <
                 &none      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LA(BSPC)        &kp UP    &kp LA(DEL)          &none
                 &sk LCTRL  &sk LALT    &sk LSHFT     &sk LGUI      &prev_next_song        &kp PG_DN  &hmr HOME LEFT      &kp DOWN  &hmr END RIGHT       &kp LC(LG(Q))
-                &none      &none       &kp C_BRI_DN  &kp C_BRI_UP  &none                  &none      &kp prev_screen_OSX &none     &kp next_screen_OSX  &kp PRINTSCREEN
+                &none      &none       &kp C_BRI_DN  &kp C_BRI_UP  &none                  &none      &kp prev_screen_OSX &none     &kp next_screen_OSX  &screenshot_OSX
                                        &none         &none         &none                  &none      &none               &none
             >;
         };
