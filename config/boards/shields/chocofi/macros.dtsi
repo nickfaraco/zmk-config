@@ -1,3 +1,5 @@
+/ {
+  macros {
 // just for testing purposes
 zed_em_kay: zed_em_kay {
             label = "ZM_zed_em_kay";
@@ -50,7 +52,8 @@ ZMK_MACRO(redo, \
         , <&macro_release &kp LSHIFT &kp LCTRL> \
         ; \
     )
-
+  };
+};
 
 // prev_screen: prev_screen {
 //     label = "ZM_prev_virtual_desktop";

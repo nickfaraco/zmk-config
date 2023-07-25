@@ -10,7 +10,7 @@
 // use global-quick-tap-ms for combos (requires PR 1387)
 #define COMBO_HOOK global-quick-tap-ms = <75>;
 
-&{/}{
+/ {
     combos {
         compatible = "zmk,combos";
 #define CONCAT2(x, y) x ## y
