@@ -1,0 +1,280 @@
+draw_config:
+  key_rx: 4.0
+  key_ry: 4.0
+  inner_pad_w: 1.0
+  inner_pad_h: 1.0
+  outer_pad_w: 0.0
+  outer_pad_h: 0.0
+  line_spacing: 1.0
+  arc_radius: 4.0
+  append_colon_to_layer_header: false
+  small_pad: 4.0
+  shrink_wide_legends: 5
+  glyph_tap_size: 16
+  glyph_hold_size: 13
+  glyph_shifted_size: 12
+
+parse_config:
+  mark_alternate_layer_activators: true
+  # sticky_label: $$mdi:gesture-tap-hold$$
+  sticky_label: $$tabler:sticker$$
+
+  raw_binding_map:
+    # Layers
+    "&to BASE_OSX" : $$mdi:apple$$
+    "&to BASE" : $$mdi:microsoft-windows$$
+    "&tog LOCKL": $$tabler:lock$$
+
+    # Modifiers
+    "&caps_word": $$mdi:caps-lock$$
+
+    # Empty
+    "&none":
+      tap: ""
+      type: none
+
+    # Bluetooth
+    "&osx_connect":
+      shifted: ""
+      tap: $$mdi:apple$$
+      hold: 1
+    "&pc_connect":
+      shifted: ""
+      tap: $$mdi:microsoft-windows$$
+      hold: 2
+    "&bt BT_SEL 2":
+      shifted: ""
+      tap: $$mdi:bluetooth-connect$$3
+      hold: 3
+    "&bt BT_SEL 3":
+      shifted: ""
+      tap: $$mdi:bluetooth-connect$$
+      hold: 4
+    "&bt BT_SEL 4":
+      shifted: ""
+      tap: $$mdi:bluetooth-connect$$
+      hold: 5
+    "&out OUT_TOG":
+      shifted: $$mdi:usb$$
+      tap: $$mdi:toggle-switch-outline$$
+      hold: $$mdi:bluetooth$$
+
+    # Reset
+    "&sys_reset":
+      tap: $$mdi:backup-restore$$
+    "&bootloader":
+      tap: $$mdi:progress-download$$
+
+    # other
+    "&screenshot_OSX": $$mdi:monitor-screenshot$$
+    "&win_sleep": $$mdi:power-sleep$$
+    "&prev_next_song": 
+      tap: $$mdi:skip-next$$
+      shifted: $$mdi:skip-previous$$
+    "&macro_par": 
+      tap: "(...)"
+      align: top
+
+  # ZMK
+  zmk_keycode_map:
+    # Symbols
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
+    DOLLAR: $
+    DLLR: $
+    PERCENT: "%"
+    PRCNT: "%"
+    CARET: ^
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: "="
+    PLUS: +
+    MINUS: "-"
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: "/"
+    FSLH: "/"
+    QUESTION: "?"
+    QMARK: "?"
+    BACKSLASH: '\'
+    BSLH: '\'
+    PIPE: "|"
+    NON_US_BACKSLASH: \
+    PIPE2: "|"
+    NON_US_BSLH: "|"
+    SEMICOLON:
+      tap: ";"
+    SEMI:
+      tap: ";"
+    COLON: ":"
+    SINGLE_QUOTE:
+      tap: "'"
+    SQT:
+      tap: "'"
+    APOSTROPHE: <
+    APOS: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    LESS_THAN: <
+    LT: <
+    DOT:
+      tap: "."
+    COMMA:
+      tap: ","
+    GREATER_THAN: ">"
+    GT: ">"
+    LEFT_BRACKET:
+      tap: "["
+    LBKT:
+      tap: "["
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET:
+      tap: "]"
+    RBKT:
+      tap: "]"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE:
+      tap: "`"
+    TILDE: "~"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    TILDE2: "~"
+    RA(GRAVE): "`"
+
+    # Modifiers
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LCMD: $$mdi:apple-keyboard-command$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCMD: $$mdi:apple-keyboard-command$$
+    # "Meh" key
+    LG(LC(LS(LALT))): $$mdi:star-four-points$$
+
+    # copy-paste and others
+    LC(C): $$mdi:content-copy$$
+    LG(C): $$mdi:content-copy$$
+    LC(Z): $$mdi:undo$$
+    LC(Z): $$mdi:undo$$
+    LC(LS(Z)): $$mdi:redo$$
+    LG(LS(Z)): $$mdi:redo$$
+
+
+    # Arrows and nav layer
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    PG_UP: $$mdi:pan-up$$
+    PG_DN: $$mdi:pan-down$$
+    HOME: $$mdi:pan-left$$
+    END: $$mdi:pan-right$$
+    LC(LG(LEFT)): "$$tabler:arrow-left-circle$$"
+    LC(LEFT): "$$tabler:arrow-left-circle$$"
+    PRINTSCREEN: $$mdi:monitor-screenshot$$
+    LC(LG(Q)): $$mdi:power-sleep$$
+
+    # Whitespace
+    RET: $$mdi:keyboard-return$$
+    # ESCAPE: $$mdi:location-exit$$
+    TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE: $$mdi:backspace$$
+    BSPC: $$mdi:backspace$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+
+    # Locks
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+    K_CANCEL: $$mdi:circle-off-outline$$
+
+    # Sound
+    C_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+
+    # Media
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PP: $$mdi:play-pause$$
+    C_PLAY_PAUSE: $$mdi:play-pause$$
+
+    # Bluetooth
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
+
+    # Function Keys
+    # F1: $$mdi:keyboard-f1$$
+    # F2: $$mdi:keyboard-f2$$
+    # F3: $$mdi:keyboard-f3$$
+    # F4: $$mdi:keyboard-f4$$
+    # F5: $$mdi:keyboard-f5$$
+    # F6: $$mdi:keyboard-f6$$
+    # F7: $$mdi:keyboard-f7$$
+    # F8: $$mdi:keyboard-f8$$
+    # F9: $$mdi:keyboard-f9$$
+    # F10: $$mdi:keyboard-f10$$
+    # F11: $$mdi:keyboard-f11$$
+    # F12: $$mdi:keyboard-f12$$
+
+    # Settings
+    C_BRI_UP: $$mdi:brightness-5$$
+    C_BRI_DN: $$mdi:brightness-7$$
+
+    # System
+    C_POWER: $$mdi:power$$
+    C_AL_LOCK: $$mdi:lock$$
+
+
+  zmk_combos:
+    combo_to_2:
+      align: top
+    combo_to_3:
+      align: top
+    combo_bt_clear:
+      align: top
+    combo_mute:
+      align: top
+      offset: 0.15
+    combo_minus:
+      key:
+        shifted: "_"
+        hold: "-"
+    combo_equal:
+      key:
+        shifted: "+"
+        hold: "="
+    combo_backslash:
+      key:
+        shifted: "|"
+        hold: \
+    combo_lbkt:
+      key:
+        shifted: "{"
+        hold: "["
+    combo_rbkt:
+      key:
+        shifted: "}"
+        hold: "]"
+    combo#31:
+      align: top
