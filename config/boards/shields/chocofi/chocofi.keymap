@@ -318,10 +318,10 @@
 
         default_layer_OSX {
             bindings = <
-                &kp W         &kp L        &kp Y          &kp P         &kp B               &kp Z       &kp F          &kp O           &kp U         &single_to_doublequote
-                &hml LCTRL C  &hml LALT R  &s_to_grave  &hml LGUI T   &kp G               &kp M       &hmr RGUI N    &hmr RSHIFT E   &hmr RALT I   &hmr RCTRL A
-                &kp Q         &kp J        &kp V          &kp D         &kp K               &kp X       &kp H          &comma_to_semi  &dot_to_colon &quest_to_excl
-                                     &kp K_CANCEL   &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &bs_del_nav_OSX   &sl ADJ
+                &kp V         &kp W        &kp F          &kp P         &kp B               &kp J       &kp L          &kp U           &kp Y         &single_to_doublequote
+                &hml LCTRL R  &hml LALT S  &hml LSHIFT T  &hml LGUI H   &kp K               &kp X       &hmr RGUI N    &hmr RSHIFT A   &hmr RALT I   &hmr RCTRL O
+                &none         &kp C        &kp G          &kp D         &none               &none       &kp M          &comma_to_semi  &dot_to_colon &none
+                                           &none          &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &kp E   &none
             >;
         };
 
