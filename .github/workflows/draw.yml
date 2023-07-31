@@ -19,5 +19,5 @@ jobs:
       output_folder: "keymap_drawer/img" # path to save produced SVGs
       # commit_message: "Draw: ${{ github.event.head_commit.message }}"
       amend_commit: true # whether to amend the commit or create a new one
-      parse_args: "-l BASE BASE_WIN NAV_WIN NAV NUM MOUSE ADJ LOCK"
+      parse_args: "-l BASE NAV NUM MOUSE ADJ LOCK"
       draw_args: "-s BASE NAV NUM MOUSE ADJ --keys-only"
