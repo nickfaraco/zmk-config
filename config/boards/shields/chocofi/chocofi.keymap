@@ -311,42 +311,43 @@
                 &kp V         &kp W        &kp F          &kp P         &kp B               &kp J       &kp L          &kp U           &kp Y         &single_to_doublequote
                 &hml LCTRL R  &hml LALT S  &hml LSHIFT T  &hml LGUI H   &kp K               &kp X       &hmr RGUI N    &hmr RSHIFT A   &hmr RALT I   &hmr RCTRL O
                 &none         &kp C        &kp G          &kp D         &none               &none       &kp M          &comma_to_semi  &dot_to_colon &none
-                                           &none          &lt MOUSE RET &lt_spc NUM 0       &lt_shft hyper 0  &kp E   &none
+                                           &none          &mo NAV       &lt_spc SYM 0       &lt_shft hyper 0  &lt NUM E   &none
             >;
         };
 
         nav_layer_OSX{
             bindings = <
-                &none      &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE       &kp PG_UP  &kp LA(BSPC)        &kp UP    &kp LA(DEL)          &none
-                &sk LCTRL  &sk LALT    &sk LSHFT     &sk LGUI      &prev_next_song        &kp PG_DN  &hmr HOME LEFT      &kp DOWN  &hmr END RIGHT       &kp LC(LG(Q))
-                &none      &none       &kp C_BRI_DN  &kp C_BRI_UP  &none                  &none      &kp prev_screen_OSX &none     &kp next_screen_OSX  &screenshot_OSX
-                                       &none         &none         &none                  &none      &none               &none
+                &kp LC(LG(Q))    &kp BSPC      &kp UP    &kp DEL     &kp PG_UP            &none  &none  &none  &none  &none
+                &screenshot_OSX  &kp LEFT      &kp DOWN  &kp RIGHT   &kp PG_DN            &none  &sk LGUI  &sk LSHFT  &sk LALT  &sk LCTRL
+                &none    &kp prev_screen_OSX   &none     &kp next_screen_OSX  &none       &none  &none  &none  &none  &none
+                                               &none     &none       &none                &none  &none  &none
             >;
         };
 
         num_layer{
             bindings = <
-                &none    &kp F7  &kp F8  &kp F9  &kp F10          &kp PLUS   &kp N7  &kp N8  &kp N9  &none
-                &kp F12  &kp F4  &kp F5  &kp F6  &kp F11          &kp MINUS  &kp N4  &kp N5  &kp N6  &kp ASTERISK
-                &kp F13  &kp F1  &kp F2  &kp F3  &none            &none      &kp N1  &kp N2  &kp N3  &kp SLASH
-                                 &none   &none   &none            &kp DOT    &kp N0  &none
+                &kp F12  &kp F7  &kp F8  &kp F9  &kp F10          &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK
+                &kp F13  &kp F4  &kp F5  &kp F6  &kp F11          &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH
+                &none    &kp F1  &kp F2  &kp F3  &none            &none      &kp N1  &kp N2  &kp N3  &none
+                                 &none   &kp N0  &kp DOT          &none      &none   &none
             >;
         };
 
-        mouse_layer{
+        symbols {
+            label = "SYM";
             bindings = <
-                &none  &none  &none  &none  &none        &none    U_WH_D    U_MS_U    U_WH_U    &none
-                &none  &none  &none  &none  &none        &none    U_MS_L    U_MS_D    U_MS_R    &none
-                &none  &none  &none  &none  &none        &none    &none     &none     &none     &none
-                              &none  &none  &none        U_BTN1   U_BTN2    &none
+                &kp deg  &kp AT  &kp HASH  &eurodollar_OSX  &kp PERCENT      &kp CARET  &kp PLUS   &kp ASTRK  &kp AMPERSAND  &none
+                &kp QUESTION  &kp GRAVE  &kp BSLH  &kp EQUAL  &none       &kp UNDER  &kp MINUS  &kp SLASH  &kp PIPE  &kp EXCL
+                &none  &none  &kp RA(GRAVE)  &kp RA(E)        &none       &none  &none  &none  &none  &none
+                                                &none  &none  &none       &none  &none  &none
             >;
         };
 
         adj_layer {
             bindings = <
-                &none        &none         &to BASE      &to BASE_OSX  &bootloader        &bootloader  &none  &none  &none  &none
-                &bt BT_CLR   &bt BT_SEL 2  &pc_connect   &osx_connect  &sys_reset         &sys_reset   &none  &none  &none  &none
-                &none        &bt BT_SEL 4  &bt BT_SEL 3  &out OUT_TOG  &none              &none        &none  &none  &none  &none
+                &none        &none         &to BASE      &to BASE_OSX  &bootloader        &bootloader  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_PREV    &none
+                &bt BT_CLR   &bt BT_SEL 2  &pc_connect   &osx_connect  &sys_reset         &sys_reset   &kp C_MUTE        &kp C_VOL_UP  &kp C_VOL_DN  &none
+                &none        &bt BT_SEL 4  &bt BT_SEL 3  &out OUT_TOG  &none              &none        &none             &kp C_BRI_UP  &kp C_BRI_DN  &none
                                                          &none  &none  &none              &none  &none  &none
             >;
         };
