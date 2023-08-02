@@ -174,6 +174,15 @@
             bindings = <&mo>, <&spc_morph>;
         };
 
+        // Alt+Tab swapper, requires PR #1366
+        swapper: swapper{
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+            ignored-key-positions = <31>; // the key being held for the layer activation
+        };
+
         //usefull mod-morphs
         dot_to_colon: dot_to_colon {
             compatible = "zmk,behavior-mod-morph";
@@ -319,7 +328,7 @@
             bindings = <
                 &kp LC(LG(Q))    &kp BSPC      &kp UP    &kp DEL     &kp PG_UP            &none  &none  &none  &none  &none
                 &screenshot_OSX  &kp LEFT      &kp DOWN  &kp RIGHT   &kp PG_DN            &none  &sk LGUI  &sk LSHFT  &sk LALT  &sk LCTRL
-                &none    &kp prev_screen_OSX   &none     &kp next_screen_OSX  &none       &none  &none  &none  &none  &none
+                &none    &kp prev_screen_OSX   &swapper  &kp next_screen_OSX  &none       &none  &none  &none  &none  &none
                                                &none     &none       &none                &none  &none  &none
             >;
         };
