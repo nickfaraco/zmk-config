@@ -312,6 +312,14 @@
         };
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NAV NUM>;
+            then-layer = <ADJ>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -329,7 +337,7 @@
                 &kp LC(LG(Q))    &kp BSPC      &kp UP    &kp DEL     &kp PG_UP            &none  &none  &none  &none  &none
                 &screenshot_OSX  &kp LEFT      &kp DOWN  &kp RIGHT   &kp PG_DN            &none  &sk LGUI  &sk LSHFT  &sk LALT  &sk LCTRL
                 &none    &kp prev_screen_OSX   &swapper  &kp next_screen_OSX  &none       &none  &none  &none  &none  &none
-                                               &none     &none       &none                &none  &none  &none
+                                               &none     &none       &none                &none  &mo NUM  &none
             >;
         };
 
