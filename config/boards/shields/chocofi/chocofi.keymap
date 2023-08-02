@@ -21,7 +21,7 @@
 // macros definition
 #define meh LC(LS(LALT))
 #define hyper LG(LC(LS(LALT)))
-#define deg RA(LS(SEMI))
+#define deg RA(LS(N8))
 
 // OSX specific macros
 #define undo LG(Z)
