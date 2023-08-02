@@ -5,7 +5,7 @@ on:
     paths:
       - "config/boards/shields/chocofi/*.keymap"
       - "config/boards/shields/chocofi/*.dtsi"
-      - "keymap_drawer/*.yml"
+      - "keymap_drawer/draw_config.yaml"
 
 jobs:
   draw_keys:
@@ -16,8 +16,8 @@ jobs:
       install_branch: "main" # branch to install keymap-drawer from
       keymap_patterns: "config/boards/shields/chocofi/*.keymap" # path to the keymaps to parse
       config_path: "keymap_drawer/draw_config.yaml" # config file, ignored if not exists
-      output_folder: "keymap_drawer/img" # path to save produced SVGs
+      output_folder: "keymap_drawer" # path to save produced SVGs
       # commit_message: "Draw: ${{ github.event.head_commit.message }}"
       amend_commit: true # whether to amend the commit or create a new one
-      parse_args: "-l BASE NAV NUM MOUSE ADJ LOCK"
-      draw_args: "-s BASE NAV NUM MOUSE ADJ --keys-only"
+      parse_args: ""
+      draw_args: "-s APTMAK NAV NUM SYM ADJ"

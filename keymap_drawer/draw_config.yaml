@@ -3,8 +3,6 @@ draw_config:
   key_ry: 4.0
   inner_pad_w: 1.0
   inner_pad_h: 1.0
-  outer_pad_w: 0.0
-  outer_pad_h: 0.0
   line_spacing: 1.0
   arc_radius: 4.0
   append_colon_to_layer_header: false
@@ -21,8 +19,8 @@ parse_config:
 
   raw_binding_map:
     # Layers
-    "&to BASE_OSX" : $$mdi:apple$$
-    "&to BASE" : $$mdi:microsoft-windows$$
+    "&to BASE_WIN" : $$mdi:microsoft-windows$$
+    "&to BASE" : $$mdi:apple$$
     "&tog LOCKL": $$tabler:lock$$
 
     # Modifiers
@@ -74,6 +72,7 @@ parse_config:
     "&macro_par": 
       tap: "(...)"
       align: top
+    "&eurodollar": "$/€"
 
   # ZMK
   zmk_keycode_map:
@@ -276,5 +275,7 @@ parse_config:
       key:
         shifted: "}"
         hold: "]"
-    combo#31:
+    combo_quit:
+      key:
+        tap: $$tabler:x$$
       align: top
