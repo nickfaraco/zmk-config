@@ -1,24 +1,60 @@
-<svg width="847.3040000000001" height="1827.8747677693564" viewBox="0 0 847.3040000000001 1827.8747677693564" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="847.3040000000001" height="1844.6747677693563" viewBox="0 0 847.3040000000001 1844.6747677693563" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
-<svg id="tabler:lock">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z" />
-  <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-  <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+<svg id="dot_spc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 24">
+  <g transform="translate(5 8)">
+    <path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z"/>
+  </g>
+  <g transform="translate(24 1)">
+    <path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z"/>
+  </g>
+  <g transform="translate(48 2)">
+    <path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z"/>
+  </g>
 </svg>
 
+</svg>
+<svg id="escape">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>location-exit</title>
+  <path d="M22 12L18 8V11H10V13H18V16M20 18A10 10 0 1 1 20 6H17.27A8 8 0
+  1 0 17.27 18Z" transform="rotate(-120)" transform-origin="center"/>
+</svg>
 
+</svg>
+<svg id="pg_dn">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <title>pan-down</title>
+<path d="M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M8,17L12,21.5L16,17H8Z" transform="scale (1.5, 1.4)" transform-origin="center"/></svg>
 
 </svg>
-<svg id="mdi:volume-off">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-off" viewBox="0 0 24 24"><path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" /></svg>
+<svg id="pg_up">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <title>pan-up</title>
+  <path d="M12,2.5L8,7H16L12,2.5M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0
+  0,0 14,12A2,2 0 0,0 12,10Z" transform="scale (1.5, 1.4)" transform-origin="center"/>
 </svg>
-<svg id="mdi:arrow-up-bold">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up-bold" viewBox="0 0 24 24"><path d="M15,20H9V12H4.16L12,4.16L19.84,12H15V20Z" /></svg>
+
 </svg>
-<svg id="mdi:power-sleep">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-power-sleep" viewBox="0 0 24 24"><path d="M18.73,18C15.4,21.69 9.71,22 6,18.64C2.33,15.31 2.04,9.62 5.37,5.93C6.9,4.25 9,3.2 11.27,3C7.96,6.7 8.27,12.39 12,15.71C13.63,17.19 15.78,18 18,18C18.25,18 18.5,18 18.73,18Z" /></svg>
+<svg id="screen-prev">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: scale(-1,1)" class="icon icon-tabler icon-tabler-screen-share" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M21 12v3a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h9" transform="scale (-1, 1)" transform-origin="center"></path>
+  <path d="M7 20l10 0"></path>
+  <path d="M9 16l0 4"></path>
+  <path d="M15 16l0 4"></path>
+  <path d="M17 4h4v4" transform="scale (-1, 1)" transform-origin="center"></path>
+  <path d="M16 9l5 -5" transform="scale (-1, 1)" transform-origin="center"></path>
+</svg>
+
+</svg>
+<svg id="mdi:progress-download">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-progress-download" viewBox="0 0 24 24"><path d="M13,2.03C17.73,2.5 21.5,6.25 21.95,11C22.5,16.5 18.5,21.38 13,21.93V19.93C16.64,19.5 19.5,16.61 19.96,12.97C20.5,8.58 17.39,4.59 13,4.05V2.05L13,2.03M11,2.06V4.06C9.57,4.26 8.22,4.84 7.1,5.74L5.67,4.26C7.19,3 9.05,2.25 11,2.06M4.26,5.67L5.69,7.1C4.8,8.23 4.24,9.58 4.05,11H2.05C2.25,9.04 3,7.19 4.26,5.67M2.06,13H4.06C4.24,14.42 4.81,15.77 5.69,16.9L4.27,18.33C3.03,16.81 2.26,14.96 2.06,13M7.1,18.37C8.23,19.25 9.58,19.82 11,20V22C9.04,21.79 7.18,21 5.67,19.74L7.1,18.37M12,16.5L7.5,12H11V8H13V12H16.5L12,16.5Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-space">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
+</svg>
+<svg id="mdi:toggle-switch-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch-outline" viewBox="0 0 24 24"><path d="M17 6H7C3.69 6 1 8.69 1 12S3.69 18 7 18H17C20.31 18 23 15.31 23 12S20.31 6 17 6M17 16H7C4.79 16 3 14.21 3 12S4.79 8 7 8H17C19.21 8 21 9.79 21 12S19.21 16 17 16M17 9C15.34 9 14 10.34 14 12S15.34 15 17 15 20 13.66 20 12 18.66 9 17 9Z" /></svg>
 </svg>
 <svg id="tabler:sticker">
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sticker" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -30,128 +66,153 @@
 
 
 </svg>
-<svg id="mdi:keyboard-space">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
-</svg>
-<svg id="mdi:bluetooth-off">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth-off" viewBox="0 0 24 24"><path d="M13,5.83L14.88,7.71L13.28,9.31L14.69,10.72L17.71,7.7L12,2H11V7.03L13,9.03M5.41,4L4,5.41L10.59,12L5,17.59L6.41,19L11,14.41V22H12L16.29,17.71L18.59,20L20,18.59M13,18.17V14.41L14.88,16.29" /></svg>
-</svg>
-<svg id="mdi:apple-keyboard-shift">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-shift" viewBox="0 0 24 24"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
-</svg>
-<svg id="mdi:apple-keyboard-control">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-control" viewBox="0 0 24 24"><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
-</svg>
-<svg id="mdi:skip-next">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
-</svg>
-<svg id="mdi:redo">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-redo" viewBox="0 0 24 24"><path d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.54,15.22L3.9,16C4.95,12.81 7.95,10.5 11.5,10.5C13.45,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z" /></svg>
-</svg>
-<svg id="mdi:play-pause">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
-</svg>
-<svg id="mdi:backspace-reverse-outline">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace-reverse-outline" viewBox="0 0 24 24"><path d="M5,15.59L6.41,17L10,13.41L13.59,17L15,15.59L11.41,12L15,8.41L13.59,7L10,10.59L6.41,7L5,8.41L8.59,12L5,15.59M2,3A2,2 0 0,0 0,5V19A2,2 0 0,0 2,21H17C17.69,21 18.23,20.64 18.59,20.11L24,12L18.59,3.88C18.23,3.35 17.69,3 17,3H2M2,5H17L21.72,12L17,19H2V5Z" /></svg>
-</svg>
-<svg id="mdi:caps-lock">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-caps-lock" viewBox="0 0 24 24"><path d="M9.96,13.71L12,8.29L14.03,13.72M11.14,6L6.43,18H8.36L9.32,15.43H14.68L15.64,18H17.57L12.86,6H11.14M20,2H4C2.89,2 2,2.89 2,4V20C2,21.11 2.9,22 4,22H20C21.11,22 22,21.11 22,20V4C22,2.89 21.1,2 20,2M20,20H4V4H20V20Z" /></svg>
-</svg>
-<svg id="mdi:progress-download">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-progress-download" viewBox="0 0 24 24"><path d="M13,2.03C17.73,2.5 21.5,6.25 21.95,11C22.5,16.5 18.5,21.38 13,21.93V19.93C16.64,19.5 19.5,16.61 19.96,12.97C20.5,8.58 17.39,4.59 13,4.05V2.05L13,2.03M11,2.06V4.06C9.57,4.26 8.22,4.84 7.1,5.74L5.67,4.26C7.19,3 9.05,2.25 11,2.06M4.26,5.67L5.69,7.1C4.8,8.23 4.24,9.58 4.05,11H2.05C2.25,9.04 3,7.19 4.26,5.67M2.06,13H4.06C4.24,14.42 4.81,15.77 5.69,16.9L4.27,18.33C3.03,16.81 2.26,14.96 2.06,13M7.1,18.37C8.23,19.25 9.58,19.82 11,20V22C9.04,21.79 7.18,21 5.67,19.74L7.1,18.37M12,16.5L7.5,12H11V8H13V12H16.5L12,16.5Z" /></svg>
-</svg>
-<svg id="mdi:volume-low">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-low" viewBox="0 0 24 24"><path d="M7,9V15H11L16,20V4L11,9H7Z" /></svg>
-</svg>
-<svg id="mdi:skip-previous">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-previous" viewBox="0 0 24 24"><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
-</svg>
-<svg id="mdi:backspace">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace" viewBox="0 0 24 24"><path d="M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12" /></svg>
-</svg>
 <svg id="mdi:bluetooth-connect">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth-connect" viewBox="0 0 24 24"><path d="M19,10L17,12L19,14L21,12M14.88,16.29L13,18.17V14.41M13,5.83L14.88,7.71L13,9.58M17.71,7.71L12,2H11V9.58L6.41,5L5,6.41L10.59,12L5,17.58L6.41,19L11,14.41V22H12L17.71,16.29L13.41,12M7,12L5,10L3,12L5,14L7,12Z" /></svg>
-</svg>
-<svg id="mdi:backup-restore">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backup-restore" viewBox="0 0 24 24"><path d="M12,3A9,9 0 0,0 3,12H0L4,16L8,12H5A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19C10.5,19 9.09,18.5 7.94,17.7L6.5,19.14C8.04,20.3 9.94,21 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M14,12A2,2 0 0,0 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12Z" /></svg>
-</svg>
-<svg id="mdi:arrow-down-bold">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-bold" viewBox="0 0 24 24"><path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" /></svg>
-</svg>
-<svg id="mdi:usb">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-usb" viewBox="0 0 24 24"><path d="M15,7V11H16V13H13V5H15L12,1L9,5H11V13H8V10.93C8.7,10.56 9.2,9.85 9.2,9C9.2,7.78 8.21,6.8 7,6.8C5.78,6.8 4.8,7.78 4.8,9C4.8,9.85 5.3,10.56 6,10.93V13A2,2 0 0,0 8,15H11V18.05C10.29,18.41 9.8,19.15 9.8,20A2.2,2.2 0 0,0 12,22.2A2.2,2.2 0 0,0 14.2,20C14.2,19.15 13.71,18.41 13,18.05V15H16A2,2 0 0,0 18,13V11H19V7H15Z" /></svg>
-</svg>
-<svg id="mdi:volume-high">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-high" viewBox="0 0 24 24"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" /></svg>
-</svg>
-<svg id="mdi:content-copy">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" /></svg>
-</svg>
-<svg id="mdi:arrow-left-bold">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left-bold" viewBox="0 0 24 24"><path d="M20,9V15H12V19.84L4.16,12L12,4.16V9H20Z" /></svg>
-</svg>
-<svg id="mdi:apple-keyboard-option">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-option" viewBox="0 0 24 24"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg>
-</svg>
-<svg id="mdi:pan-up">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-up" viewBox="0 0 24 24"><path d="M12,2.5L8,7H16L12,2.5M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" /></svg>
-</svg>
-<svg id="tabler:x">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M18 6l-12 12" />
-  <path d="M6 6l12 12" />
-</svg>
-
-
-
-</svg>
-<svg id="mdi:star-four-points">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-star-four-points" viewBox="0 0 24 24"><path d="M12,1L9,9L1,12L9,15L12,23L15,15L23,12L15,9L12,1Z" /></svg>
-</svg>
-<svg id="mdi:microsoft-windows">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-microsoft-windows" viewBox="0 0 24 24"><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>
-</svg>
-<svg id="mdi:pan-down">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-down" viewBox="0 0 24 24"><path d="M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M8,17L12,21.5L16,17H8Z" /></svg>
-</svg>
-<svg id="mdi:keyboard-return">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
-</svg>
-<svg id="mdi:apple">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple" viewBox="0 0 24 24"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" /></svg>
-</svg>
-<svg id="mdi:arrow-right-bold">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-bold" viewBox="0 0 24 24"><path d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" /></svg>
-</svg>
-<svg id="mdi:brightness-7">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-7" viewBox="0 0 24 24"><path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z" /></svg>
-</svg>
-<svg id="mdi:apple-keyboard-command">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
 </svg>
 <svg id="mdi:bluetooth">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth" viewBox="0 0 24 24"><path d="M14.88,16.29L13,18.17V14.41M13,5.83L14.88,7.71L13,9.58M17.71,7.71L12,2H11V9.58L6.41,5L5,6.41L10.59,12L5,17.58L6.41,19L11,14.41V22H12L17.71,16.29L13.41,12L17.71,7.71Z" /></svg>
 </svg>
-<svg id="mdi:keyboard-tab">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
+<svg id="mdi:volume-high">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-high" viewBox="0 0 24 24"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" /></svg>
+</svg>
+<svg id="mdi:arrow-up-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up-bold" viewBox="0 0 24 24"><path d="M15,20H9V12H4.16L12,4.16L19.84,12H15V20Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-option">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-option" viewBox="0 0 24 24"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg>
+</svg>
+<svg id="mdi:brightness-7">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-7" viewBox="0 0 24 24"><path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z" /></svg>
+</svg>
+<svg id="mdi:undo">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-undo" viewBox="0 0 24 24"><path d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z" /></svg>
+</svg>
+<svg id="mdi:arrow-right-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-bold" viewBox="0 0 24 24"><path d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" /></svg>
+</svg>
+<svg id="tabler:screen-share">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-screen-share" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M21 12v3a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h9" />
+  <path d="M7 20l10 0" />
+  <path d="M9 16l0 4" />
+  <path d="M15 16l0 4" />
+  <path d="M17 4h4v4" />
+  <path d="M16 9l5 -5" />
+</svg>
+
+
+
+</svg>
+<svg id="mdi:play-pause">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
+</svg>
+<svg id="mdi:caps-lock">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-caps-lock" viewBox="0 0 24 24"><path d="M9.96,13.71L12,8.29L14.03,13.72M11.14,6L6.43,18H8.36L9.32,15.43H14.68L15.64,18H17.57L12.86,6H11.14M20,2H4C2.89,2 2,2.89 2,4V20C2,21.11 2.9,22 4,22H20C21.11,22 22,21.11 22,20V4C22,2.89 21.1,2 20,2M20,20H4V4H20V20Z" /></svg>
 </svg>
 <svg id="mdi:brightness-5">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-5" viewBox="0 0 24 24"><path d="M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" /></svg>
 </svg>
-<svg id="mdi:toggle-switch-outline">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch-outline" viewBox="0 0 24 24"><path d="M17 6H7C3.69 6 1 8.69 1 12S3.69 18 7 18H17C20.31 18 23 15.31 23 12S20.31 6 17 6M17 16H7C4.79 16 3 14.21 3 12S4.79 8 7 8H17C19.21 8 21 9.79 21 12S19.21 16 17 16M17 9C15.34 9 14 10.34 14 12S15.34 15 17 15 20 13.66 20 12 18.66 9 17 9Z" /></svg>
+<svg id="mdi:keyboard-tab">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
 </svg>
-<svg id="tabler:arrow-left-circle">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left-circle" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg id="mdi:apple">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple" viewBox="0 0 24 24"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" /></svg>
+</svg>
+<svg id="mdi:star-four-points">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-star-four-points" viewBox="0 0 24 24"><path d="M12,1L9,9L1,12L9,15L12,23L15,15L23,12L15,9L12,1Z" /></svg>
+</svg>
+<svg id="mdi:lock-open-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-lock-open-outline" viewBox="0 0 24 24"><path d="M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10A2,2 0 0,1 6,8H15V6A3,3 0 0,0 12,3A3,3 0 0,0 9,6H7A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,17A2,2 0 0,1 10,15A2,2 0 0,1 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-return">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
+</svg>
+<svg id="mdi:microsoft-windows">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-microsoft-windows" viewBox="0 0 24 24"><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>
+</svg>
+<svg id="tabler:browser-x">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser-x" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M17 12h-14" />
-  <path d="M6 9l-3 3l3 3" />
-  <path d="M19 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
+  <path d="M4 8h16" />
+  <path d="M8 4v4" />
+  <path d="M10 16l4 -4" />
+  <path d="M14 16l-4 -4" />
 </svg>
 
 
 
+</svg>
+<svg id="mdi:arrow-down-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-bold" viewBox="0 0 24 24"><path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" /></svg>
+</svg>
+<svg id="mdi:volume-low">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-low" viewBox="0 0 24 24"><path d="M7,9V15H11L16,20V4L11,9H7Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-command">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
+</svg>
+<svg id="mdi:content-paste">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-paste" viewBox="0 0 24 24"><path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z" /></svg>
+</svg>
+<svg id="mdi:arrow-left-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left-bold" viewBox="0 0 24 24"><path d="M20,9V15H12V19.84L4.16,12L12,4.16V9H20Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-control">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-control" viewBox="0 0 24 24"><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
+</svg>
+<svg id="mdi:power-sleep">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-power-sleep" viewBox="0 0 24 24"><path d="M18.73,18C15.4,21.69 9.71,22 6,18.64C2.33,15.31 2.04,9.62 5.37,5.93C6.9,4.25 9,3.2 11.27,3C7.96,6.7 8.27,12.39 12,15.71C13.63,17.19 15.78,18 18,18C18.25,18 18.5,18 18.73,18Z" /></svg>
+</svg>
+<svg id="mdi:backspace">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace" viewBox="0 0 24 24"><path d="M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12" /></svg>
+</svg>
+<svg id="mdi:volume-off">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-off" viewBox="0 0 24 24"><path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" /></svg>
+</svg>
+<svg id="mdi:swap-horizontal">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-swap-horizontal" viewBox="0 0 24 24"><path d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" /></svg>
+</svg>
+<svg id="mdi:skip-next">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
+</svg>
+<svg id="tabler:square-x">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+  <path d="M9 9l6 6m0 -6l-6 6" />
+</svg>
+
+
+
+</svg>
+<svg id="mdi:content-cut">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-cut" viewBox="0 0 24 24"><path d="M19,3L13,9L15,11L22,4V3M12,12.5A0.5,0.5 0 0,1 11.5,12A0.5,0.5 0 0,1 12,11.5A0.5,0.5 0 0,1 12.5,12A0.5,0.5 0 0,1 12,12.5M6,20A2,2 0 0,1 4,18C4,16.89 4.9,16 6,16A2,2 0 0,1 8,18C8,19.11 7.1,20 6,20M6,8A2,2 0 0,1 4,6C4,4.89 4.9,4 6,4A2,2 0 0,1 8,6C8,7.11 7.1,8 6,8M9.64,7.64C9.87,7.14 10,6.59 10,6A4,4 0 0,0 6,2A4,4 0 0,0 2,6A4,4 0 0,0 6,10C6.59,10 7.14,9.87 7.64,9.64L10,12L7.64,14.36C7.14,14.13 6.59,14 6,14A4,4 0 0,0 2,18A4,4 0 0,0 6,22A4,4 0 0,0 10,18C10,17.41 9.87,16.86 9.64,16.36L12,14L19,21H22V20L9.64,7.64Z" /></svg>
+</svg>
+<svg id="mdi:content-copy">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" /></svg>
+</svg>
+<svg id="mdi:usb">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-usb" viewBox="0 0 24 24"><path d="M15,7V11H16V13H13V5H15L12,1L9,5H11V13H8V10.93C8.7,10.56 9.2,9.85 9.2,9C9.2,7.78 8.21,6.8 7,6.8C5.78,6.8 4.8,7.78 4.8,9C4.8,9.85 5.3,10.56 6,10.93V13A2,2 0 0,0 8,15H11V18.05C10.29,18.41 9.8,19.15 9.8,20A2.2,2.2 0 0,0 12,22.2A2.2,2.2 0 0,0 14.2,20C14.2,19.15 13.71,18.41 13,18.05V15H16A2,2 0 0,0 18,13V11H19V7H15Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-shift">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-shift" viewBox="0 0 24 24"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
+</svg>
+<svg id="mdi:backup-restore">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backup-restore" viewBox="0 0 24 24"><path d="M12,3A9,9 0 0,0 3,12H0L4,16L8,12H5A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19C10.5,19 9.09,18.5 7.94,17.7L6.5,19.14C8.04,20.3 9.94,21 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M14,12A2,2 0 0,0 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12Z" /></svg>
+</svg>
+<svg id="mdi:redo">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-redo" viewBox="0 0 24 24"><path d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.54,15.22L3.9,16C4.95,12.81 7.95,10.5 11.5,10.5C13.45,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z" /></svg>
+</svg>
+<svg id="mdi:monitor-screenshot">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-monitor-screenshot" viewBox="0 0 24 24"><path d="M9,6H5V10H7V8H9M19,10H17V12H15V14H19M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2" /></svg>
+</svg>
+<svg id="mdi:skip-previous">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-previous" viewBox="0 0 24 24"><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
+</svg>
+<svg id="mdi:backspace-reverse-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace-reverse-outline" viewBox="0 0 24 24"><path d="M5,15.59L6.41,17L10,13.41L13.59,17L15,15.59L11.41,12L15,8.41L13.59,7L10,10.59L6.41,7L5,8.41L8.59,12L5,15.59M2,3A2,2 0 0,0 0,5V19A2,2 0 0,0 2,21H17C17.69,21 18.23,20.64 18.59,20.11L24,12L18.59,3.88C18.23,3.35 17.69,3 17,3H2M2,5H17L21.72,12L17,19H2V5Z" /></svg>
 </svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags*/
@@ -289,7 +350,7 @@ path.combo {
 <text x="550.436" y="169.624" class="tap">X</text>
 <rect rx="4.0" ry="4.0" x="581.088" y="134.784" width="57.303999999999995" height="54.0" class="key"/>
 <text x="609.74" y="161.784" class="tap">N</text>
-<text x="609.74" y="184.784" class="hold">RGUI</text>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="603.24" y="171.784" height="13" width="13.0" class="hold glyph mdi:apple-keyboard-command"/>
 <rect rx="4.0" ry="4.0" x="640.3919999999999" y="113.0" width="57.303999999999995" height="54.0" class="key"/>
 <text x="669.044" y="140.0" class="tap">A</text>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="662.544" y="150.0" height="13" width="13.0" class="hold glyph mdi:apple-keyboard-shift"/>
@@ -299,15 +360,15 @@ path.combo {
 <rect rx="4.0" ry="4.0" x="759.0" y="172.304" width="57.303999999999995" height="54.0" class="key"/>
 <text x="787.652" y="199.304" class="tap">O</text>
 <use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="781.152" y="209.304" height="13" width="13.0" class="hold glyph mdi:apple-keyboard-control"/>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="228.304" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="228.304" width="57.303999999999995" height="54.0" class="ghost key"/>
 <rect rx="4.0" ry="4.0" x="90.30399999999999" y="188.768" width="57.303999999999995" height="54.0" class="key"/>
 <text x="118.95599999999999" y="215.768" class="tap">C</text>
 <rect rx="4.0" ry="4.0" x="149.608" y="169.0" width="57.303999999999995" height="54.0" class="key"/>
 <text x="178.26" y="196.0" class="tap">G</text>
 <rect rx="4.0" ry="4.0" x="208.91200000000003" y="190.84" width="57.303999999999995" height="54.0" class="key"/>
 <text x="237.56400000000002" y="217.84" class="tap">D</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="198.624" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="198.624" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="198.624" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="198.624" width="57.303999999999995" height="54.0" class="ghost key"/>
 <rect rx="4.0" ry="4.0" x="581.088" y="190.84" width="57.303999999999995" height="54.0" class="key"/>
 <text x="609.74" y="217.84" class="tap">M</text>
 <rect rx="4.0" ry="4.0" x="640.3919999999999" y="169.0" width="57.303999999999995" height="54.0" class="key"/>
@@ -316,8 +377,8 @@ path.combo {
 <rect rx="4.0" ry="4.0" x="699.696" y="188.768" width="57.303999999999995" height="54.0" class="key"/>
 <text x="728.3480000000001" y="215.768" class="tap">.</text>
 <text x="728.3480000000001" y="192.768" class="shifted">:</text>
-<rect rx="4.0" ry="4.0" x="759.0" y="228.304" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="189.42400000000004" y="256.584" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="759.0" y="228.304" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="189.42400000000004" y="256.584" width="57.303999999999995" height="54.0" class="ghost key"/>
 <g transform="rotate(15.0, 284.15695407686394, 292.0887530667371)">
 <rect rx="4.0" ry="4.0" x="255.50495407686395" y="265.0887530667371" width="57.303999999999995" height="54.0" class="key"/>
 <text x="284.15695407686394" y="292.0887530667371" class="tap">NAV</text>
@@ -327,7 +388,7 @@ path.combo {
 <rect rx="4.0" ry="4.0" x="323.59357474425406" y="258.404" width="54.0" height="86.928" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="342.59357474425406" y="293.868" height="16" width="16.0" class="tap glyph mdi:keyboard-space"/>
 <text x="350.59357474425406" y="341.332" class="hold">SYM</text>
-<text x="350.59357474425406" y="262.404" class="shifted" style="font-size: 62%">&amp;dot_spc</text>
+<use href="#dot_spc" xlink:href="#dot_spc" x="332.59357474425406" y="262.404" height="12" width="36.0" class="shifted glyph dot_spc"/>
 </g>
 <g transform="rotate(-30.0, 493.40642525574594, 301.868)">
 <rect rx="4.0" ry="4.0" x="466.40642525574594" y="258.404" width="54.0" height="86.928" class="key"/>
@@ -340,358 +401,360 @@ path.combo {
 <text x="563.0344648531952" y="291.23361494171843" class="tap">E</text>
 <text x="563.0344648531952" y="314.23361494171843" class="hold">NUM</text>
 </g>
-<rect rx="4.0" ry="4.0" x="600.5759999999999" y="256.584" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="282.86799999999994" y="128.624" width="28.0" height="26.0" class="combo"/>
+<rect rx="4.0" ry="4.0" x="600.5759999999999" y="256.584" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="286.36799999999994" y="130.624" width="21.0" height="22.0" class="combo"/>
 <text x="296.86799999999994" y="141.624" class="combo tap">X</text>
-<rect rx="4.0" ry="4.0" x="536.436" y="128.624" width="28.0" height="26.0" class="combo"/>
+<rect rx="4.0" ry="4.0" x="539.936" y="130.624" width="21.0" height="22.0" class="combo"/>
 <text x="550.436" y="141.624" class="combo tap">Z</text>
-<path d="M148.608,55.5 h-25.652000000000015 a4.0,4.0 0 0 0 -4.0,4.0 v25.601333333333333" class="combo"/>
-<path d="M148.608,55.5 h25.651999999999987 a4.0,4.0 0 0 1 4.0,4.0 v5.833333333333332" class="combo"/>
-<rect rx="4.0" ry="4.0" x="134.608" y="42.5" width="28.0" height="26.0" class="combo"/>
-<use href="#tabler:x" xlink:href="#tabler:x" x="140.608" y="47.5" height="16" width="16.0" class="combo tap glyph tabler:x"/>
-<rect rx="4.0" ry="4.0" x="193.912" y="81.892" width="28.0" height="26.0" class="combo"/>
-<text x="207.912" y="94.892" class="combo tap">LG(W)</text>
-<rect rx="4.0" ry="4.0" x="134.608" y="136.88400000000001" width="28.0" height="26.0" class="combo"/>
-<text x="148.608" y="149.88400000000001" class="combo tap" style="font-size: 83%">ESCAPE</text>
-<rect rx="4.0" ry="4.0" x="193.912" y="137.892" width="28.0" height="26.0" class="combo"/>
+<rect rx="4.0" ry="4.0" x="138.108" y="82.884" width="21.0" height="22.0" class="combo"/>
+<use href="#tabler:square-x" xlink:href="#tabler:square-x" x="140.608" y="85.884" height="16" width="16.0" class="combo tap glyph tabler:square-x"/>
+<rect rx="4.0" ry="4.0" x="197.412" y="83.892" width="21.0" height="22.0" class="combo"/>
+<use href="#tabler:browser-x" xlink:href="#tabler:browser-x" x="199.912" y="86.892" height="16" width="16.0" class="combo tap glyph tabler:browser-x"/>
+<rect rx="4.0" ry="4.0" x="138.108" y="138.88400000000001" width="21.0" height="22.0" class="combo"/>
+<use href="#escape" xlink:href="#escape" x="140.608" y="141.88400000000001" height="16" width="16.0" class="combo tap glyph escape"/>
+<rect rx="4.0" ry="4.0" x="197.412" y="139.892" width="21.0" height="22.0" class="combo"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="199.912" y="142.892" height="16" width="16.0" class="combo tap glyph mdi:keyboard-tab"/>
-<rect rx="4.0" ry="4.0" x="134.608" y="192.88400000000001" width="28.0" height="26.0" class="combo"/>
+<rect rx="4.0" ry="4.0" x="138.108" y="194.88400000000001" width="21.0" height="22.0" class="combo"/>
 <use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="140.608" y="197.88400000000001" height="16" width="16.0" class="combo tap glyph mdi:content-copy"/>
-<rect rx="4.0" ry="4.0" x="193.912" y="193.92000000000002" width="28.0" height="26.0" class="combo"/>
-<text x="207.912" y="206.92000000000002" class="combo tap">LG(V)</text>
-<path d="M178.26,209.86933333333334 l-39.63306542252885,3.942099047377745" class="combo"/>
-<path d="M178.26,209.86933333333334 l39.71216446056948,5.337454902317641" class="combo"/>
-<rect rx="4.0" ry="4.0" x="164.26" y="196.86933333333334" width="28.0" height="26.0" class="combo"/>
-<text x="178.26" y="209.86933333333334" class="combo tap">LG(X)</text>
-<rect rx="4.0" ry="4.0" x="75.304" y="166.536" width="28.0" height="26.0" class="combo"/>
-<text x="89.304" y="179.536" class="combo tap">LG(Z)</text>
-<rect rx="4.0" ry="4.0" x="253.216" y="152.704" width="28.0" height="26.0" class="combo"/>
+<rect rx="4.0" ry="4.0" x="197.412" y="195.92000000000002" width="21.0" height="22.0" class="combo"/>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="199.912" y="198.92000000000002" height="16" width="16.0" class="combo tap glyph mdi:content-paste"/>
+<path d="M178.26,246.34 h-55.304 a4.0,4.0 0 0 1 -4.0,-4.0 v-7.905333333333335" class="combo"/>
+<path d="M178.26,246.34 l0.0,-39.14" class="combo"/>
+<path d="M178.26,246.34 h55.30400000000003 a4.0,4.0 0 0 0 4.0,-4.0 v-5.833333333333332" class="combo"/>
+<rect rx="4.0" ry="4.0" x="167.76" y="235.34" width="21.0" height="22.0" class="combo"/>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="170.26" y="238.34" height="16" width="16.0" class="combo tap glyph mdi:content-cut"/>
+<rect rx="4.0" ry="4.0" x="78.804" y="168.536" width="21.0" height="22.0" class="combo"/>
+<use href="#mdi:undo" xlink:href="#mdi:undo" x="81.304" y="171.536" height="16" width="16.0" class="combo tap glyph mdi:undo"/>
+<rect rx="4.0" ry="4.0" x="256.716" y="154.704" width="21.0" height="22.0" class="combo"/>
 <use href="#mdi:redo" xlink:href="#mdi:redo" x="259.216" y="157.704" height="16" width="16.0" class="combo tap glyph mdi:redo"/>
-<rect rx="4.0" ry="4.0" x="684.696" y="136.88400000000001" width="28.0" height="26.0" class="combo"/>
+<rect rx="4.0" ry="4.0" x="688.196" y="138.88400000000001" width="21.0" height="22.0" class="combo"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="690.696" y="141.88400000000001" height="16" width="16.0" class="combo tap glyph mdi:keyboard-return"/>
-<rect rx="4.0" ry="4.0" x="625.392" y="81.892" width="28.0" height="26.0" class="combo"/>
+<rect rx="4.0" ry="4.0" x="628.892" y="83.892" width="21.0" height="22.0" class="combo"/>
 <text x="639.392" y="94.892" class="combo tap">(</text>
-<rect rx="4.0" ry="4.0" x="684.696" y="80.884" width="28.0" height="26.0" class="combo"/>
+<rect rx="4.0" ry="4.0" x="688.196" y="82.884" width="21.0" height="22.0" class="combo"/>
 <text x="698.696" y="93.884" class="combo tap">)</text>
-<rect rx="4.0" ry="4.0" x="625.392" y="193.92000000000002" width="28.0" height="26.0" class="combo"/>
-<text x="639.392" y="215.92000000000002" class="combo hold">[</text>
-<text x="639.392" y="197.92000000000002" class="combo shifted">{</text>
-<rect rx="4.0" ry="4.0" x="684.696" y="192.88400000000001" width="28.0" height="26.0" class="combo"/>
-<text x="698.696" y="214.88400000000001" class="combo hold">]</text>
-<text x="698.696" y="196.88400000000001" class="combo shifted">}</text>
-<path d="M422.826,222.586 l-343.8608402791173,-75.06587789601949" class="combo"/>
-<path d="M422.826,222.586 l345.50886993639944,-75.08410646800837" class="combo"/>
-<path d="M422.826,222.586 l-59.660829378709394,65.48347031206143" class="combo"/>
-<path d="M422.826,222.586 l58.16840643401442,65.33975365253404" class="combo"/>
-<rect rx="4.0" ry="4.0" x="408.826" y="209.586" width="28.0" height="26.0" class="combo"/>
-<use href="#tabler:lock" xlink:href="#tabler:lock" x="414.826" y="214.586" height="16" width="16.0" class="combo tap glyph tabler:lock"/>
+<rect rx="4.0" ry="4.0" x="628.892" y="195.92000000000002" width="21.0" height="22.0" class="combo"/>
+<text x="639.392" y="213.92000000000002" class="combo hold">[</text>
+<text x="639.392" y="199.92000000000002" class="combo shifted">{</text>
+<rect rx="4.0" ry="4.0" x="688.196" y="194.88400000000001" width="21.0" height="22.0" class="combo"/>
+<text x="698.696" y="212.88400000000001" class="combo hold">]</text>
+<text x="698.696" y="198.88400000000001" class="combo shifted">}</text>
+<path d="M422.826,363.632 h-377.33270000000005 a4.0,4.0 0 0 1 -4.0,-4.0 v-197.66133333333335" class="combo"/>
+<path d="M422.826,363.632 h379.06730000000005 a4.0,4.0 0 0 0 4.0,-4.0 v-197.66133333333335" class="combo"/>
+<path d="M422.826,363.632 h-71.84404651853326 a4.0,4.0 0 0 1 -4.0,-4.0 v-28.121333333333343" class="combo"/>
+<path d="M422.826,363.632 h70.10944651853322 a4.0,4.0 0 0 0 4.0,-4.0 v-28.121333333333343" class="combo"/>
+<rect rx="4.0" ry="4.0" x="412.326" y="352.632" width="21.0" height="22.0" class="combo"/>
+<use href="#mdi:lock-open-outline" xlink:href="#mdi:lock-open-outline" x="414.826" y="355.632" height="16" width="16.0" class="combo tap glyph mdi:lock-open-outline"/>
 </g>
 <g class="layer-NAV">
-<text x="30.0" y="382.37495355387125" class="label">NAV</text>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="470.6789535538712" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:power-sleep" xlink:href="#mdi:power-sleep" x="51.652" y="489.6789535538712" height="16" width="16.0" class="tap glyph mdi:power-sleep"/>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="431.1429535538713" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="110.95599999999999" y="450.1429535538713" height="16" width="16.0" class="tap glyph mdi:backspace"/>
-<rect rx="4.0" ry="4.0" x="149.608" y="411.37495355387125" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="170.26" y="430.37495355387125" height="16" width="16.0" class="tap glyph mdi:arrow-up-bold"/>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="433.15895355387124" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="229.56400000000002" y="452.15895355387124" height="16" width="16.0" class="tap glyph mdi:backspace-reverse-outline"/>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="440.9989535538713" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:pan-up" xlink:href="#mdi:pan-up" x="288.86799999999994" y="459.9989535538713" height="16" width="16.0" class="tap glyph mdi:pan-up"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="440.9989535538713" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="581.088" y="433.15895355387124" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="411.37495355387125" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="699.696" y="431.1429535538713" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="759.0" y="470.6789535538712" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="526.6789535538712" width="57.303999999999995" height="54.0" class="key"/>
-<text x="59.652" y="553.6789535538712" class="tap" style="font-size: 60%">&amp;screenshot</text>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="487.1429535538713" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="110.95599999999999" y="506.1429535538713" height="16" width="16.0" class="tap glyph mdi:arrow-left-bold"/>
-<rect rx="4.0" ry="4.0" x="149.608" y="467.37495355387125" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:arrow-down-bold" xlink:href="#mdi:arrow-down-bold" x="170.26" y="486.37495355387125" height="16" width="16.0" class="tap glyph mdi:arrow-down-bold"/>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="489.15895355387124" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="229.56400000000002" y="508.15895355387124" height="16" width="16.0" class="tap glyph mdi:arrow-right-bold"/>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="496.9989535538713" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:pan-down" xlink:href="#mdi:pan-down" x="288.86799999999994" y="515.9989535538713" height="16" width="16.0" class="tap glyph mdi:pan-down"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="496.9989535538713" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="581.088" y="489.15895355387124" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="601.74" y="508.15895355387124" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-command"/>
-<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="603.24" y="526.1589535538712" height="13" width="13.0" class="hold glyph tabler:sticker"/>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="467.37495355387125" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="661.044" y="486.37495355387125" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-shift"/>
-<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="662.544" y="504.37495355387125" height="13" width="13.0" class="hold glyph tabler:sticker"/>
-<rect rx="4.0" ry="4.0" x="699.696" y="487.1429535538713" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="720.3480000000001" y="506.1429535538713" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-option"/>
-<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="721.8480000000001" y="524.1429535538713" height="13" width="13.0" class="hold glyph tabler:sticker"/>
-<rect rx="4.0" ry="4.0" x="759.0" y="526.6789535538712" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="779.652" y="545.6789535538712" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-control"/>
-<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="781.152" y="563.6789535538712" height="13" width="13.0" class="hold glyph tabler:sticker"/>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="582.6789535538712" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="543.1429535538713" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#tabler:arrow-left-circle" xlink:href="#tabler:arrow-left-circle" x="110.95599999999999" y="562.1429535538713" height="16" width="16.0" class="tap glyph tabler:arrow-left-circle"/>
-<rect rx="4.0" ry="4.0" x="149.608" y="523.3749535538713" width="57.303999999999995" height="54.0" class="key"/>
-<text x="178.26" y="550.3749535538713" class="tap" style="font-size: 62%">&amp;swapper</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="545.2149535538713" width="57.303999999999995" height="54.0" class="key"/>
-<text x="237.56400000000002" y="572.2149535538713" class="tap" style="font-size: 60%">LC(RIGHT)</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="552.9989535538713" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="552.9989535538713" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="581.088" y="545.2149535538713" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="523.3749535538713" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="699.696" y="543.1429535538713" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="759.0" y="582.6789535538712" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="189.42400000000004" y="610.9589535538712" width="57.303999999999995" height="54.0" class="none key"/>
-<g transform="rotate(15.0, 284.15695407686394, 646.4637066206084)">
-<rect rx="4.0" ry="4.0" x="255.50495407686395" y="619.4637066206084" width="57.303999999999995" height="54.0" class="held key"/>
+<text x="30.0" y="399.17495355387126" class="label">NAV</text>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="487.4789535538713" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:power-sleep" xlink:href="#mdi:power-sleep" x="51.652" y="506.4789535538713" height="16" width="16.0" class="tap glyph mdi:power-sleep"/>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="447.94295355387123" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="110.95599999999999" y="466.94295355387123" height="16" width="16.0" class="tap glyph mdi:backspace"/>
+<rect rx="4.0" ry="4.0" x="149.608" y="428.17495355387126" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="170.26" y="447.17495355387126" height="16" width="16.0" class="tap glyph mdi:arrow-up-bold"/>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="449.95895355387125" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="229.56400000000002" y="468.95895355387125" height="16" width="16.0" class="tap glyph mdi:backspace-reverse-outline"/>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="457.79895355387123" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#pg_up" xlink:href="#pg_up" x="288.86799999999994" y="476.79895355387123" height="16" width="16.0" class="tap glyph pg_up"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="457.79895355387123" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="581.088" y="449.95895355387125" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="428.17495355387126" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="699.696" y="447.94295355387123" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="759.0" y="487.4789535538713" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="543.4789535538713" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:monitor-screenshot" xlink:href="#mdi:monitor-screenshot" x="51.652" y="562.4789535538713" height="16" width="16.0" class="tap glyph mdi:monitor-screenshot"/>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="503.94295355387123" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="110.95599999999999" y="522.9429535538712" height="16" width="16.0" class="tap glyph mdi:arrow-left-bold"/>
+<rect rx="4.0" ry="4.0" x="149.608" y="484.17495355387126" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:arrow-down-bold" xlink:href="#mdi:arrow-down-bold" x="170.26" y="503.17495355387126" height="16" width="16.0" class="tap glyph mdi:arrow-down-bold"/>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="505.9589535538713" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="229.56400000000002" y="524.9589535538713" height="16" width="16.0" class="tap glyph mdi:arrow-right-bold"/>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="513.7989535538712" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#pg_dn" xlink:href="#pg_dn" x="288.86799999999994" y="532.7989535538712" height="16" width="16.0" class="tap glyph pg_dn"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="513.7989535538712" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="581.088" y="505.9589535538713" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="601.74" y="524.9589535538713" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-command"/>
+<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="603.24" y="542.9589535538713" height="13" width="13.0" class="hold glyph tabler:sticker"/>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="484.17495355387126" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="661.044" y="503.17495355387126" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-shift"/>
+<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="662.544" y="521.1749535538713" height="13" width="13.0" class="hold glyph tabler:sticker"/>
+<rect rx="4.0" ry="4.0" x="699.696" y="503.94295355387123" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="720.3480000000001" y="522.9429535538712" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-option"/>
+<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="721.8480000000001" y="540.9429535538712" height="13" width="13.0" class="hold glyph tabler:sticker"/>
+<rect rx="4.0" ry="4.0" x="759.0" y="543.4789535538713" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="779.652" y="562.4789535538713" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-control"/>
+<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="781.152" y="580.4789535538713" height="13" width="13.0" class="hold glyph tabler:sticker"/>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="599.4789535538713" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="559.9429535538712" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#screen-prev" xlink:href="#screen-prev" x="110.95599999999999" y="578.9429535538712" height="16" width="16.0" class="tap glyph screen-prev"/>
+<rect rx="4.0" ry="4.0" x="149.608" y="540.1749535538713" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:swap-horizontal" xlink:href="#mdi:swap-horizontal" x="170.26" y="559.1749535538713" height="16" width="16.0" class="tap glyph mdi:swap-horizontal"/>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="562.0149535538712" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#tabler:screen-share" xlink:href="#tabler:screen-share" x="229.56400000000002" y="581.0149535538712" height="16" width="16.0" class="tap glyph tabler:screen-share"/>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="569.7989535538712" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="569.7989535538712" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="581.088" y="562.0149535538712" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="540.1749535538713" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="699.696" y="559.9429535538712" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="759.0" y="599.4789535538713" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="189.42400000000004" y="627.7589535538713" width="57.303999999999995" height="54.0" class="ghost key"/>
+<g transform="rotate(15.0, 284.15695407686394, 663.2637066206084)">
+<rect rx="4.0" ry="4.0" x="255.50495407686395" y="636.2637066206084" width="57.303999999999995" height="54.0" class="held key"/>
 </g>
-<g transform="rotate(30.0, 350.59357474425406, 656.2429535538713)">
-<rect rx="4.0" ry="4.0" x="323.59357474425406" y="612.7789535538714" width="54.0" height="86.928" class="none key"/>
+<g transform="rotate(30.0, 350.59357474425406, 673.0429535538713)">
+<rect rx="4.0" ry="4.0" x="323.59357474425406" y="629.5789535538713" width="54.0" height="86.928" class="none key"/>
 </g>
-<g transform="rotate(-30.0, 493.40642525574594, 656.2429535538713)">
-<rect rx="4.0" ry="4.0" x="466.40642525574594" y="612.7789535538714" width="54.0" height="86.928" class="none key"/>
+<g transform="rotate(-30.0, 493.40642525574594, 673.0429535538713)">
+<rect rx="4.0" ry="4.0" x="466.40642525574594" y="629.5789535538713" width="54.0" height="86.928" class="none key"/>
 </g>
-<g transform="rotate(-15.0, 563.0344648531952, 645.6085684955897)">
-<rect rx="4.0" ry="4.0" x="534.3824648531952" y="618.6085684955897" width="57.303999999999995" height="54.0" class="key"/>
-<text x="563.0344648531952" y="645.6085684955897" class="tap">NUM</text>
+<g transform="rotate(-15.0, 563.0344648531952, 662.4085684955896)">
+<rect rx="4.0" ry="4.0" x="534.3824648531952" y="635.4085684955896" width="57.303999999999995" height="54.0" class="key"/>
+<text x="563.0344648531952" y="662.4085684955896" class="tap">NUM</text>
 </g>
-<rect rx="4.0" ry="4.0" x="600.5759999999999" y="610.9589535538712" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="600.5759999999999" y="627.7589535538713" width="57.303999999999995" height="54.0" class="ghost key"/>
 </g>
 <g class="layer-SYM">
-<text x="30.0" y="736.7499071077425" class="label">SYM</text>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="825.0539071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="59.652" y="852.0539071077425" class="tap" style="font-size: 60%">RA(LS(SEMI))</text>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="785.5179071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="118.95599999999999" y="812.5179071077425" class="tap">@</text>
-<rect rx="4.0" ry="4.0" x="149.608" y="765.7499071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="178.26" y="792.7499071077425" class="tap">#</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="787.5339071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="237.56400000000002" y="814.5339071077425" class="tap">$/€</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="795.3739071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="296.86799999999994" y="822.3739071077425" class="tap">%</text>
-<rect rx="4.0" ry="4.0" x="521.784" y="795.3739071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="550.436" y="822.3739071077425" class="tap">^</text>
-<rect rx="4.0" ry="4.0" x="581.088" y="787.5339071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="609.74" y="814.5339071077425" class="tap">+</text>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="765.7499071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="669.044" y="792.7499071077425" class="tap">*</text>
-<rect rx="4.0" ry="4.0" x="699.696" y="785.5179071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="728.3480000000001" y="812.5179071077425" class="tap">&amp;</text>
-<rect rx="4.0" ry="4.0" x="759.0" y="825.0539071077425" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="881.0539071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="59.652" y="908.0539071077425" class="tap">?</text>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="841.5179071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="118.95599999999999" y="868.5179071077425" class="tap">`</text>
-<rect rx="4.0" ry="4.0" x="149.608" y="821.7499071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="178.26" y="848.7499071077425" class="tap">\</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="843.5339071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="237.56400000000002" y="870.5339071077425" class="tap">=</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="851.3739071077425" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="851.3739071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="550.436" y="878.3739071077425" class="tap">_</text>
-<rect rx="4.0" ry="4.0" x="581.088" y="843.5339071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="609.74" y="870.5339071077425" class="tap">-</text>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="821.7499071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="669.044" y="848.7499071077425" class="tap">/</text>
-<rect rx="4.0" ry="4.0" x="699.696" y="841.5179071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="728.3480000000001" y="868.5179071077425" class="tap">|</text>
-<rect rx="4.0" ry="4.0" x="759.0" y="881.0539071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="787.652" y="908.0539071077425" class="tap">!</text>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="937.0539071077425" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="897.5179071077425" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="149.608" y="877.7499071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="178.26" y="904.7499071077425" class="tap">`</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="899.5899071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="237.56400000000002" y="926.5899071077425" class="tap">RA(E)</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="907.3739071077425" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="907.3739071077425" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="581.088" y="899.5899071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="609.74" y="926.5899071077425" class="tap">&lt;</text>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="877.7499071077425" width="57.303999999999995" height="54.0" class="key"/>
-<text x="669.044" y="904.7499071077425" class="tap">&gt;</text>
-<rect rx="4.0" ry="4.0" x="699.696" y="897.5179071077425" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="759.0" y="937.0539071077425" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="189.42400000000004" y="965.3339071077426" width="57.303999999999995" height="54.0" class="none key"/>
-<g transform="rotate(15.0, 284.15695407686394, 1000.8386601744796)">
-<rect rx="4.0" ry="4.0" x="255.50495407686395" y="973.8386601744796" width="57.303999999999995" height="54.0" class="none key"/>
+<text x="30.0" y="753.5499071077425" class="label">SYM</text>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="841.8539071077424" width="57.303999999999995" height="54.0" class="key"/>
+<text x="59.652" y="868.8539071077424" class="tap">°</text>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="802.3179071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="118.95599999999999" y="829.3179071077425" class="tap">@</text>
+<rect rx="4.0" ry="4.0" x="149.608" y="782.5499071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="178.26" y="809.5499071077425" class="tap">#</text>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="804.3339071077424" width="57.303999999999995" height="54.0" class="key"/>
+<text x="237.56400000000002" y="831.3339071077424" class="tap">$/€</text>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="812.1739071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="296.86799999999994" y="839.1739071077425" class="tap">%</text>
+<rect rx="4.0" ry="4.0" x="521.784" y="812.1739071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="550.436" y="839.1739071077425" class="tap">^</text>
+<rect rx="4.0" ry="4.0" x="581.088" y="804.3339071077424" width="57.303999999999995" height="54.0" class="key"/>
+<text x="609.74" y="831.3339071077424" class="tap">+</text>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="782.5499071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="669.044" y="809.5499071077425" class="tap">*</text>
+<rect rx="4.0" ry="4.0" x="699.696" y="802.3179071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="728.3480000000001" y="829.3179071077425" class="tap">&amp;</text>
+<rect rx="4.0" ry="4.0" x="759.0" y="841.8539071077424" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="897.8539071077424" width="57.303999999999995" height="54.0" class="key"/>
+<text x="59.652" y="924.8539071077424" class="tap">?</text>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="858.3179071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="118.95599999999999" y="885.3179071077425" class="tap">`</text>
+<rect rx="4.0" ry="4.0" x="149.608" y="838.5499071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="178.26" y="865.5499071077425" class="tap">\</text>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="860.3339071077424" width="57.303999999999995" height="54.0" class="key"/>
+<text x="237.56400000000002" y="887.3339071077424" class="tap">=</text>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="868.1739071077425" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="868.1739071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="550.436" y="895.1739071077425" class="tap">_</text>
+<rect rx="4.0" ry="4.0" x="581.088" y="860.3339071077424" width="57.303999999999995" height="54.0" class="key"/>
+<text x="609.74" y="887.3339071077424" class="tap">-</text>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="838.5499071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="669.044" y="865.5499071077425" class="tap">/</text>
+<rect rx="4.0" ry="4.0" x="699.696" y="858.3179071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="728.3480000000001" y="885.3179071077425" class="tap">|</text>
+<rect rx="4.0" ry="4.0" x="759.0" y="897.8539071077424" width="57.303999999999995" height="54.0" class="key"/>
+<text x="787.652" y="924.8539071077424" class="tap">!</text>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="953.8539071077424" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="914.3179071077425" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="149.608" y="894.5499071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="178.26" y="921.5499071077425" class="tap">`</text>
+<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="171.76" y="931.5499071077425" height="13" width="13.0" class="hold glyph tabler:sticker"/>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="916.3899071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="237.56400000000002" y="943.3899071077425" class="tap">´</text>
+<use href="#tabler:sticker" xlink:href="#tabler:sticker" x="231.06400000000002" y="953.3899071077425" height="13" width="13.0" class="hold glyph tabler:sticker"/>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="924.1739071077425" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="924.1739071077425" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="581.088" y="916.3899071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="609.74" y="943.3899071077425" class="tap">&lt;</text>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="894.5499071077425" width="57.303999999999995" height="54.0" class="key"/>
+<text x="669.044" y="921.5499071077425" class="tap">&gt;</text>
+<rect rx="4.0" ry="4.0" x="699.696" y="914.3179071077425" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="759.0" y="953.8539071077424" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="189.42400000000004" y="982.1339071077425" width="57.303999999999995" height="54.0" class="ghost key"/>
+<g transform="rotate(15.0, 284.15695407686394, 1017.6386601744796)">
+<rect rx="4.0" ry="4.0" x="255.50495407686395" y="990.6386601744796" width="57.303999999999995" height="54.0" class="none key"/>
 </g>
-<g transform="rotate(30.0, 350.59357474425406, 1010.6179071077424)">
-<rect rx="4.0" ry="4.0" x="323.59357474425406" y="967.1539071077425" width="54.0" height="86.928" class="held key"/>
+<g transform="rotate(30.0, 350.59357474425406, 1027.4179071077424)">
+<rect rx="4.0" ry="4.0" x="323.59357474425406" y="983.9539071077425" width="54.0" height="86.928" class="held key"/>
 </g>
-<g transform="rotate(-30.0, 493.40642525574594, 1010.6179071077424)">
-<rect rx="4.0" ry="4.0" x="466.40642525574594" y="967.1539071077425" width="54.0" height="86.928" class="none key"/>
+<g transform="rotate(-30.0, 493.40642525574594, 1027.4179071077424)">
+<rect rx="4.0" ry="4.0" x="466.40642525574594" y="983.9539071077425" width="54.0" height="86.928" class="none key"/>
 </g>
-<g transform="rotate(-15.0, 563.0344648531952, 999.9835220494609)">
-<rect rx="4.0" ry="4.0" x="534.3824648531952" y="972.9835220494609" width="57.303999999999995" height="54.0" class="none key"/>
+<g transform="rotate(-15.0, 563.0344648531952, 1016.7835220494609)">
+<rect rx="4.0" ry="4.0" x="534.3824648531952" y="989.7835220494609" width="57.303999999999995" height="54.0" class="none key"/>
 </g>
-<rect rx="4.0" ry="4.0" x="600.5759999999999" y="965.3339071077426" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="625.392" y="790.6419071077426" width="28.0" height="26.0" class="combo"/>
-<text x="639.392" y="803.6419071077426" class="combo tap">(</text>
-<rect rx="4.0" ry="4.0" x="684.696" y="789.6339071077425" width="28.0" height="26.0" class="combo"/>
-<text x="698.696" y="802.6339071077425" class="combo tap">)</text>
-<rect rx="4.0" ry="4.0" x="625.392" y="902.6699071077426" width="28.0" height="26.0" class="combo"/>
-<text x="639.392" y="924.6699071077426" class="combo hold">[</text>
-<text x="639.392" y="906.6699071077426" class="combo shifted">{</text>
-<rect rx="4.0" ry="4.0" x="684.696" y="901.6339071077425" width="28.0" height="26.0" class="combo"/>
-<text x="698.696" y="923.6339071077425" class="combo hold">]</text>
-<text x="698.696" y="905.6339071077425" class="combo shifted">}</text>
+<rect rx="4.0" ry="4.0" x="600.5759999999999" y="982.1339071077425" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="628.892" y="809.4419071077425" width="21.0" height="22.0" class="combo"/>
+<text x="639.392" y="820.4419071077425" class="combo tap">(</text>
+<rect rx="4.0" ry="4.0" x="688.196" y="808.4339071077425" width="21.0" height="22.0" class="combo"/>
+<text x="698.696" y="819.4339071077425" class="combo tap">)</text>
+<rect rx="4.0" ry="4.0" x="628.892" y="921.4699071077425" width="21.0" height="22.0" class="combo"/>
+<text x="639.392" y="939.4699071077425" class="combo hold">[</text>
+<text x="639.392" y="925.4699071077425" class="combo shifted">{</text>
+<rect rx="4.0" ry="4.0" x="688.196" y="920.4339071077425" width="21.0" height="22.0" class="combo"/>
+<text x="698.696" y="938.4339071077425" class="combo hold">]</text>
+<text x="698.696" y="924.4339071077425" class="combo shifted">}</text>
 </g>
 <g class="layer-NUM">
-<text x="30.0" y="1091.1248606616136" class="label">NUM</text>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1179.4288606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="59.652" y="1206.4288606616137" class="tap">F12</text>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1139.8928606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="118.95599999999999" y="1166.8928606616137" class="tap">F7</text>
-<rect rx="4.0" ry="4.0" x="149.608" y="1120.1248606616136" width="57.303999999999995" height="54.0" class="key"/>
-<text x="178.26" y="1147.1248606616136" class="tap">F8</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1141.9088606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="237.56400000000002" y="1168.9088606616137" class="tap">F9</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1149.7488606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="296.86799999999994" y="1176.7488606616137" class="tap">F10</text>
-<rect rx="4.0" ry="4.0" x="521.784" y="1149.7488606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="550.436" y="1176.7488606616137" class="tap">+</text>
-<rect rx="4.0" ry="4.0" x="581.088" y="1141.9088606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="609.74" y="1168.9088606616137" class="tap">7</text>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1120.1248606616136" width="57.303999999999995" height="54.0" class="key"/>
-<text x="669.044" y="1147.1248606616136" class="tap">8</text>
-<rect rx="4.0" ry="4.0" x="699.696" y="1139.8928606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="728.3480000000001" y="1166.8928606616137" class="tap">9</text>
-<rect rx="4.0" ry="4.0" x="759.0" y="1179.4288606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="787.652" y="1206.4288606616137" class="tap">*</text>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1235.4288606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="59.652" y="1262.4288606616137" class="tap">F13</text>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1195.8928606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="118.95599999999999" y="1222.8928606616137" class="tap">F4</text>
-<rect rx="4.0" ry="4.0" x="149.608" y="1176.1248606616136" width="57.303999999999995" height="54.0" class="key"/>
-<text x="178.26" y="1203.1248606616136" class="tap">F5</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1197.9088606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="237.56400000000002" y="1224.9088606616137" class="tap">F6</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1205.7488606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="296.86799999999994" y="1232.7488606616137" class="tap">F11</text>
-<rect rx="4.0" ry="4.0" x="521.784" y="1205.7488606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="550.436" y="1232.7488606616137" class="tap">-</text>
-<rect rx="4.0" ry="4.0" x="581.088" y="1197.9088606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="609.74" y="1224.9088606616137" class="tap">4</text>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1176.1248606616136" width="57.303999999999995" height="54.0" class="key"/>
-<text x="669.044" y="1203.1248606616136" class="tap">5</text>
-<rect rx="4.0" ry="4.0" x="699.696" y="1195.8928606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="728.3480000000001" y="1222.8928606616137" class="tap">6</text>
-<rect rx="4.0" ry="4.0" x="759.0" y="1235.4288606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="787.652" y="1262.4288606616137" class="tap">/</text>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1291.4288606616137" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1251.8928606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="118.95599999999999" y="1278.8928606616137" class="tap">F1</text>
-<rect rx="4.0" ry="4.0" x="149.608" y="1232.1248606616136" width="57.303999999999995" height="54.0" class="key"/>
-<text x="178.26" y="1259.1248606616136" class="tap">F2</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1253.9648606616136" width="57.303999999999995" height="54.0" class="key"/>
-<text x="237.56400000000002" y="1280.9648606616136" class="tap">F3</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1261.7488606616137" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="1261.7488606616137" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="581.088" y="1253.9648606616136" width="57.303999999999995" height="54.0" class="key"/>
-<text x="609.74" y="1280.9648606616136" class="tap">1</text>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1232.1248606616136" width="57.303999999999995" height="54.0" class="key"/>
-<text x="669.044" y="1259.1248606616136" class="tap">2</text>
-<rect rx="4.0" ry="4.0" x="699.696" y="1251.8928606616137" width="57.303999999999995" height="54.0" class="key"/>
-<text x="728.3480000000001" y="1278.8928606616137" class="tap">3</text>
-<rect rx="4.0" ry="4.0" x="759.0" y="1291.4288606616137" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="189.42400000000004" y="1319.7088606616137" width="57.303999999999995" height="54.0" class="none key"/>
-<g transform="rotate(15.0, 284.15695407686394, 1355.2136137283508)">
-<rect rx="4.0" ry="4.0" x="255.50495407686395" y="1328.2136137283508" width="57.303999999999995" height="54.0" class="held key"/>
-<text x="284.15695407686394" y="1355.2136137283508" class="held tap">0</text>
+<text x="30.0" y="1107.9248606616138" class="label">NUM</text>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1196.228860661614" width="57.303999999999995" height="54.0" class="key"/>
+<text x="59.652" y="1223.228860661614" class="tap">F12</text>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1156.6928606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="118.95599999999999" y="1183.6928606616138" class="tap">F7</text>
+<rect rx="4.0" ry="4.0" x="149.608" y="1136.9248606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="178.26" y="1163.9248606616138" class="tap">F8</text>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1158.708860661614" width="57.303999999999995" height="54.0" class="key"/>
+<text x="237.56400000000002" y="1185.708860661614" class="tap">F9</text>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1166.5488606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="296.86799999999994" y="1193.5488606616138" class="tap">F10</text>
+<rect rx="4.0" ry="4.0" x="521.784" y="1166.5488606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="550.436" y="1193.5488606616138" class="tap">+</text>
+<rect rx="4.0" ry="4.0" x="581.088" y="1158.708860661614" width="57.303999999999995" height="54.0" class="key"/>
+<text x="609.74" y="1185.708860661614" class="tap">7</text>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1136.9248606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="669.044" y="1163.9248606616138" class="tap">8</text>
+<rect rx="4.0" ry="4.0" x="699.696" y="1156.6928606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="728.3480000000001" y="1183.6928606616138" class="tap">9</text>
+<rect rx="4.0" ry="4.0" x="759.0" y="1196.228860661614" width="57.303999999999995" height="54.0" class="key"/>
+<text x="787.652" y="1223.228860661614" class="tap">*</text>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1252.228860661614" width="57.303999999999995" height="54.0" class="key"/>
+<text x="59.652" y="1279.228860661614" class="tap">F13</text>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1212.6928606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="118.95599999999999" y="1239.6928606616138" class="tap">F4</text>
+<rect rx="4.0" ry="4.0" x="149.608" y="1192.9248606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="178.26" y="1219.9248606616138" class="tap">F5</text>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1214.708860661614" width="57.303999999999995" height="54.0" class="key"/>
+<text x="237.56400000000002" y="1241.708860661614" class="tap">F6</text>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1222.5488606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="296.86799999999994" y="1249.5488606616138" class="tap">F11</text>
+<rect rx="4.0" ry="4.0" x="521.784" y="1222.5488606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="550.436" y="1249.5488606616138" class="tap">-</text>
+<rect rx="4.0" ry="4.0" x="581.088" y="1214.708860661614" width="57.303999999999995" height="54.0" class="key"/>
+<text x="609.74" y="1241.708860661614" class="tap">4</text>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1192.9248606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="669.044" y="1219.9248606616138" class="tap">5</text>
+<rect rx="4.0" ry="4.0" x="699.696" y="1212.6928606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="728.3480000000001" y="1239.6928606616138" class="tap">6</text>
+<rect rx="4.0" ry="4.0" x="759.0" y="1252.228860661614" width="57.303999999999995" height="54.0" class="key"/>
+<text x="787.652" y="1279.228860661614" class="tap">/</text>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1308.228860661614" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1268.6928606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="118.95599999999999" y="1295.6928606616138" class="tap">F1</text>
+<rect rx="4.0" ry="4.0" x="149.608" y="1248.9248606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="178.26" y="1275.9248606616138" class="tap">F2</text>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1270.7648606616137" width="57.303999999999995" height="54.0" class="key"/>
+<text x="237.56400000000002" y="1297.7648606616137" class="tap">F3</text>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1278.5488606616138" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="1278.5488606616138" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="581.088" y="1270.7648606616137" width="57.303999999999995" height="54.0" class="key"/>
+<text x="609.74" y="1297.7648606616137" class="tap">1</text>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1248.9248606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="669.044" y="1275.9248606616138" class="tap">2</text>
+<rect rx="4.0" ry="4.0" x="699.696" y="1268.6928606616138" width="57.303999999999995" height="54.0" class="key"/>
+<text x="728.3480000000001" y="1295.6928606616138" class="tap">3</text>
+<rect rx="4.0" ry="4.0" x="759.0" y="1308.228860661614" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="189.42400000000004" y="1336.5088606616139" width="57.303999999999995" height="54.0" class="ghost key"/>
+<g transform="rotate(15.0, 284.15695407686394, 1372.013613728351)">
+<rect rx="4.0" ry="4.0" x="255.50495407686395" y="1345.013613728351" width="57.303999999999995" height="54.0" class="held key"/>
+<text x="284.15695407686394" y="1372.013613728351" class="held tap">0</text>
 </g>
-<g transform="rotate(30.0, 350.59357474425406, 1364.9928606616136)">
-<rect rx="4.0" ry="4.0" x="323.59357474425406" y="1321.5288606616136" width="54.0" height="86.928" class="key"/>
-<text x="350.59357474425406" y="1364.9928606616136" class="tap">.</text>
+<g transform="rotate(30.0, 350.59357474425406, 1381.7928606616138)">
+<rect rx="4.0" ry="4.0" x="323.59357474425406" y="1338.3288606616138" width="54.0" height="86.928" class="key"/>
+<text x="350.59357474425406" y="1381.7928606616138" class="tap">.</text>
 </g>
-<g transform="rotate(-30.0, 493.40642525574594, 1364.9928606616136)">
-<rect rx="4.0" ry="4.0" x="466.40642525574594" y="1321.5288606616136" width="54.0" height="86.928" class="none key"/>
+<g transform="rotate(-30.0, 493.40642525574594, 1381.7928606616138)">
+<rect rx="4.0" ry="4.0" x="466.40642525574594" y="1338.3288606616138" width="54.0" height="86.928" class="none key"/>
 </g>
-<g transform="rotate(-15.0, 563.0344648531952, 1354.358475603332)">
-<rect rx="4.0" ry="4.0" x="534.3824648531952" y="1327.358475603332" width="57.303999999999995" height="54.0" class="held key"/>
+<g transform="rotate(-15.0, 563.0344648531952, 1371.1584756033321)">
+<rect rx="4.0" ry="4.0" x="534.3824648531952" y="1344.1584756033321" width="57.303999999999995" height="54.0" class="held key"/>
 </g>
-<rect rx="4.0" ry="4.0" x="600.5759999999999" y="1319.7088606616137" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="625.392" y="1145.0168606616137" width="28.0" height="26.0" class="combo"/>
-<text x="639.392" y="1158.0168606616137" class="combo tap">(</text>
-<rect rx="4.0" ry="4.0" x="684.696" y="1144.0088606616137" width="28.0" height="26.0" class="combo"/>
-<text x="698.696" y="1157.0088606616137" class="combo tap">)</text>
-<rect rx="4.0" ry="4.0" x="625.392" y="1257.0448606616137" width="28.0" height="26.0" class="combo"/>
-<text x="639.392" y="1279.0448606616137" class="combo hold">[</text>
-<text x="639.392" y="1261.0448606616137" class="combo shifted">{</text>
-<rect rx="4.0" ry="4.0" x="684.696" y="1256.0088606616137" width="28.0" height="26.0" class="combo"/>
-<text x="698.696" y="1278.0088606616137" class="combo hold">]</text>
-<text x="698.696" y="1260.0088606616137" class="combo shifted">}</text>
+<rect rx="4.0" ry="4.0" x="600.5759999999999" y="1336.5088606616139" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="628.892" y="1163.8168606616139" width="21.0" height="22.0" class="combo"/>
+<text x="639.392" y="1174.8168606616139" class="combo tap">(</text>
+<rect rx="4.0" ry="4.0" x="688.196" y="1162.8088606616138" width="21.0" height="22.0" class="combo"/>
+<text x="698.696" y="1173.8088606616138" class="combo tap">)</text>
+<rect rx="4.0" ry="4.0" x="628.892" y="1275.844860661614" width="21.0" height="22.0" class="combo"/>
+<text x="639.392" y="1293.844860661614" class="combo hold">[</text>
+<text x="639.392" y="1279.844860661614" class="combo shifted">{</text>
+<rect rx="4.0" ry="4.0" x="688.196" y="1274.8088606616138" width="21.0" height="22.0" class="combo"/>
+<text x="698.696" y="1292.8088606616138" class="combo hold">]</text>
+<text x="698.696" y="1278.8088606616138" class="combo shifted">}</text>
 </g>
 <g class="layer-ADJ">
-<text x="30.0" y="1445.499814215485" class="label">ADJ</text>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1533.803814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1494.267814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="149.608" y="1474.499814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:apple" xlink:href="#mdi:apple" x="170.26" y="1493.499814215485" height="16" width="16.0" class="tap glyph mdi:apple"/>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1496.283814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:apple" xlink:href="#mdi:apple" x="229.56400000000002" y="1515.283814215485" height="16" width="16.0" class="tap glyph mdi:apple"/>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1504.123814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="288.86799999999994" y="1523.123814215485" height="16" width="16.0" class="tap glyph mdi:progress-download"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="1504.123814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="542.436" y="1523.123814215485" height="16" width="16.0" class="tap glyph mdi:progress-download"/>
-<rect rx="4.0" ry="4.0" x="581.088" y="1496.283814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="601.74" y="1515.283814215485" height="16" width="16.0" class="tap glyph mdi:play-pause"/>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1474.499814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:skip-next" xlink:href="#mdi:skip-next" x="661.044" y="1493.499814215485" height="16" width="16.0" class="tap glyph mdi:skip-next"/>
-<rect rx="4.0" ry="4.0" x="699.696" y="1494.267814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:skip-previous" xlink:href="#mdi:skip-previous" x="720.3480000000001" y="1513.267814215485" height="16" width="16.0" class="tap glyph mdi:skip-previous"/>
-<rect rx="4.0" ry="4.0" x="759.0" y="1533.803814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1589.803814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="51.652" y="1608.803814215485" height="16" width="16.0" class="tap glyph mdi:bluetooth-off"/>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1550.267814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="110.95599999999999" y="1569.267814215485" height="16" width="16.0" class="tap glyph mdi:bluetooth-connect"/>
-<text x="118.95599999999999" y="1600.267814215485" class="hold">3</text>
-<rect rx="4.0" ry="4.0" x="149.608" y="1530.499814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="170.26" y="1549.499814215485" height="16" width="16.0" class="tap glyph mdi:microsoft-windows"/>
-<text x="178.26" y="1580.499814215485" class="hold">2</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1552.283814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:apple" xlink:href="#mdi:apple" x="229.56400000000002" y="1571.283814215485" height="16" width="16.0" class="tap glyph mdi:apple"/>
-<text x="237.56400000000002" y="1602.283814215485" class="hold">1</text>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1560.123814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="288.86799999999994" y="1579.123814215485" height="16" width="16.0" class="tap glyph mdi:backup-restore"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="1560.123814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="542.436" y="1579.123814215485" height="16" width="16.0" class="tap glyph mdi:backup-restore"/>
-<rect rx="4.0" ry="4.0" x="581.088" y="1552.283814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:volume-low" xlink:href="#mdi:volume-low" x="601.74" y="1571.283814215485" height="16" width="16.0" class="tap glyph mdi:volume-low"/>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1530.499814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="661.044" y="1549.499814215485" height="16" width="16.0" class="tap glyph mdi:volume-high"/>
-<rect rx="4.0" ry="4.0" x="699.696" y="1550.267814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="720.3480000000001" y="1569.267814215485" height="16" width="16.0" class="tap glyph mdi:volume-off"/>
-<rect rx="4.0" ry="4.0" x="759.0" y="1589.803814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1645.803814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1606.267814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="110.95599999999999" y="1625.267814215485" height="16" width="16.0" class="tap glyph mdi:bluetooth-connect"/>
-<text x="118.95599999999999" y="1656.267814215485" class="hold">5</text>
-<rect rx="4.0" ry="4.0" x="149.608" y="1586.499814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="170.26" y="1605.499814215485" height="16" width="16.0" class="tap glyph mdi:bluetooth-connect"/>
-<text x="178.26" y="1636.499814215485" class="hold">4</text>
-<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1608.339814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:toggle-switch-outline" xlink:href="#mdi:toggle-switch-outline" x="229.56400000000002" y="1627.339814215485" height="16" width="16.0" class="tap glyph mdi:toggle-switch-outline"/>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="231.06400000000002" y="1645.339814215485" height="13" width="13.0" class="hold glyph mdi:bluetooth"/>
-<use href="#mdi:usb" xlink:href="#mdi:usb" x="231.56400000000002" y="1612.339814215485" height="12" width="12.0" class="shifted glyph mdi:usb"/>
-<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1616.123814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="521.784" y="1616.123814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="581.088" y="1608.339814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:brightness-7" xlink:href="#mdi:brightness-7" x="601.74" y="1627.339814215485" height="16" width="16.0" class="tap glyph mdi:brightness-7"/>
-<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1586.499814215485" width="57.303999999999995" height="54.0" class="key"/>
-<use href="#mdi:brightness-5" xlink:href="#mdi:brightness-5" x="661.044" y="1605.499814215485" height="16" width="16.0" class="tap glyph mdi:brightness-5"/>
-<rect rx="4.0" ry="4.0" x="699.696" y="1606.267814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="759.0" y="1645.803814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<rect rx="4.0" ry="4.0" x="189.42400000000004" y="1674.083814215485" width="57.303999999999995" height="54.0" class="none key"/>
-<g transform="rotate(15.0, 284.15695407686394, 1709.5885672822221)">
-<rect rx="4.0" ry="4.0" x="255.50495407686395" y="1682.5885672822221" width="57.303999999999995" height="54.0" class="held key"/>
+<text x="30.0" y="1462.2998142154852" class="label">ADJ</text>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1550.6038142154853" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1511.0678142154852" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="149.608" y="1491.2998142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:apple" xlink:href="#mdi:apple" x="170.26" y="1510.2998142154852" height="16" width="16.0" class="tap glyph mdi:apple"/>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1513.0838142154853" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:apple" xlink:href="#mdi:apple" x="229.56400000000002" y="1532.0838142154853" height="16" width="16.0" class="tap glyph mdi:apple"/>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1520.9238142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="288.86799999999994" y="1539.9238142154852" height="16" width="16.0" class="tap glyph mdi:progress-download"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="1520.9238142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="542.436" y="1539.9238142154852" height="16" width="16.0" class="tap glyph mdi:progress-download"/>
+<rect rx="4.0" ry="4.0" x="581.088" y="1513.0838142154853" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="601.74" y="1532.0838142154853" height="16" width="16.0" class="tap glyph mdi:play-pause"/>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1491.2998142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:skip-next" xlink:href="#mdi:skip-next" x="661.044" y="1510.2998142154852" height="16" width="16.0" class="tap glyph mdi:skip-next"/>
+<rect rx="4.0" ry="4.0" x="699.696" y="1511.0678142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:skip-previous" xlink:href="#mdi:skip-previous" x="720.3480000000001" y="1530.0678142154852" height="16" width="16.0" class="tap glyph mdi:skip-previous"/>
+<rect rx="4.0" ry="4.0" x="759.0" y="1550.6038142154853" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1606.6038142154853" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="51.652" y="1625.6038142154853" height="16" width="16.0" class="tap glyph mdi:bluetooth"/>
+<text x="59.652" y="1656.6038142154853" class="hold">clear</text>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1567.0678142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="110.95599999999999" y="1586.0678142154852" height="16" width="16.0" class="tap glyph mdi:bluetooth-connect"/>
+<text x="118.95599999999999" y="1617.0678142154852" class="hold">3</text>
+<rect rx="4.0" ry="4.0" x="149.608" y="1547.2998142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="170.26" y="1566.2998142154852" height="16" width="16.0" class="tap glyph mdi:microsoft-windows"/>
+<text x="178.26" y="1597.2998142154852" class="hold">2</text>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1569.0838142154853" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:apple" xlink:href="#mdi:apple" x="229.56400000000002" y="1588.0838142154853" height="16" width="16.0" class="tap glyph mdi:apple"/>
+<text x="237.56400000000002" y="1619.0838142154853" class="hold">1</text>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1576.9238142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="288.86799999999994" y="1595.9238142154852" height="16" width="16.0" class="tap glyph mdi:backup-restore"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="1576.9238142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="542.436" y="1595.9238142154852" height="16" width="16.0" class="tap glyph mdi:backup-restore"/>
+<rect rx="4.0" ry="4.0" x="581.088" y="1569.0838142154853" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:volume-low" xlink:href="#mdi:volume-low" x="601.74" y="1588.0838142154853" height="16" width="16.0" class="tap glyph mdi:volume-low"/>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1547.2998142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="661.044" y="1566.2998142154852" height="16" width="16.0" class="tap glyph mdi:volume-high"/>
+<rect rx="4.0" ry="4.0" x="699.696" y="1567.0678142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="720.3480000000001" y="1586.0678142154852" height="16" width="16.0" class="tap glyph mdi:volume-off"/>
+<rect rx="4.0" ry="4.0" x="759.0" y="1606.6038142154853" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="31.000000000000004" y="1662.6038142154853" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="90.30399999999999" y="1623.0678142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="110.95599999999999" y="1642.0678142154852" height="16" width="16.0" class="tap glyph mdi:bluetooth-connect"/>
+<text x="118.95599999999999" y="1673.0678142154852" class="hold">5</text>
+<rect rx="4.0" ry="4.0" x="149.608" y="1603.2998142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="170.26" y="1622.2998142154852" height="16" width="16.0" class="tap glyph mdi:bluetooth-connect"/>
+<text x="178.26" y="1653.2998142154852" class="hold">4</text>
+<rect rx="4.0" ry="4.0" x="208.91200000000003" y="1625.139814215485" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:toggle-switch-outline" xlink:href="#mdi:toggle-switch-outline" x="229.56400000000002" y="1644.139814215485" height="16" width="16.0" class="tap glyph mdi:toggle-switch-outline"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="231.06400000000002" y="1662.139814215485" height="13" width="13.0" class="hold glyph mdi:bluetooth"/>
+<use href="#mdi:usb" xlink:href="#mdi:usb" x="231.56400000000002" y="1629.139814215485" height="12" width="12.0" class="shifted glyph mdi:usb"/>
+<rect rx="4.0" ry="4.0" x="268.21599999999995" y="1632.9238142154852" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="521.784" y="1632.9238142154852" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="581.088" y="1625.139814215485" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:brightness-7" xlink:href="#mdi:brightness-7" x="601.74" y="1644.139814215485" height="16" width="16.0" class="tap glyph mdi:brightness-7"/>
+<rect rx="4.0" ry="4.0" x="640.3919999999999" y="1603.2998142154852" width="57.303999999999995" height="54.0" class="key"/>
+<use href="#mdi:brightness-5" xlink:href="#mdi:brightness-5" x="661.044" y="1622.2998142154852" height="16" width="16.0" class="tap glyph mdi:brightness-5"/>
+<rect rx="4.0" ry="4.0" x="699.696" y="1623.0678142154852" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="759.0" y="1662.6038142154853" width="57.303999999999995" height="54.0" class="ghost key"/>
+<rect rx="4.0" ry="4.0" x="189.42400000000004" y="1690.8838142154852" width="57.303999999999995" height="54.0" class="ghost key"/>
+<g transform="rotate(15.0, 284.15695407686394, 1726.3885672822223)">
+<rect rx="4.0" ry="4.0" x="255.50495407686395" y="1699.3885672822223" width="57.303999999999995" height="54.0" class="held key"/>
 </g>
-<g transform="rotate(30.0, 350.59357474425406, 1719.367814215485)">
-<rect rx="4.0" ry="4.0" x="323.59357474425406" y="1675.903814215485" width="54.0" height="86.928" class="none key"/>
+<g transform="rotate(30.0, 350.59357474425406, 1736.1678142154851)">
+<rect rx="4.0" ry="4.0" x="323.59357474425406" y="1692.7038142154852" width="54.0" height="86.928" class="none key"/>
 </g>
-<g transform="rotate(-30.0, 493.40642525574594, 1719.367814215485)">
-<rect rx="4.0" ry="4.0" x="466.40642525574594" y="1675.903814215485" width="54.0" height="86.928" class="none key"/>
+<g transform="rotate(-30.0, 493.40642525574594, 1736.1678142154851)">
+<rect rx="4.0" ry="4.0" x="466.40642525574594" y="1692.7038142154852" width="54.0" height="86.928" class="none key"/>
 </g>
-<g transform="rotate(-15.0, 563.0344648531952, 1708.7334291572033)">
-<rect rx="4.0" ry="4.0" x="534.3824648531952" y="1681.7334291572033" width="57.303999999999995" height="54.0" class="held key"/>
+<g transform="rotate(-15.0, 563.0344648531952, 1725.5334291572035)">
+<rect rx="4.0" ry="4.0" x="534.3824648531952" y="1698.5334291572035" width="57.303999999999995" height="54.0" class="held key"/>
 </g>
-<rect rx="4.0" ry="4.0" x="600.5759999999999" y="1674.083814215485" width="57.303999999999995" height="54.0" class="none key"/>
+<rect rx="4.0" ry="4.0" x="600.5759999999999" y="1690.8838142154852" width="57.303999999999995" height="54.0" class="ghost key"/>
 </g>
 </svg>
