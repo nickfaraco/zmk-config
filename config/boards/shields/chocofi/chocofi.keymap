@@ -327,10 +327,10 @@
         symbols {
             label = "SYM";
             bindings = <
-                &kp deg  &kp AT  &kp HASH  &eurodollar  &kp PERCENT       &kp CARET  &kp PLUS   &kp ASTRK  &kp AMPS  &none
-                &kp QUESTION  &kp GRAVE  &kp BSLH  &kp EQUAL  &none       &kp UNDER  &kp MINUS  &kp SLASH  &kp PIPE  &kp EXCL
-                &none  &none  &kp RA(GRAVE)  &kp RA(E)        &none       &none      &kp LT     &kp GT     &none     &none
-                                                &none  &none  &none       &none      &none      &none
+                &kp deg  &kp AT  &kp HASH  &eurodollar      &kp PERCENT     &kp CARET  &kp PLUS   &kp ASTRK  &kp AMPS  &none
+                &kp QUESTION  &kp GRAVE  &kp BSLH  &kp EQUAL  &kp TILDE     &kp UNDER  &kp MINUS  &kp SLASH  &kp PIPE  &kp EXCL
+                &none  &none  &kp RA(GRAVE)  &kp RA(E)        &none         &none      &kp LT     &kp GT     &none     &none
+                                                &none  &none  &none         &none      &none      &none
             >;
         };
 
