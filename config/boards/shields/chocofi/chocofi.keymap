@@ -11,7 +11,7 @@
 #define ADJ 4
 #define LOCKL 5
 
-// #include "combos.dtsi"
+#include "combos.dtsi"
 // #include "mouse.dtsi"
 
 // tapping term definition
