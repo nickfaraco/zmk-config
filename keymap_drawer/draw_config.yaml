@@ -116,7 +116,9 @@ parse_config:
       tap: "(...)"
       align: top
     "&eurodollar": "$/€"
-    "&swapper": $$mdi:swap-horizontal$$
+    "&swapper":
+      tap: $$mdi:swap-horizontal$$
+      hold: "Windows"
     "&dot_spc": $$dot_spc$$
 
   # ZMK
@@ -244,6 +246,9 @@ parse_config:
     PG_DN: $$pg_dn$$
     HOME: $$mdi:pan-left$$
     END: $$mdi:pan-right$$
+    LC(TAB):
+      tap: $$mdi:swap-horizontal$$
+      hold: "Tabs"
     LC(LG(LEFT)): "$$tabler:arrow-left-circle$$"
     # LC(LEFT): "$$tabler:arrow-left-circle$$"
     LC(RIGHT): "$$tabler:screen-share$$"
@@ -257,8 +262,8 @@ parse_config:
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
     SPACE: $$mdi:keyboard-space$$
-    BACKSPACE: $$mdi:backspace$$
-    BSPC: $$mdi:backspace$$
+    BACKSPACE: $$mdi:backspace-outline$$
+    BSPC: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
 
