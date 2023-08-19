@@ -31,16 +31,20 @@
         COMBO(undo, 10 11, &kp LG(Z), BASE)
         COMBO(redo, 13 14, &kp LG(LS(Z)), BASE)
     // right-hand side combos
-        COMBO(ret, 17 18, &kp RET, BASE)
+        COMBO(ret, 16 17 18, &kp RET, BASE)
         // parenthesis combos
-        COMBO(lpar, 6 7, &kp LPAR, BASE SYM NUM)
-        COMBO(rpar, 7 8, &kp RPAR, BASE SYM NUM)
+        COMBO(lpar, 16 17, &kp LPAR, BASE SYM NUM)
+        COMBO(rpar, 17 18, &kp RPAR, BASE SYM NUM)
         // brackets combos
         COMBO(lbkt, 26 27, &kp LBKT, BASE SYM NUM)
         COMBO(rbkt, 27 28, &kp RBKT, BASE SYM NUM)
         // braces combos
         // COMBO(lbrc, 26 27, &kp LBRC, BASE NUM)
         // COMBO(rbrc, 27 28, &kp RBRC, BASE NUM)
+        // delete actions
+        COMBO(bspc, 6 7, &kp BSPC, BASE NUM)
+        COMBO(del, 7 8, &kp DEL, BASE NUM)
+        COMBO(ctrl_bspc, 6 7 8, &kp LC(BSPC), BASE NUM)
         // lock layer
         COMBO(lock, 0 9 32 33, &tog LOCKL, BASE)
     };

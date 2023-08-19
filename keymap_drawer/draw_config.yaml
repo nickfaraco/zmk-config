@@ -8,8 +8,8 @@ draw_config:
   append_colon_to_layer_header: false
   small_pad: 4.0
   shrink_wide_legends: 5
-  combo_w: 21
-  combo_h: 22
+  combo_w: 24
+  combo_h: 26
   glyph_tap_size: 16
   glyph_hold_size: 13
   glyph_shifted_size: 12
@@ -341,3 +341,16 @@ parse_config:
       arc_scale: 1.05
     combo_cut:
       a: bottom
+    combo_bspc:
+      key:
+        tap: $$mdi:backspace-outline$$
+    combo_ctrl_bspc:
+      key:
+        s: $$mdi:backspace-outline$$
+        h: "WORD"
+      a: top
+    combo_del:
+      key:
+        tap: $$mdi:backspace-reverse-outline$$
+    combo_ret:
+      a: top
