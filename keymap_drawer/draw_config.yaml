@@ -120,6 +120,9 @@ parse_config:
       tap: $$mdi:swap-horizontal$$
       hold: "Windows"
     "&dot_spc": $$dot_spc$$
+    "&kp LG(DEL)":
+      tap: $$mdi:backspace-reverse-outline$$
+      hold: "WORD"
 
   # ZMK
   zmk_keycode_map:

@@ -42,9 +42,9 @@
         // COMBO(lbrc, 26 27, &kp LBRC, BASE NUM)
         // COMBO(rbrc, 27 28, &kp RBRC, BASE NUM)
         // delete actions
-        COMBO(bspc, 6 7, &kp BSPC, BASE NUM)
-        COMBO(del, 7 8, &kp DEL, BASE NUM)
-        COMBO(ctrl_bspc, 6 7 8, &kp LC(BSPC), BASE NUM)
+        COMBO(bspc, 6 7, &kp BSPC, BASE NAV NUM)
+        COMBO(del, 7 8, &kp DEL, BASE NAV NUM)
+        COMBO(ctrl_bspc, 6 7 8, &kp LC(BSPC), BASE NAV NUM)
         // lock layer
         COMBO(lock, 0 9 32 33, &tog LOCKL, BASE)
     };
