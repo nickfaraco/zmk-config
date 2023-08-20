@@ -293,13 +293,13 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NAV NUM>;
-            then-layer = <ADJ>;
-        };
-    };
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <NAV NUM>;
+    //         then-layer = <ADJ>;
+    //     };
+    // };
 
     keymap {
         compatible = "zmk,keymap";
@@ -320,7 +320,7 @@
                 &none       &none       &none       &none       &none          &none         &kp PG_DN   &kp UP    &kp PG_UP  &kp LC(LG(Q))
                 &sk LCTRL   &sk LALT    &sk LSHFT   &sk LGUI    &none          &kp LG(DEL)   &kp LEFT    &kp DOWN  &kp RIGHT  &screenshot
                 &none       &none       &swapper    &kp LC(TAB) &none          &none      &kp DSK_PREV   &none     &kp DSK_NEXT  &none
-                                        &none       &none       &none          &none         &mo NUM     &none
+                                        &none       &none       &none          &none         &mo ADJ     &none
             >;
         };
 
