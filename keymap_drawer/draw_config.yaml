@@ -347,10 +347,15 @@ parse_config:
     combo_bspc:
       key:
         tap: $$mdi:backspace-outline$$
-    combo_ctrl_bspc:
+    combo_gui_bspc:
       key:
         s: $$mdi:backspace-outline$$
         h: "WORD"
+      a: top
+    combo_ctrl_bspc:
+      key:
+        s: $$mdi:backspace-outline$$
+        h: "LINE"
       a: top
     combo_del:
       key:
