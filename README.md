@@ -1,5 +1,17 @@
 # zmk-config
 
+> **Warning**
+> The 30-keys version of this keymap is still under development. As a
+> consequence, the README hereafter is not updated. While some information here
+> might still hold true, please refer to the keymap file itself (or to the
+> image below) for more details.
+
+> **Note**
+> The drawing at the end of this page is automatically updated at each commit
+> via a Github actions workflow. You can refer to that to get a sense of the
+> keymap I'm currently using. Some glyphs may not make sense to you, please
+> refer to the keymap file and drawing config file in such case.
+
 This is a [ZMK](https://zmk.dev) config repo for my 34/36-keys Chocofi keyboard,
 arranged in 3 rows and 5 columns with 3 thumb keys on each side, using
 the Canary layout.
