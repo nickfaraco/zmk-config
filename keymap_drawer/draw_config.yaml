@@ -85,7 +85,7 @@ parse_config:
       hold: 2
     "&bt BT_SEL 2":
       shifted: ""
-      tap: $$mdi:bluetooth-connect$$3
+      tap: $$mdi:bluetooth-connect$$
       hold: 3
     "&bt BT_SEL 3":
       shifted: ""

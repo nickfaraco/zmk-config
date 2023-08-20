@@ -19,7 +19,7 @@
 #define QUICK_TAP_MS 125
 
 // macros definition
-#define meh LC(LS(LALT))
+#define meh LG(LC(LALT))
 #define hyper LG(LC(LS(LALT)))
 #define deg RA(LS(N8))
 
@@ -310,7 +310,7 @@
                 &kp V         &kp W        &kp F          &kp P         &kp B               &kp J       &kp L          &kp U           &kp Y         &single_to_doublequote
                 &hml LCTRL R  &hml LALT S  &hml LSHIFT T  &hml LGUI H   &kp K               &kp X       &hmr RGUI N    &hmr RSHIFT A   &hmr RALT I   &hmr RCTRL O
                 &none         &kp C        &kp G          &kp D         &none               &none       &kp M          &comma_to_semi  &dot_to_colon &none
-                                           &none          &sl NAV       &lt_spc SYM 0       &lt_shft hyper 0  &lt NUM E   &none
+                                           &none          &sl NAV       &lt_spc SYM 0       &lt NUM E   &lt_shft meh 0 &none
             >;
         };
 
