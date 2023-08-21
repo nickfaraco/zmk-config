@@ -18,7 +18,7 @@
 #define CONCAT(x, y) CONCAT2(x, y)
 #define COMBO(name, pos, k, l) CONCAT(combo_, name) { key-positions = <pos>; bindings = <k>; layers = <l>; timeout-ms = <COMBO_TAB_MS>; };
     // missing letters
-        COMBO(x, 4 14, &kp X, BASE)
+        COMBO(x, 4 14, &kp Q, BASE)
         COMBO(z, 5 15, &kp Z, BASE)
     // left-hand side combos
         COMBO(quit, 1 2, &kp LG(Q), BASE)
