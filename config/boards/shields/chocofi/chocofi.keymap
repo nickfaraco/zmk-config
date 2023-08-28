@@ -310,7 +310,7 @@
                 &kp V         &kp W        &kp F          &kp P         &kp B               &kp J       &kp L          &kp U           &kp Y         &single_to_doublequote
                 &hml LCTRL R  &hml LALT S  &hml LSHIFT T  &hml LGUI H   &kp K               &kp X       &hmr RGUI N    &hmr RSHIFT A   &hmr RALT I   &hmr RCTRL O
                 &none         &kp C        &kp G          &kp D         &none               &none       &kp M          &comma_to_semi  &dot_to_colon &none
-                                           &none          &sl NAV       &lt_spc SYM 0       &lt NUM E   &lt_shft meh 0 &none
+                                           &none          &sl NAV       &lt_spc NUM 0       &lt SYM E   &lt_shft meh 0 &none
             >;
         };
 
@@ -340,7 +340,7 @@
                 &kp F12  &kp F7  &kp F8  &kp F9  &kp F10          &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK
                 &kp F13  &kp F4  &kp F5  &kp F6  &kp F11          &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH
                 &none    &kp F1  &kp F2  &kp F3  &none            &none      &kp N1  &kp N2  &kp N3  &none
-                                 &none   &kp N0  &kp DOT          &none      &none   &none
+                                 &none   &none   &none            &kp N0     &kp DOT   &none
             >;
         };
 
