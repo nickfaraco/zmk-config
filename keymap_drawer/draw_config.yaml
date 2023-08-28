@@ -306,6 +306,23 @@ parse_config:
     # F11: $$mdi:keyboard-f11$$
     # F12: $$mdi:keyboard-f12$$
 
+    # Numpad
+    KP_N0: 0
+    KP_N1: 1
+    KP_N2: 2
+    KP_N3: 3
+    KP_N4: 4
+    KP_N5: 5
+    KP_N6: 6
+    KP_N7: 7
+    KP_N8: 8
+    KP_N9: 9
+    KP_PLUS: +
+    KP_MINUS: "-"
+    KP_MULTIPLY: "*"
+    KP_DIVIDE: /
+    KP_EQUAL: "="
+
     # Settings
     C_BRI_UP: $$mdi:brightness-5$$
     C_BRI_DN: $$mdi:brightness-7$$
