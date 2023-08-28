@@ -120,7 +120,7 @@ parse_config:
       tap: $$mdi:swap-horizontal$$
       hold: "Windows"
     "&dot_spc": $$dot_spc$$
-    "&kp LG(DEL)":
+    "&kp LA(DEL)":
       tap: $$mdi:backspace-reverse-outline$$
       hold: "WORD"
 
@@ -347,12 +347,12 @@ parse_config:
     combo_bspc:
       key:
         tap: $$mdi:backspace-outline$$
-    combo_gui_bspc:
+    combo_del_word:
       key:
         s: $$mdi:backspace-outline$$
         h: "WORD"
       a: top
-    combo_ctrl_bspc:
+    combo_del_line:
       key:
         s: $$mdi:backspace-outline$$
         h: "LINE"
