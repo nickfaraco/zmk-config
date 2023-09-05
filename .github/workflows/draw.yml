@@ -3,8 +3,8 @@ on:
   workflow_dispatch: # can be triggered manually
   push: # automatically run on changes to following paths
     paths:
-      - "config/boards/shields/chocofi/*.keymap"
-      - "config/boards/shields/chocofi/*.dtsi"
+      - "config/*.keymap"
+      - "config/*.dtsi"
       - "keymap_drawer/draw_config.yaml"
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
       contents: write
     with:
       install_branch: "main" # branch to install keymap-drawer from
-      keymap_patterns: "config/boards/shields/chocofi/*.keymap" # path to the keymaps to parse
+      keymap_patterns: "config/*.keymap" # path to the keymaps to parse
       config_path: "keymap_drawer/draw_config.yaml" # config file, ignored if not exists
       output_folder: "keymap_drawer" # path to save produced SVGs
       # commit_message: "Draw: ${{ github.event.head_commit.message }}"

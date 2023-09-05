@@ -1,3 +1,5 @@
 .vscode
 .DS_Store
 keymap_drawer/keymap.yaml
+build
+*.uf2
