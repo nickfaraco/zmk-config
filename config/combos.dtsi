@@ -21,8 +21,8 @@
         COMBO(x, 4 14, &kp Q, BASE)
         COMBO(z, 5 15, &kp Z, BASE)
     // left-hand side combos
-        COMBO(quit, 1 2, &kp LG(Q), BASE)
-        COMBO(cltab, 2 3, &kp LG(W), BASE)
+        // COMBO(quit, 1 2, &kp LG(Q), BASE)
+        // COMBO(cltab, 2 3, &kp LG(W), BASE)
         COMBO(esc, 11 12, &kp ESCAPE, BASE)
         COMBO(tab, 12 13, &kp TAB, BASE)
         COMBO(copy, 21 22, &kp LG(C), BASE)
@@ -31,7 +31,7 @@
         COMBO(undo, 10 11, &kp LG(Z), BASE)
         COMBO(redo, 13 14, &kp LG(LS(Z)), BASE)
     // right-hand side combos
-        COMBO(ret, 16 17 18, &kp RET, BASE)
+        // COMBO(ret, 16 17 18, &kp RET, BASE)
         // parenthesis combos
         COMBO(lpar, 16 17, &kp LPAR, BASE SYM NUM)
         COMBO(rpar, 17 18, &kp RPAR, BASE SYM NUM)

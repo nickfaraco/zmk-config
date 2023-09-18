@@ -269,7 +269,8 @@ parse_config:
     BSPC: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
-
+    LG(Q): $$tabler:square-x$$
+    LG(W): $$tabler:browser-x$$
     # Locks
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
