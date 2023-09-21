@@ -1,0 +1,8 @@
+/* deactivate bluetooth */
+#define WIRELESS 0
+
+/* define layout */
+#define ALPHA_13332 1
+
+/* source the main keymap */
+#include "base.keymap"

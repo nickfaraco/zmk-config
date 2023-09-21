@@ -239,6 +239,7 @@
             bindings = <&kp LG(X) &kp U &kp S>;
         };
 
+        #if WIRELESS
         pc_connect: pc_connect{
             label = "ZM_PC_CONNECT";
             compatible = "zmk,behavior-macro";
@@ -247,7 +248,6 @@
             tap-ms = <5>;
             bindings = <&bt BT_SEL 1 &to BASE>;
         };
-
         osx_connect: osx_connect{
             label = "ZM_PC_CONNECT";
             compatible = "zmk,behavior-macro";
@@ -256,6 +256,7 @@
             tap-ms = <5>;
             bindings = <&bt BT_SEL 0 &to BASE>;
         };
+        #endif
 
         macro_par: macro_par{
             label = "ZM_PAR";
