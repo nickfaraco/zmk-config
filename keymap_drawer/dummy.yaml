@@ -1,4 +1,3 @@
-layout: {qmk_keyboard: chocofi}
 layers:
   APTMAK:
   - V
@@ -21,16 +20,16 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
-  - {type: none}
+  - ;
   - C
   - G
   - D
-  - {type: none}
-  - {type: none}
+  - Q
+  - Z
   - M
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {type: none}
+  - /
   - {type: none}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: NAV, s: $$dot_spc$$}
@@ -228,6 +227,12 @@ combos:
   l: [APTMAK]
 - p: [5, 15]
   k: Z
+  l: [APTMAK]
+- p: [1, 11]
+  k: V
+  l: [APTMAK]
+- p: [8, 18]
+  k: {t: '''', s: '"'}
   l: [APTMAK]
 - p: [11, 12]
   k: $$escape$$
