@@ -1,4 +1,4 @@
-<svg width="847" height="1845" viewBox="0 0 847 1845" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="847" height="1864" viewBox="0 0 847 1864" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="dot_spc">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 24">
@@ -328,7 +328,7 @@ path.combo {
 </style>
 <g transform="translate(30, 0)" class="layer-APTMAK">
 <text x="0" y="28" class="label">APTMAK</text>
-<g transform="translate(0, 56)">
+<g transform="translate(0, 76)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">
 <rect rx="4" ry="4" x="-29" y="-27" width="57" height="54" class="key ghost"/>
 <text x="0" y="0" class="key ghost tap">V</text>
@@ -488,10 +488,10 @@ path.combo {
 <rect rx="4" ry="4" x="-29" y="-27" width="57" height="54" class="key ghost"/>
 </g>
 <g class="combo combopos-0">
-<path d="M148,49 l-40,-1" class="combo"/>
-<path d="M148,49 l40,1" class="combo"/>
-<rect rx="4" ry="4" x="136" y="36" width="24" height="26" class="combo"/>
-<text x="148" y="49" class="combo tap">Q</text>
+<path d="M148,0 h-55 a4.0,4.0 0 0 0 -4.0,4.0 v25" class="combo"/>
+<path d="M148,0 h55 a4.0,4.0 0 0 1 4.0,4.0 v27" class="combo"/>
+<rect rx="4" ry="4" x="136" y="-13" width="24" height="26" class="combo"/>
+<text x="148" y="0" class="combo tap">Q</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="4" ry="4" x="166" y="26" width="24" height="26" class="combo"/>
@@ -586,7 +586,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 371)" class="layer-NAV">
+<g transform="translate(30, 391)" class="layer-NAV">
 <text x="0" y="28" class="label">NAV</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">
@@ -743,7 +743,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 726)" class="layer-SYM">
+<g transform="translate(30, 745)" class="layer-SYM">
 <text x="0" y="28" class="label">SYM</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">
@@ -901,7 +901,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1080)" class="layer-NUM">
+<g transform="translate(30, 1100)" class="layer-NUM">
 <text x="0" y="28" class="label">NUM</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">
@@ -1076,7 +1076,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1434)" class="layer-ADJ">
+<g transform="translate(30, 1454)" class="layer-ADJ">
 <text x="0" y="28" class="label">ADJ</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">

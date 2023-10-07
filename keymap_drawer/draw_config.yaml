@@ -382,3 +382,6 @@ parse_config:
         tap: $$mdi:backspace-reverse-outline$$
     combo_ret:
       a: top
+    combo_q:
+      a: top
+      o: 0.35
