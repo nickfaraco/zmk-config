@@ -24,11 +24,12 @@
 #define COMBO(name, pos, k, l) CONCAT(combo_, name) { key-positions = <pos>; bindings = <k>; layers = <l>; timeout-ms = <COMBO_TAB_MS>; };
     // missing letters
     #if ALPHA_23332 || ALPHA_13332 || DUMMY_KEEB
-        COMBO(x, 4 14, &kp Q, BASE)
-        COMBO(z, 5 15, &kp Z, BASE)
+        COMBO(q, 1 3, &kp Q, BASE)
+        COMBO(z, 2 3, &kp Z, BASE)
         #if ALPHA_13332 || DUMMY_KEEB
-        COMBO(v, 1 11, &kp V, BASE)
+        COMBO(v, 1 2, &kp V, BASE)
         COMBO(quote, 8 18, &single_to_doublequote , BASE)
+        COMBO(quote, 3 13, &single_to_doublequote , BASE)
         #endif
     #endif
     // left-hand side combos
