@@ -123,6 +123,8 @@ parse_config:
     "&kp LA(DEL)":
       tap: $$mdi:backspace-reverse-outline$$
       hold: "WORD"
+    "&kp LG(LS(SPACE))":
+      tap: $$tabler:mouse$$
 
   # ZMK
   zmk_keycode_map:
