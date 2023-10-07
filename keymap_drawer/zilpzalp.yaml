@@ -236,9 +236,6 @@ combos:
 - p: [8, 18]
   k: {t: '''', s: '"'}
   l: [APTMAK]
-- p: [3, 13]
-  k: {t: '''', s: '"'}
-  l: [APTMAK]
 - p: [11, 12]
   k: $$escape$$
   l: [APTMAK]

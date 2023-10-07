@@ -29,7 +29,6 @@
         #if ALPHA_13332 || DUMMY_KEEB
         COMBO(v, 1 2, &kp V, BASE)
         COMBO(quote, 8 18, &single_to_doublequote , BASE)
-        COMBO(quote, 3 13, &single_to_doublequote , BASE)
         #endif
     #endif
     // left-hand side combos
