@@ -43,7 +43,7 @@ layers:
   - $$tabler:square-x$$
   - $$tabler:browser-x$$
   - {type: none}
-  - {type: none}
+  - $$mdi:monitor-screenshot$$
   - $$pg_dn$$
   - $$mdi:arrow-up-bold$$
   - $$pg_up$$
@@ -57,15 +57,15 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:monitor-screenshot$$
+  - $$mdi:power-sleep$$
   - {type: none}
   - {t: '$$mdi:swap-horizontal$$', h: Windows}
-  - $$mdi:power-sleep$$
+  - {type: none}
   - {t: '$$mdi:swap-horizontal$$', h: Tabs}
   - {type: none}
   - {type: none}
   - $$screen-prev$$
-  - {type: none}
+  - $$tabler:mouse$$
   - $$tabler:screen-share$$
   - {type: none}
   - {type: none}
@@ -223,10 +223,12 @@ layers:
   - {type: none}
   - {type: none}
 combos:
-- p: [4, 14]
+- p: [1, 3]
   k: Q
   l: [APTMAK]
-- p: [5, 15]
+  a: top
+  o: 0.35
+- p: [2, 3]
   k: Z
   l: [APTMAK]
 - p: [11, 12]

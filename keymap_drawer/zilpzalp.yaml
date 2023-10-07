@@ -1,6 +1,6 @@
 layers:
   APTMAK:
-  - V
+  - {type: none}
   - W
   - F
   - P
@@ -9,7 +9,7 @@ layers:
   - L
   - U
   - Y
-  - ''''
+  - {type: none}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
@@ -20,16 +20,16 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
-  - ;
+  - {type: none}
   - C
   - G
   - D
-  - Q
-  - Z
+  - {type: none}
+  - {type: none}
   - M
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - /
+  - {type: none}
   - {type: none}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: NAV, s: $$dot_spc$$}
@@ -158,10 +158,10 @@ layers:
   - $$mdi:skip-next$$
   - $$mdi:skip-previous$$
   - {type: none}
-  - {t: '$$mdi:bluetooth$$', h: clear}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:microsoft-windows$$', h: '2'}
-  - {t: '$$mdi:apple$$', h: '1'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - $$mdi:backup-restore$$
   - $$mdi:backup-restore$$
   - $$mdi:volume-low$$
@@ -169,9 +169,9 @@ layers:
   - $$mdi:volume-off$$
   - {type: none}
   - {type: none}
-  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - {t: '$$mdi:toggle-switch-outline$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {type: none}
   - {type: none}
   - $$mdi:brightness-7$$

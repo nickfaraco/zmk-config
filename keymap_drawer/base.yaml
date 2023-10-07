@@ -42,7 +42,7 @@ layers:
   - $$tabler:square-x$$
   - $$tabler:browser-x$$
   - {type: none}
-  - {type: none}
+  - $$mdi:monitor-screenshot$$
   - $$pg_dn$$
   - $$mdi:arrow-up-bold$$
   - $$pg_up$$
@@ -56,15 +56,15 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:monitor-screenshot$$
+  - $$mdi:power-sleep$$
   - {type: none}
   - {t: '$$mdi:swap-horizontal$$', h: Windows}
-  - $$mdi:power-sleep$$
+  - {type: none}
   - {t: '$$mdi:swap-horizontal$$', h: Tabs}
   - {type: none}
   - {type: none}
   - $$screen-prev$$
-  - {type: none}
+  - $$tabler:mouse$$
   - $$tabler:screen-share$$
   - {type: none}
   - {type: none}

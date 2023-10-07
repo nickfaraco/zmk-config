@@ -88,7 +88,7 @@
             flavor = "balanced";
             tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;       // double-tap + hold repeats tap-key
-            global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
+            require-prior-idle-ms = <150>;       // do not activate HOLD during typing flow
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <RIGHT_KEYS THUMBS>;
             hold-trigger-on-release;
@@ -101,7 +101,7 @@
             flavor = "balanced";
             tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;       // double-tap + hold repeats tap-key
-            global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
+            require-prior-idle-ms = <150>;       // do not activate HOLD during typing flow
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <LEFT_KEYS THUMBS>;
             hold-trigger-on-release;
