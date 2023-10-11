@@ -1061,14 +1061,6 @@ path.combo {
 <rect rx="4" ry="4" x="657" y="25" width="24" height="26" class="combo"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="661" y="30" height="16" width="16.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
-<g class="combo combopos-6">
-<path d="M639,0 h-55 a4.0,4.0 0 0 0 -4.0,4.0 v28" class="combo"/>
-<path d="M639,0 l0,17" class="combo"/>
-<path d="M639,0 h55 a4.0,4.0 0 0 1 4.0,4.0 v26" class="combo"/>
-<rect rx="4" ry="4" x="627" y="-14" width="24" height="26" class="combo"/>
-<text x="639" y="8" class="combo hold">WORD</text>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="633" y="-10" height="12" width="12.0" class="combo shifted glyph mdi:backspace-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1454)" class="layer-ADJ">
@@ -1082,7 +1074,7 @@ path.combo {
 </g>
 <g transform="translate(148, 28)" class="key keypos-2">
 <rect rx="4" ry="4" x="-29" y="-27" width="57" height="54" class="key"/>
-<use href="#mdi:apple" xlink:href="#mdi:apple" x="-8" y="-8" height="16" width="16.0" class="key tap glyph mdi:apple"/>
+<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-8" y="-8" height="16" width="16.0" class="key tap glyph mdi:microsoft-windows"/>
 </g>
 <g transform="translate(208, 50)" class="key keypos-3">
 <rect rx="4" ry="4" x="-29" y="-27" width="57" height="54" class="key"/>
