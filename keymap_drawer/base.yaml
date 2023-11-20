@@ -22,7 +22,7 @@ layers:
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - ;
   - C
-  - G
+  - {t: G, h: NUM}
   - D
   - Q
   - Z
@@ -73,6 +73,43 @@ layers:
   - {t: E, h: SYM_W}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  NUM:
+  - F12
+  - F7
+  - F8
+  - F9
+  - {type: none}
+  - '}'
+  - '7'
+  - '8'
+  - '9'
+  - {type: none}
+  - F10
+  - F4
+  - F5
+  - F6
+  - {type: none}
+  - '{'
+  - '4'
+  - '5'
+  - '6'
+  - E
+  - {type: none}
+  - F1
+  - {t: F2, type: held}
+  - F3
+  - {type: none}
+  - {type: none}
+  - '1'
+  - '2'
+  - '3'
+  - {type: none}
+  - {type: none}
+  - {t: ',', type: held}
+  - {t: ▽, type: trans}
+  - {t: '0', h: SYM}
+  - .
+  - {type: none}
   NAV:
   - {type: none}
   - {type: none}
@@ -151,35 +188,35 @@ layers:
   - {type: none}
   - '@'
   - '#'
-  - $/€
+  - '&'
   - '%'
   - ^
   - +
   - '*'
-  - '&'
+  - $/€/°
   - {type: none}
   - '?'
   - '`'
   - \
-  - '='
+  - '|'
   - '~'
   - _
   - '-'
   - /
-  - '|'
+  - '='
   - '!'
   - {type: none}
   - {t: '`', h: '$$tabler:sticker$$'}
-  - {t: ´, h: '$$tabler:sticker$$'}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - {t: ´, h: '$$tabler:sticker$$', type: held}
   - <
+  - {type: none}
+  - {type: none}
   - '>'
-  - °
+  - ;
+  - ':'
   - {type: none}
   - {type: none}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
   - {type: none}
@@ -188,75 +225,38 @@ layers:
   - {type: none}
   - '@'
   - '#'
-  - $/€
+  - '&'
   - '%'
   - ^
   - +
   - '*'
-  - '&'
+  - '&curr_deg_win'
   - {type: none}
   - '?'
   - '`'
   - \
-  - '='
+  - '|'
   - '~'
   - _
   - '-'
   - /
-  - '|'
+  - '='
   - '!'
   - {type: none}
   - {t: '`', h: '$$tabler:sticker$$'}
-  - {t: ´, h: '$$tabler:sticker$$'}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - {t: ´, h: '$$tabler:sticker$$', type: held}
   - <
+  - {type: none}
+  - {type: none}
   - '>'
-  - '&macro_deg_win'
-  - {type: none}
-  - {type: none}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: none}
-  - {type: none}
-  NUM:
-  - F12
-  - F7
-  - F8
-  - F9
-  - '*'
-  - +
-  - '7'
-  - '8'
-  - '9'
-  - {type: none}
-  - F10
-  - F4
-  - F5
-  - F6
-  - /
-  - '-'
-  - '4'
-  - '5'
-  - '6'
-  - E
-  - {type: none}
-  - F1
-  - F2
-  - F3
-  - {type: none}
-  - {type: none}
-  - '1'
-  - '2'
-  - '3'
+  - ;
+  - ':'
   - {type: none}
   - {type: none}
   - {type: held}
   - {t: ▽, type: trans}
-  - '0'
-  - .
+  - {type: held}
+  - {type: none}
   - {type: none}
   ADJ:
   - {type: none}
@@ -281,7 +281,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {type: held}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -290,7 +290,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {type: none}
+  - {type: held}
   - {type: held}
   - {type: held}
   - {type: none}

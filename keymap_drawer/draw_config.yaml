@@ -115,7 +115,7 @@ parse_config:
     "&macro_par": 
       tap: "(...)"
       align: top
-    "&eurodollar": "$/€"
+    "&curr_deg": "$/€/°"
     "&swapper":
       tap: $$mdi:swap-horizontal$$
       hold: "Windows"
