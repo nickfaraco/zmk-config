@@ -1,4 +1,4 @@
-<svg width="847" height="1864" viewBox="0 0 847 1864" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="847" height="1838" viewBox="0 0 847 1838" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="dot_spc">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 24">
@@ -328,7 +328,7 @@ path.combo {
 </style>
 <g transform="translate(30, 0)" class="layer-APTMAK">
 <text x="0" y="28" class="label">APTMAK</text>
-<g transform="translate(0, 76)">
+<g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">
 <rect rx="4" ry="4" x="-29" y="-27" width="57" height="54" class="key ghost"/>
 <text x="0" y="0" class="key ghost tap">V</text>
@@ -582,7 +582,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 391)" class="layer-NUM">
+<g transform="translate(30, 364)" class="layer-NUM">
 <text x="0" y="28" class="label">NUM</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">
@@ -749,7 +749,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 745)" class="layer-NAV">
+<g transform="translate(30, 719)" class="layer-NAV">
 <text x="0" y="28" class="label">NAV</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">
@@ -906,7 +906,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1100)" class="layer-SYM">
+<g transform="translate(30, 1073)" class="layer-SYM">
 <text x="0" y="28" class="label">SYM</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">
@@ -1064,7 +1064,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1454)" class="layer-ADJ">
+<g transform="translate(30, 1428)" class="layer-ADJ">
 <text x="0" y="28" class="label">ADJ</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key ghost keypos-0">

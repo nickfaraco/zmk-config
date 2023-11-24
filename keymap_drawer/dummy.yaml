@@ -69,8 +69,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:keyboard-space$$', h: NAV_W, s: $$dot_spc$$}
-  - {t: E, h: SYM_W}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
@@ -148,41 +148,41 @@ layers:
   - {type: none}
   - {type: none}
   NAV_W:
-  - {type: none}
-  - {type: none}
-  - RA(F4)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LA(F4)
   - LC(W)
-  - {type: none}
-  - LC(LS(S))
-  - $$pg_dn$$
-  - $$mdi:arrow-up-bold$$
-  - $$pg_up$$
-  - {type: none}
+  - {t: ▽, type: trans}
+  - LG(LS(S))
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$tabler:sticker$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$tabler:sticker$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$tabler:sticker$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$tabler:sticker$$'}
-  - {type: none}
+  - {t: ▽, type: trans}
   - LC(DEL)
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - $$mdi:power-sleep$$
-  - {type: none}
+  - {t: ▽, type: trans}
   - '&swapper_win'
-  - {type: none}
-  - {t: '$$mdi:swap-horizontal$$', h: Tabs}
-  - {type: none}
-  - {type: none}
-  - LG(LS(LEFT))
-  - {type: none}
-  - LG(LS(RIGHT))
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LG(LC(LEFT))
+  - {t: ▽, type: trans}
+  - LG(LC(RIGHT))
   - {t: ▽, type: trans}
   - {type: none}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: none}
   SYM:
   - {type: none}
@@ -222,41 +222,41 @@ layers:
   - {type: none}
   - {type: none}
   SYM_W:
-  - {type: none}
-  - '@'
-  - '#'
-  - '&'
-  - '%'
-  - ^
-  - +
-  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&curr_deg_win'
-  - {type: none}
-  - '?'
-  - '`'
-  - \
-  - '|'
-  - '~'
-  - _
-  - '-'
-  - /
-  - '='
-  - '!'
-  - {type: none}
-  - {t: '`', h: '$$tabler:sticker$$'}
-  - {t: ´, h: '$$tabler:sticker$$', type: held}
-  - <
-  - {type: none}
-  - {type: none}
-  - '>'
-  - ;
-  - ':'
-  - {type: none}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: none}
   - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: none}
+  - {t: ▽, type: trans}
   - {type: none}
   ADJ:
   - {type: none}
