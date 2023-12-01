@@ -135,12 +135,13 @@
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp C_NEXT>, <&kp C_PREV>;
         };
-        screenshot: screenshot { // single-tap: area selector, double-tap: full-screen
+        screenshot: screenshot {
+            // single-tap: area selector, double-tap: open screenshot app, triple-tap: full-screen
             compatible = "zmk,behavior-tap-dance";
             label = "SCREENSHOT";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_TERM_MS>;
-            bindings = <&kp LG(LS(NUMBER_4))>, <&kp LG(LS(NUMBER_3))>;
+            bindings = <&kp LG(LS(N4))>, <&kp LG(LS(N5))>, <&kp LG(LS(N3))>;
         };
 
         // tap: sticky-shift | lshft + tap: caps-word | hold: set in keymap (HYPER)
