@@ -186,15 +186,15 @@
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-            ignored-key-positions = <31>; // the key being held for the layer activation
+            ignored-key-positions = <21>;
         };
 
         swapper_win: swapper_win{
             compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
+            label = "SWAPPER_W";
             #binding-cells = <0>;
             bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
-            ignored-key-positions = <31>; // the key being held for the layer activation
+            ignored-key-positions = <21>;
         };
 
         //usefull mod-morphs
@@ -433,7 +433,7 @@
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                 &sk LCTRL      &sk LALT       &sk LSHFT      &sk LGUI       xxx                  &kp LA(DEL)    &kp LEFT       &kp DOWN       &kp RIGHT      &kp LC(LG(Q))
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                xxx            &swapper       xxx            &kp LC(TAB)    xxx                  xxx            &kp DSK_PREV   &kp HR_APP     &kp DSK_NEXT   xxx
+                xxx            &kp LS(TAB)    &swapper       &kp LC(TAB)    xxx                  xxx            &kp DSK_PREV   &kp HR_APP     &kp DSK_NEXT   xxx
              //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
                                               xxx            xxx            ___                  ___            xxx            xxx
              //                              ╰──────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴──────────────╯
