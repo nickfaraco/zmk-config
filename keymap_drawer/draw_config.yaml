@@ -108,6 +108,7 @@ parse_config:
 
     # other
     "&screenshot": $$mdi:monitor-screenshot$$
+    "&key_repeat": $$mdi:repeat-variant$$
     "&win_sleep": $$mdi:power-sleep$$
     "&prev_next_song": 
       tap: $$mdi:skip-next$$
