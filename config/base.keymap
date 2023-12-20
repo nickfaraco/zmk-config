@@ -380,16 +380,16 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "APTMAK";
+            label = "BASE LAYER";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 &kp Q            &kp W          &kp E          &kp R         &kp T                 &kp Y          &kp U          &kp I          &kp O          &kp P
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                &hml LCTRL A   &hml LALT S    &hml LSHIFT D  &hml LGUI F     &kp G                 &kp H          &hmr RGUI J    &hmr RSHIFT K  &hmr RALT L  &hmr RCTRL SEMI
+                &hml LCTRL A   &hml LALT S    &hml LSHIFT D  &hml LGUI F     &kp G                 &kp H          &hmr RGUI J    &hmr RSHIFT K  &hmr RALT L  &hmr RSHIFT SEMI
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                 &kp Z            &kp X          &lt NUM C      &kp V          &kp B                &kp N            &kp M        &comma_semi    &dot_colon     &kp SLASH
              //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
-                                              xxx            &lt NUM BSPC    &lt_spc NAV 0        &lt SYM RET      &kp SPACE      &trans
+                                              &kp LCTRL        &lt NUM BSPC   &lt_spc NAV 0        &lt SYM RET      &kp SPACE      &kp RCTRL
              //                              ╰──────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴──────────────╯
             >;
         };
@@ -428,11 +428,11 @@
             label = "NAV";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-                xxx            xxx            &kp LG(Q)      &kp LG(W)      xxx                  &screenshot    &kp PG_DN      &kp UP         &kp PG_UP      xxx
+                xxx            xxx            &kp LG(Q)      &kp LG(W)      xxx                  &screenshot      &kp PG_DN      &kp UP         &kp PG_UP      &kp RIGHT
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                &sk LCTRL      &sk LALT       &sk LSHFT      &sk LGUI       xxx                  &kp LA(DEL)    &kp LEFT       &kp DOWN       &kp RIGHT      &kp LC(LG(Q))
+                &sk LCTRL      &sk LALT       &sk LSHFT      &sk LGUI       xxx                  &kp LEFT         &kp UP         &kp DOWN       &kp RIGHT      &kp LC(LG(Q))
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                xxx            &swapper       xxx            &kp LC(TAB)    xxx                  xxx            &kp DSK_PREV   &kp HR_APP     &kp DSK_NEXT   xxx
+                xxx            &swapper       xxx            &kp LC(TAB)    xxx                  xxx              &kp DSK_PREV   &kp HR_APP     &kp DSK_NEXT   xxx
              //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
                                               xxx            xxx            ___                  ___            xxx            xxx
              //                              ╰──────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴──────────────╯
@@ -458,9 +458,9 @@
             label = "SYM";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-                xxx            &kp AT         &kp HASH       &kp AMPS       &kp PERCENT          &kp CARET      &kp PLUS       &kp ASTRK      &curr_deg      xxx
+                &kp LC(TAB)       &kp AT         &kp HASH       &kp AMPS       &kp PERCENT          &kp CARET      &kp PLUS       &kp ASTRK      &curr_deg      xxx
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                &kp QUESTION   &kp GRAVE      &kp BSLH       &kp PIPE       &kp TILDE            &kp UNDER      &kp MINUS      &kp SLASH      &kp EQUAL      &kp EXCL
+                &kp ESCAPE        &kp GRAVE      &kp BSLH       &kp PIPE       &kp TILDE            &kp UNDER      &kp MINUS      &kp SLASH      &kp EQUAL      &kp EXCL
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                 xxx            &kp RA(GRAVE)  &kp RA(E)      &kp LT         xxx                  xxx            &kp GT         &kp SEMI       &kp COLON      xxx
              //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
