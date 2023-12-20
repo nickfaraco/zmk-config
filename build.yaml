@@ -17,5 +17,3 @@ include:
     shield: chocofi_left
   - board: nice_nano_v2
     shield: chocofi_right
-  - board: seeeduino_xiao_rp2040
-    shield: zilpzalp

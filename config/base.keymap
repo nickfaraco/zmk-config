@@ -383,13 +383,13 @@
             label = "APTMAK";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-                LTL            &kp W          &kp F          &kp P         &kp B                 &kp J          &kp L          &kp U          &kp Y          RTR
+                &kp Q            &kp W          &kp E          &kp R         &kp T                 &kp Y          &kp U          &kp I          &kp O          &kp P
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                &hml LCTRL R   &hml LALT S    &hml LSHIFT T  &hml LGUI H   &kp K                 &kp X          &hmr RGUI N    &hmr RSHIFT A  &hmr RALT I    &hmr RCTRL O
+                &hml LCTRL A   &hml LALT S    &hml LSHIFT D  &hml LGUI F     &kp G                 &kp H          &hmr RGUI J    &hmr RSHIFT K  &hmr RALT L  &hmr RCTRL SEMI
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                LBL            &kp C          &lt NUM G      &kp D          LBR                  RBL            &kp M          &comma_semi    &dot_colon     RBR
+                &kp Z            &kp X          &lt NUM C      &kp V          &kp B                &kp N            &kp M        &comma_semi    &dot_colon     &kp SLASH
              //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
-                                              xxx            &lt NUM RET    &lt_spc NAV 0        &lt SYM E      &lt_shft meh 0 xxx
+                                              xxx            &lt NUM BSPC    &lt_spc NAV 0        &lt SYM RET      &kp SPACE      &trans
              //                              ╰──────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴──────────────╯
             >;
         };
