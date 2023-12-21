@@ -1,11 +1,5 @@
 # zmk-config
 
-> **Warning**
-> The 30-keys version of this keymap is still under development. As a
-> consequence, the README hereafter is not updated. While some information here
-> might still hold true, please refer to the keymap file itself (or to the
-> image below) for more details.
-
 > **Note**
 > The drawing at the end of this page is automatically updated at each commit
 > via a Github actions workflow. You can refer to that to get a sense of the
