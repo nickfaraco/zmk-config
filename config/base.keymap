@@ -314,7 +314,7 @@
             tap-ms = <5>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT>;
         };
-        
+
         macro_bkt: macro_bkt{
             label = "ZM_BKT";
             compatible = "zmk,behavior-macro";
@@ -459,7 +459,7 @@
             label = "SYM";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-                &kp LC(TAB)       &kp AT         &kp HASH       &kp AMPS       &kp PERCENT          &kp CARET      &kp PLUS       &kp ASTRK      &curr_deg      xxx
+                &kp LC(TAB)       &kp AT         &kp HASH       &kp AMPS       &kp PERCENT          &kp CARET      &kp PLUS       &kp ASTRK      &curr_deg      &kp SQT
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                 &kp ESCAPE        &kp GRAVE      &kp BSLH       &kp PIPE       &kp TILDE            &kp UNDER      &kp MINUS      &kp SLASH      &kp EQUAL      &kp EXCL
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
