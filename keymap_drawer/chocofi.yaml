@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: chocofi}
 layers:
-  APTMAK:
+  Default:
   - V
   - W
   - F
