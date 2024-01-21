@@ -89,7 +89,6 @@
         // HOME ROW MODS
         hml: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <TAP_TERM_MS>;
@@ -102,7 +101,6 @@
 
         hmr: right_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "RIGHT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <TAP_TERM_MS>;
@@ -116,21 +114,18 @@
         // TAP DANCES
         curr_deg: tap_dance_curr_deg {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_curr_deg";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp DLLR>, <&kp LA(N5)>, <&kp deg>;
         };
         curr_deg_win: tap_dance_curr_deg_win {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_curr_deg_win";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp DLLR>, <&macro_euro_win>, <&macro_deg_win>;
         };
         prev_next_song: prev_next_song {
             compatible = "zmk,behavior-tap-dance";
-            label = "PREV_NEXT_SONG";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp C_NEXT>, <&kp C_PREV>;
@@ -138,7 +133,6 @@
         screenshot: screenshot {
             // single-tap: area selector, double-tap: open screenshot app, triple-tap: full-screen
             compatible = "zmk,behavior-tap-dance";
-            label = "SCREENSHOT";
             #binding-cells = <0>;
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp LG(LS(N4))>, <&kp LG(LS(N5))>, <&kp LG(LS(N3))>;
@@ -147,14 +141,12 @@
         // tap: sticky-shift | lshft + tap: caps-word | hold: set in keymap (HYPER)
         ss_cw: ss_cw {
             compatible = "zmk,behavior-mod-morph";
-            label = "SS_CW";
             #binding-cells = <0>;
             bindings = <&sk LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         lt_shft: lt_shft {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_SHFT";
             #binding-cells = <2>;
             tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;
@@ -165,14 +157,12 @@
         // tap: space | shft + tap: dot -> space -> sticky shift | hold: activate layer
         spc_morph: spc_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "SPC_MORPH";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&dot_spc>;
             mods = <(MOD_LSFT)>;
         };
         lt_spc: lt_spc {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_SPC";
             #binding-cells = <2>;
             tapping-term-ms = <TAP_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;
@@ -183,7 +173,6 @@
         // Alt+Tab swapper, requires PR #1366
         swapper: swapper{
             compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
             ignored-key-positions = <21>;
@@ -191,7 +180,6 @@
 
         swapper_win: swapper_win{
             compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER_W";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <21>;
@@ -200,28 +188,24 @@
         //usefull mod-morphs
         dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_TO_COLON";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_TO_SEMICOLON";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         quest_excl: quest_excl {
             compatible = "zmk,behavior-mod-morph";
-            label = "quest_to_excl";
             #binding-cells = <0>;
             bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         single_to_doublequote: single_to_doublequote {
             compatible = "zmk,behavior-mod-morph";
-            label = "SINGLE_TO_DOUBLEQUOTE";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -231,7 +215,6 @@
     // macros
     macros {
         sel_word: select_word {
-            label = "ZM_SELECT_WORD";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -244,7 +227,6 @@
         };
 
         del_line: del_line {
-            label = "ZMK_DEL_LINE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -257,7 +239,6 @@
         };
 
         del_line_win: del_line_win {
-            label = "ZMK_DEL_LINE_WIN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -270,7 +251,6 @@
         };
 
         dot_spc: dot_spc{
-            label = "ZM_DOT_SPACE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -280,7 +260,6 @@
 
         // Windows sleep key (fix LOCK not working on Windows)
         win_sleep: win_sleep{
-            label = "ZM_WIN_SLEEP";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <100>;
@@ -290,7 +269,6 @@
 
         #if WIRELESS
         pc_connect: pc_connect{
-            label = "ZM_PC_CONNECT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <100>;
@@ -298,7 +276,6 @@
             bindings = <&bt BT_SEL 1 &to BASE>;
         };
         osx_connect: osx_connect{
-            label = "ZM_PC_CONNECT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <100>;
@@ -308,7 +285,6 @@
         #endif
 
         macro_par: macro_par{
-            label = "ZM_PAR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -316,7 +292,6 @@
             bindings = <&kp LPAR &kp RPAR &kp LEFT>;
         };
         macro_bkt: macro_bkt{
-            label = "ZM_BKT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -324,7 +299,6 @@
             bindings = <&kp LBKT &kp RBKT &kp LEFT>;
         };
         macro_brc: macro_brc{
-            label = "ZM_BRC";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -332,7 +306,6 @@
             bindings = <&kp LBRC &kp RBRC &kp LEFT>;
         };
         macro_deg_win: macro_deg_win{
-            label = "ZM_DEG";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -344,7 +317,6 @@
                 ;
         };
         macro_euro_win: macro_euro_win{
-            label = "ZM_EURO";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -381,7 +353,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "APTMAK";
+            display-name = "APTMAK";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 LTL            &kp W          &kp F          &kp P         &kp B                 &kp J          &kp L          &kp U          &kp Y          RTR
@@ -396,7 +368,7 @@
         };
 
         default_win {
-            label = "APTMAK_W";
+            display-name = "APTMAK_W";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 ___            ___            ___            ___            ___                  ___            ___            ___            ___            ___
@@ -411,7 +383,7 @@
         };
 
         num_layer{
-            label = "NUM";
+            display-name = "NUM";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 &kp F12        &kp F7         &kp F8         &kp F9         xxx                  &kp RBRC       &kp KP_N7      &kp KP_N8      &kp KP_N9      xxx
@@ -426,7 +398,7 @@
         };
 
         nav_layer{
-            label = "NAV";
+            display-name = "NAV";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 xxx            xxx            &kp LG(Q)      &kp LG(W)      xxx                  &screenshot    &kp PG_DN      &kp UP         &kp PG_UP      xxx
@@ -441,7 +413,7 @@
         };
 
         nav_win{
-            label = "NAV_W";
+            display-name = "NAV_W";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 ___            ___            &kp LA(F4)     &kp LC(W)      ___                  &kp LG(LS(S))  ___            ___            ___            ___
@@ -456,7 +428,7 @@
         };
 
         symbols {
-            label = "SYM";
+            display-name = "SYM";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 xxx            &kp AT         &kp HASH       &kp AMPS       &kp PERCENT          &kp CARET      &kp PLUS       &kp ASTRK      &curr_deg      xxx
@@ -471,7 +443,7 @@
         };
 
         symbols_win {
-            label = "SYM_W";
+            display-name = "SYM_W";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 ___            ___            ___            ___            ___                  ___            ___            ___            &curr_deg_win  ___
@@ -486,7 +458,7 @@
         };
 
         adj_layer {
-            label = "ADJ";
+            display-name = "ADJ";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 xxx            xxx            &to BASE_WIN   &to BASE       &bootloader          &bootloader    &kp C_PP       &kp C_NEXT     &kp C_PREV     xxx
@@ -501,7 +473,7 @@
         };
 
         lock_layer {
-            label = "LOCK";
+            display-name = "LOCK";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 xxx            xxx            xxx            xxx            xxx                  xxx            xxx            xxx            xxx            xxx
