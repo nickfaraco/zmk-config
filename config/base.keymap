@@ -192,6 +192,32 @@
             bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        left_home: left_home {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&left_home_nested>;
+            keep-mods = <MOD_LCTL>;
+            mods = <(MOD_LCTL|MOD_LALT)>;
+        };
+        left_home_nested: left_home_nested {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT)>, <&kp HOME>;
+            mods = <(MOD_LCTL)>;
+        };
+        right_end: right_end {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&right_end_nested>;
+            keep-mods = <MOD_LCTL>;
+            mods = <(MOD_LCTL|MOD_LALT)>;
+        };
+        right_end_nested: right_end_nested {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT)>, <&kp END>;
+            mods = <(MOD_LCTL)>;
+        };
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -418,7 +444,7 @@
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 ___            ___            &kp LA(F4)     &kp LC(W)      ___                  &kp LG(LS(S))  ___            ___            ___            ___
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                &sk LGUI       ___            ___            &sk LCTRL      ___                  &kp LC(DEL)    ___            ___            ___            &kp LG(L)
+                &sk LGUI       ___            ___            &sk LCTRL      ___                  &kp LC(DEL)    &left_home     ___            &right_end     &kp LG(L)
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                 ___            ___            &swapper_win   ___            ___                  ___            &kp DSK_PREV_W ___            &kp DSK_NEXT_W ___
              //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
