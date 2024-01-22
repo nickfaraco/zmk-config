@@ -66,5 +66,7 @@
         COMBO(del_line_win, 6 7 8, &del_line_win, NAVW)
         // lock layer
         COMBO(lock, 0 9 32 33, &tog LOCKL, BASE)
+    // mouse layer
+        COMBO(mouse, 10 32, &mo MSE, BASE BASE_WIN)
     };
 };

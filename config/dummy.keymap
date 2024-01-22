@@ -3,6 +3,7 @@ though this means having duplicated keys -- it's just for drawing all of the
 options at once on the github repo) */
 #define WIRELESS 1
 #define DUMMY_KEEB 1
+#define MOUSE_KEYS 1
 
 /* source the main keymap */
 #include "base.keymap"

@@ -3,6 +3,7 @@
 
 /* define layout */
 #define ALPHA_13332 1
+#define MOUSE_KEYS 1
 
 /* source the main keymap */
 #include "base.keymap"
