@@ -191,6 +191,12 @@
         };
 
         //usefull mod-morphs
+        esc_kcancel: esc_kcancel {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE>, <&kp K_CANCEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;

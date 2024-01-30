@@ -34,7 +34,7 @@
     // left-hand side combos
         // COMBO(quit, 1 2, &kp LG(Q), BASE)
         // COMBO(cltab, 2 3, &kp LG(W), BASE)
-        COMBO(esc, 11 12, &kp ESCAPE, BASE BASE_WIN)
+        COMBO(esc, 11 12, &esc_kcancel, BASE BASE_WIN)
         COMBO(tab, 12 13, &kp TAB, BASE BASE_WIN)
         COMBO(copy, 21 22, &kp LG(C), BASE)
         COMBO(paste, 22 23, &kp LG(V), BASE)
