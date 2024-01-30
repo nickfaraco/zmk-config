@@ -1,0 +1,105 @@
+/ {
+    macros {
+        sel_word: select_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp LEFT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LSHFT &kp LCTRL>
+                ;
+        };
+
+        del_line: del_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp END>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp HOME>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp BSPC>
+                ;
+        };
+
+        dot_spc: dot_spc{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp DOT &kp SPACE &sk LSHFT>;
+        };
+
+        // Windows sleep key (fix LOCK not working on Windows)
+        win_sleep: win_sleep{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <5>;
+            bindings = <&kp LG(X) &kp U &kp S>;
+        };
+
+        #if WIRELESS
+        pc_connect: pc_connect{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <5>;
+            bindings = <&bt BT_SEL 1 &to BASE>;
+        };
+        osx_connect: osx_connect{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <5>;
+            bindings = <&bt BT_SEL 0 &to BASE>;
+        };
+        #endif
+
+        macro_par: macro_par{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+        };
+        macro_bkt: macro_bkt{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
+        };
+        macro_brc: macro_brc{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
+        };
+        macro_deg_win: macro_deg_win{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N6>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        macro_euro_win: macro_euro_win{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};

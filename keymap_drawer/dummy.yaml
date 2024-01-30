@@ -1,5 +1,5 @@
 layers:
-  default:
+  APTMAK:
   - $$mdi:repeat-variant$$
   - W
   - F
@@ -22,7 +22,7 @@ layers:
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - V
   - C
-  - {t: G, h: num}
+  - {t: G, h: NUM}
   - D
   - Q
   - Z
@@ -31,12 +31,12 @@ layers:
   - {t: ., s: ':'}
   - /
   - {type: none}
-  - {t: '$$mdi:keyboard-return$$', h: num}
-  - {t: '$$mdi:keyboard-space$$', h: nav, s: $$dot_spc$$}
-  - {t: E, h: symbols}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: NAV, s: $$dot_spc$$}
+  - {t: E, h: SYM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:star-three-points$$', s: '$$mdi:caps-lock$$'}
   - {type: none}
-  default_win:
+  APTMAK_W:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -73,7 +73,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  num:
+  NUM:
   - F12
   - F7
   - F8
@@ -107,12 +107,12 @@ layers:
   - {type: none}
   - {t: ',', type: held}
   - {t: ▽, type: trans}
-  - {t: '0', h: symbols}
+  - {t: '0', h: SYM}
   - .
   - {type: none}
-  nav:
+  NAV:
   - {type: none}
-  - {type: none}
+  - LG(LEFT)
   - $$tabler:square-x$$
   - $$tabler:browser-x$$
   - {type: none}
@@ -147,9 +147,9 @@ layers:
   - {t: ▽, type: trans}
   - {type: none}
   - {type: none}
-  nav_win:
+  NAV_W:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LA(LEFT)
   - LA(F4)
   - LC(W)
   - {t: ▽, type: trans}
@@ -164,13 +164,13 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$tabler:sticker$$'}
   - {t: ▽, type: trans}
   - LC(DEL)
+  - {t: '$$mdi:arrow-left-bold$$', s: $$screen-prev$$}
   - {t: ▽, type: trans}
+  - {t: '$$mdi:arrow-right-bold$$', s: '$$tabler:screen-share$$'}
+  - LG(L)
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:power-sleep$$
   - {t: ▽, type: trans}
   - '&swapper_win'
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -184,7 +184,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: none}
-  symbols:
+  SYM:
   - {type: none}
   - '@'
   - '#'
@@ -221,7 +221,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  symbols_win:
+  SYM_W:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -258,7 +258,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {type: none}
-  adj:
+  ADJ:
   - {type: none}
   - {type: none}
   - $$mdi:microsoft-windows$$
@@ -295,7 +295,7 @@ layers:
   - {type: held}
   - {type: none}
   - {type: none}
-  lock:
+  LOCK:
   - {type: none}
   - {type: none}
   - {type: none}
@@ -331,94 +331,131 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
+  - {type: none}
+  MOUSE:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '&msc SCRL_Y(-100)'
+  - '&mmv MOVE_Y(-1250)'
+  - '&msc SCRL_Y(100)'
+  - {type: none}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: none}
+  - '&msc SCRL_X(-100)'
+  - '&mmv MOVE_X(-1250)'
+  - '&mmv MOVE_Y(1250)'
+  - '&mmv MOVE_X(1250)'
+  - '&msc SCRL_X(100)'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '&mkp MB4'
+  - '&mkp MB3'
+  - '&mkp MB5'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - '&mkp MB1'
+  - '&mkp MB2'
   - {type: none}
 combos:
 - p: [1, 3]
   k: Q
-  l: [default, default_win]
+  l: [APTMAK, APTMAK_W]
   a: top
   o: 0.35
 - p: [2, 3]
   k: V
-  l: [default, default_win]
+  l: [APTMAK, APTMAK_W]
 - p: [1, 2]
   k: Z
-  l: [default, default_win]
+  l: [APTMAK, APTMAK_W]
 - p: [8, 18]
   k: {t: '''', s: '"'}
-  l: [default, default_win]
+  l: [APTMAK, APTMAK_W]
 - p: [11, 12]
-  k: $$escape$$
-  l: [default, default_win]
+  k: {t: $$escape$$, s: '$$mdi:circle-off-outline$$'}
+  l: [APTMAK, APTMAK_W]
 - p: [12, 13]
   k: $$mdi:keyboard-tab$$
-  l: [default, default_win]
+  l: [APTMAK, APTMAK_W]
 - p: [21, 22]
   k: $$mdi:content-copy$$
-  l: [default]
+  l: [APTMAK]
 - p: [22, 23]
   k: $$mdi:content-paste$$
-  l: [default]
+  l: [APTMAK]
 - p: [21, 22, 23]
   k: $$mdi:content-cut$$
-  l: [default]
+  l: [APTMAK]
   a: bottom
 - p: [10, 11]
   k: $$mdi:undo$$
-  l: [default]
+  l: [APTMAK]
 - p: [13, 14]
   k: $$mdi:redo$$
-  l: [default]
+  l: [APTMAK]
 - p: [21, 22]
   k: $$mdi:content-copy$$
-  l: [default_win]
+  l: [APTMAK_W]
 - p: [22, 23]
   k: $$mdi:content-paste$$
-  l: [default_win]
+  l: [APTMAK_W]
 - p: [21, 22, 23]
   k: $$mdi:content-cut$$
-  l: [default_win]
+  l: [APTMAK_W]
 - p: [10, 11]
   k: $$mdi:undo$$
-  l: [default_win]
+  l: [APTMAK_W]
 - p: [13, 14]
   k: $$mdi:redo$$
-  l: [default_win]
+  l: [APTMAK_W]
 - p: [16, 17]
   k: (
-  l: [default, default_win, symbols, symbols_win, num]
+  l: [APTMAK, APTMAK_W, SYM, SYM_W, NUM]
 - p: [17, 18]
   k: )
-  l: [default, default_win, symbols, symbols_win, num]
+  l: [APTMAK, APTMAK_W, SYM, SYM_W, NUM]
 - p: [26, 27]
   k: {h: '[', s: '{'}
-  l: [default, default_win, symbols, symbols_win, num]
+  l: [APTMAK, APTMAK_W, SYM, SYM_W, NUM]
 - p: [27, 28]
   k: {h: ']', s: '}'}
-  l: [default, default_win, symbols, symbols_win, num]
+  l: [APTMAK, APTMAK_W, SYM, SYM_W, NUM]
 - p: [6, 7]
   k: $$mdi:backspace-outline$$
-  l: [default, default_win, nav, nav_win, num]
+  l: [APTMAK, APTMAK_W, NAV, NAV_W, NUM]
 - p: [7, 8]
   k: $$mdi:backspace-reverse-outline$$
-  l: [default, default_win, nav, nav_win, num]
+  l: [APTMAK, APTMAK_W, NAV, NAV_W, NUM]
 - p: [6, 7, 8]
   k: {h: WORD, s: '$$mdi:backspace-outline$$'}
-  l: [default]
+  l: [APTMAK]
   a: top
 - p: [6, 7, 8]
   k: {h: LINE, s: '$$mdi:backspace-outline$$'}
-  l: [nav]
+  l: [NAV, NAV_W]
   a: top
 - p: [6, 7, 8]
   k: LC(BSPC)
-  l: [default_win]
-- p: [6, 7, 8]
-  k: '&del_line_win'
-  l: [nav_win]
+  l: [APTMAK_W]
 - p: [0, 9, 32, 33]
   k: $$mdi:lock-open-outline$$
-  l: [default]
+  l: [APTMAK]
   a: bottom
   o: 0.3
   arc_scale: 1.05
+- p: [10, 32]
+  k: MOUSE
+  l: [APTMAK, APTMAK_W]
