@@ -268,18 +268,6 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp END>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp HOME>
-                , <&macro_release &kp LGUI>
-                , <&macro_tap &kp BSPC>
-                ;
-        };
-
-        del_line_win: del_line_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp END>
                 , <&macro_press &kp LSHFT>
                 , <&macro_tap &kp HOME>
                 , <&macro_release &kp LSHFT>
