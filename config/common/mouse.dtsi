@@ -1,41 +1,20 @@
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+
 #include <dt-bindings/zmk/mouse.h>
 
 &mmv {
   acceleration-exponent = <1>;      // 1
-  time-to-max-speed-ms = <1500>;    // 40
+  time-to-max-speed-ms = <500>;    // 40
   delay-ms = <0>;                   // 0
 };
 
 &msc {
   acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <5000>;    // 40
+  time-to-max-speed-ms = <40>;      // 500
   delay-ms = <0>;                   // 10
 };
 
-#define U_MOUSE_MOVE_MAX 1250       // 600
-#define U_MOUSE_SCROLL_MAX 100      // 10
-
-#undef MOVE_UP
-#undef MOVE_DOWN
-#undef MOVE_LEFT
-#undef MOVE_RIGHT
-#define MOVE_UP MOVE_Y(-U_MOUSE_MOVE_MAX)
-#define MOVE_DOWN MOVE_Y(U_MOUSE_MOVE_MAX)
-#define MOVE_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
-#define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
-
-#undef SCRL_UP
-#undef SCRL_DOWN
-#undef SCRL_LEFT
-#undef SCRL_RIGHT
-#define SCRL_UP SCRL_Y(U_MOUSE_SCROLL_MAX)
-#define SCRL_DOWN SCRL_Y(-U_MOUSE_SCROLL_MAX)
-#define SCRL_LEFT SCRL_X(-U_MOUSE_SCROLL_MAX)
-#define SCRL_RIGHT SCRL_X(U_MOUSE_SCROLL_MAX)
-
-#define BTN1 &mkp MB1
-#define BTN2 &mkp MB2
-#define BTN3 &mkp MB3
 #define MS_U &mmv MOVE_UP
 #define MS_D &mmv MOVE_DOWN
 #define MS_L &mmv MOVE_LEFT
