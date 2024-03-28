@@ -29,7 +29,7 @@
         COMBO(z, 2 3, &kp V, BASE BASE_WIN, MS_SLOW)
         COMBO(v, 1 2, &kp Z, BASE BASE_WIN, MS_SLOW)
         #if ALPHA_13332 || DUMMY_KEEB
-        COMBO(quote, 8 18, &single_to_doublequote , BASE BASE_WIN, MS_FAST)
+        COMBO(quote, 7 8, &single_to_doublequote , BASE BASE_WIN, MS_FAST)
         #endif
     #endif
     // left-hand side combos
@@ -56,11 +56,11 @@
         COMBO(lbkt, 26 27, &kp LBKT, BASE BASE_WIN SYM SYMW NUM, MS_FAST)
         COMBO(rbkt, 27 28, &kp RBKT, BASE BASE_WIN SYM SYMW NUM, MS_FAST)
         // braces combos
-        // COMBO(lbrc, 26 27, &kp LBRC, BASE NUM)
-        // COMBO(rbrc, 27 28, &kp RBRC, BASE NUM)
+        COMBO(lbrc, 15 16, &kp LBRC, BASE BASE_WIN SYM SYMW NUM, MS_SLOW)
+        COMBO(rbrc, 18 19, &kp RBRC, BASE BASE_WIN SYM SYMW NUM, MS_SLOW)
         // delete actions
         COMBO(bspc, 6 7, &kp BSPC, BASE BASE_WIN NAV NAVW NUM, MS_FAST)
-        COMBO(del, 7 8, &kp DEL, BASE BASE_WIN NAV NAVW NUM, MS_FAST)
+        COMBO(del, 6 8, &kp DEL, BASE BASE_WIN NAV NAVW NUM, MS_FAST)
         COMBO(del_word, 6 7 8, &kp LA(BSPC), BASE, MS_FAST)
         COMBO(del_line, 6 7 8, &del_line, NAV NAVW, MS_FAST)
         COMBO(del_word_win, 6 7 8, &kp LC(BSPC), BASE_WIN, MS_FAST)
