@@ -410,7 +410,7 @@
 
         #ifdef MOUSE_KEYS
         mouse_layer {
-            display-name = "MOUSE";
+            display-name = "MSE";
             bindings = <
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 xxx            xxx            xxx            xxx            xxx                  xxx            WH_D           MS_U           WH_U           xxx

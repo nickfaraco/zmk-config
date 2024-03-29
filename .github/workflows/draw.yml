@@ -20,6 +20,6 @@ jobs:
       # commit_message: "Draw: ${{ github.event.head_commit.message }}"
       amend_commit: true # whether to amend the commit or create a new one
       parse_args: ""
-      draw_args: "dummy:'-k chocofi -s APTMAK NAV SYM NUM ADJ -g 0 9 20 24 25 29 30 35'
-                  base:'-k chocofi -s APTMAK NAV SYM NUM ADJ -g 0 9 20 24 25 2930 35'
-                  chocofi: :'-k chocofi -s APTMAK NAV SYM NUM ADJ -g 20 24 25 29 30 35'"
+      draw_args: "dummy:'-k chocofi -s APTMAK NAV SYM NUM ADJ MSE -g 0 9 20 24 25 29 30 35'
+                  base:'-k chocofi -s APTMAK NAV SYM NUM ADJ MSE -g 0 9 20 24 25 2930 35'
+                  chocofi: :'-k chocofi -s APTMAK NAV SYM NUM ADJ MSE -g 20 24 25 29 30 35'"

@@ -10,6 +10,7 @@ draw_config:
   shrink_wide_legends: 5
   combo_w: 24
   combo_h: 26
+  n_columns: 2
   glyph_tap_size: 16
   glyph_hold_size: 13
   glyph_shifted_size: 12
@@ -126,6 +127,22 @@ parse_config:
       hold: "WORD"
     "&kp LG(LS(SPACE))":
       tap: $$tabler:mouse$$
+    "&kp LG(LEFT)":
+      tap: "Prev Page"
+    # Mouse keys
+    "&mmv MOVE_UP": "Cursor UP"
+    "&mmv MOVE_DOWN": "Cursor DOWN"
+    "&mmv MOVE_LEFT": "Cursor LEFT"
+    "&mmv MOVE_RIGHT": "Cursor RIGHT"
+    "&msc SCRL_UP": "Scroll UP"
+    "&msc SCRL_DOWN": "Scroll DOWN"
+    "&msc SCRL_LEFT": "Scroll LEFT"
+    "&msc SCRL_RIGHT": "Scroll RIGHT"
+    "&mkp MB1": "MB1"
+    "&mkp MB2": "MB2"
+    "&mkp MB3": "MB3"
+    "&mkp MB4": "MB4"
+    "&mkp MB5": "MB5"
 
   # ZMK
   zmk_keycode_map:
@@ -381,8 +398,13 @@ parse_config:
     combo_del:
       key:
         tap: $$mdi:backspace-reverse-outline$$
+      a: top
+      o: 0.9
     combo_ret:
       a: top
     combo_q:
       a: top
       o: 0.35
+    combo_mouse:
+      a: bottom
+      arc_scale: 0.85
