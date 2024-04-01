@@ -64,8 +64,6 @@
         COMBO(del_word, 6 7 8, &kp LA(BSPC), BASE, MS_FAST)
         COMBO(del_line, 6 7 8, &del_line, NAV NAVW, MS_FAST)
         COMBO(del_word_win, 6 7 8, &kp LC(BSPC), BASE_WIN, MS_FAST)
-        // lock layer
-        COMBO(lock, 10 19 32 33, &tog LOCKL, BASE, MS_SLOW)
     // mouse layer
         COMBO(mouse, 10 32, &mo MSE, BASE BASE_WIN, MS_SLOW)
     };
