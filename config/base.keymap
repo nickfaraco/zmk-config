@@ -147,7 +147,7 @@
         ss_cw: ss_cw {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&caps_word>;
+            bindings = <&sk RSHFT>, <&caps_word>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         lt_shft: lt_shft {
@@ -164,7 +164,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&dot_spc>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_RSFT)>;
         };
         lt_spc: lt_spc {
             compatible = "zmk,behavior-hold-tap";
@@ -201,7 +201,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_RSFT)>;
         };
         left_home: left_home {
             compatible = "zmk,behavior-mod-morph";
