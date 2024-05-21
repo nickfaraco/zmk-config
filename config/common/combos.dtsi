@@ -28,9 +28,7 @@
         COMBO(q, 1 3, &kp Q, BASE BASE_WIN, MS_SLOW)
         COMBO(z, 2 3, &kp V, BASE BASE_WIN, MS_SLOW)
         COMBO(v, 1 2, &kp Z, BASE BASE_WIN, MS_SLOW)
-        #if ALPHA_13332 || DUMMY_KEEB
-        COMBO(quote, 7 8, &single_to_doublequote , BASE BASE_WIN, MS_FAST)
-        #endif
+        COMBO(quote, 7 8, &single_to_doublequote , BASE BASE_WIN, MS_SLOW)
     #endif
     // left-hand side combos
         // COMBO(quit, 1 2, &kp LG(Q), BASE)

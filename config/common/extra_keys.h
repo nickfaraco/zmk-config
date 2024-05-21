@@ -25,7 +25,7 @@
 #define LTL &key_repeat
 #define LBL &kp V
 #define LBR &kp Q
-#define RTR &kp SINGLE_QUOTE
+#define RTR &key_repeat
 #define RBL &kp Z
 #define RBR &kp SLASH
 #endif
