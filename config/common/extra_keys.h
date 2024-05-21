@@ -18,14 +18,14 @@
 #define LTL &key_repeat
 #define LBL &none
 #define LBR &none
-#define RTR &kp SINGLE_QUOTE
+#define RTR &kp K_CANCEL
 #define RBL &none
 #define RBR &none
 #else // full 3x5 matrix
 #define LTL &key_repeat
 #define LBL &kp V
 #define LBR &kp Q
-#define RTR &key_repeat
+#define RTR &kp K_CANCEL
 #define RBL &kp Z
 #define RBR &kp SLASH
 #endif
