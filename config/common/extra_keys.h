@@ -15,17 +15,17 @@
 #define RBL &none
 #define RBR &none
 #elif ALPHA_23332
-#define LTL &key_repeat
-#define LBL &none
+#define LTL &none
+#define LBL &kp V
 #define LBR &none
-#define RTR &kp K_CANCEL
+#define RTR &none
 #define RBL &none
-#define RBR &none
+#define RBR &single_to_doublequote
 #else // full 3x5 matrix
 #define LTL &key_repeat
 #define LBL &kp V
 #define LBR &kp Q
 #define RTR &kp K_CANCEL
 #define RBL &kp Z
-#define RBR &kp SLASH
+#define RBR &single_to_doublequote
 #endif
