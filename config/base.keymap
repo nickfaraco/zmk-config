@@ -142,6 +142,18 @@
             tapping-term-ms = <TAP_TERM_MS>;
             bindings = <&kp LG(LS(N4))>, <&kp LG(LS(N5))>, <&kp LG(LS(N3))>;
         };
+        lockscr: lockscr {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TAP_TERM_MS>;
+            bindings = <&none>, <&kp LC(LG(Q))>;
+        };
+        lockscr_win: lockscr_win {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TAP_TERM_MS>;
+            bindings = <&none>, <&kp LG(L)>;
+        };
 
         // tap: sticky-shift | lshft + tap: caps-word | hold: set in keymap (HYPER)
         ss_cw: ss_cw {
@@ -323,7 +335,7 @@
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 xxx            &kp LG(LEFT)   &kp LG(Q)      &kp LG(W)      xxx                  &screenshot    &kp PG_DN      &kp UP         &kp PG_UP      xxx
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                &sk LCTRL      &sk LALT       &sk LSHFT      &sk LGUI       &kp CAPS             &kp LA(DEL)    &kp LEFT       &kp DOWN       &kp RIGHT      &kp LC(LG(Q))
+                &sk LCTRL      &sk LALT       &sk LSHFT      &sk LGUI       &kp CAPS             &kp LA(DEL)    &kp LEFT       &kp DOWN       &kp RIGHT      &lockscr
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                 xxx            &kp LS(TAB)    &swapper       &kp LC(TAB)    xxx                  xxx            &kp DSK_PREV   &kp HR_APP     &kp DSK_NEXT   xxx
              //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
@@ -338,7 +350,7 @@
              //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                 ___            &kp LA(LEFT)   &kp LA(F4)     &kp LC(W)      ___                  &kp LG(LS(S))  ___            ___            ___            ___
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-                &sk LGUI       ___            ___            &sk LCTRL      ___                  &kp LC(DEL)    &left_home     ___            &right_end     &kp LG(L)
+                &sk LGUI       ___            ___            &sk LCTRL      ___                  &kp LC(DEL)    &left_home     ___            &right_end     &lockscr_win
              //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                 ___            ___            &swapper_win   ___            ___                  ___            &kp DSK_PREV_W ___            &kp DSK_NEXT_W ___
              //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
