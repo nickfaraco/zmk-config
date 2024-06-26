@@ -22,7 +22,7 @@
         compatible = "zmk,combos";
 #define CONCAT2(x, y) x ## y
 #define CONCAT(x, y) CONCAT2(x, y)
-#define COMBO(name, pos, k, l, t) CONCAT(combo_, name) { key-positions = <pos>; bindings = <k>; layers = <l>; timeout-ms = <t>; require-prior-idle-ms=<200>;};
+#define COMBO(name, pos, k, l, t) CONCAT(combo_, name) { key-positions = <pos>; bindings = <k>; layers = <l>; timeout-ms = <t>; require-prior-idle-ms=<100>;};
     // missing letters
     #if ALPHA_23332 || ALPHA_13332 || DUMMY_KEEB
         COMBO(q, 1 3, &kp Q, BASE BASE_WIN, MS_SLOW)
